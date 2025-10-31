@@ -1,0 +1,24 @@
+{
+  "chunk_id": 2,
+  "domain": "backupify",
+  "date": "2025-10-31",
+  "timestamp": "2025-10-31T23:17:09.184384",
+  "results": {
+    "public": [
+      {
+        "url": "https://wordpress-base.s3.ap-northeast-1.amazonaws.com",
+        "bucket": "wordpress-base",
+        "region": "ap-northeast-1",
+        "status": 200,
+        "access": "public",
+        "timestamp": "2025-10-31T22:50:30.178728"
+      }
+    ],
+    "private": []
+  },
+  "stats": {
+    "total_checked": 50920,
+    "public_found": 1,
+    "private_found": 0
+  }
+}
