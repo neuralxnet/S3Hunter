@@ -2,7 +2,7 @@ name: S3 Bucket Reconnaissance
 
 on:
   schedule:
-    - cron: '0 0 * * *'
+    - cron: '0 * * * *'  # Run every hour
   workflow_dispatch:
     inputs:
       chunk_size:
@@ -13,6 +13,10 @@ on:
         description: 'Concurrent workers'
         required: false
         default: '30'
+      domains_per_hour:
+        description: 'Domains to scan per hour (leave empty for all)'
+        required: false
+        default: ''
 
 jobs:
   s3-recon:
@@ -78,6 +82,7 @@ jobs:
         env:
           CHUNK_SIZE: ${{ github.event.inputs.chunk_size || '50' }}
           WORKERS: ${{ github.event.inputs.workers || '30' }}
+          DOMAINS_PER_HOUR: ${{ github.event.inputs.domains_per_hour || '100' }}
         run: |
           python3 .github/s3_recon_chunked.py base_wordlist.txt \
             -c $CHUNK_SIZE \
@@ -86,6 +91,7 @@ jobs:
             -e list.txt \
             --state-dir state \
             --output-dir results \
+            --domains-per-hour $DOMAINS_PER_HOUR \
             -p
       
       - name: Commit and push results
