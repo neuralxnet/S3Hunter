@@ -32,7 +32,7 @@ DEFAULT_ENVIRONMENTS = [
 class S3ReconChunked:
     def __init__(self, wordlist, timeout=10, max_workers=30, public_only=False, 
                  env_file=None, verbose=False, chunk_size=50, state_dir='state', 
-                 output_dir='results', resume=True):
+                 output_dir='results', resume=True, domains_per_hour=None):
         self.wordlist = wordlist
         self.timeout = timeout
         self.max_workers = max_workers
@@ -43,6 +43,7 @@ class S3ReconChunked:
         self.state_dir = state_dir
         self.output_dir = output_dir
         self.resume = resume
+        self.domains_per_hour = domains_per_hour
         self.environments = self.load_environments()
         self.results = {'public': [], 'private': []}
         self.total_checked = 0
@@ -119,6 +120,35 @@ class S3ReconChunked:
                 json.dump({'scanned': list(scanned_hashes), 'updated': datetime.now().isoformat()}, f)
         except Exception as e:
             print(f"[!] Error saving state: {e}")
+    
+    def load_domain_state(self):
+        """Load the global domain state to track which domains have been scanned"""
+        state_file = os.path.join(self.state_dir, "domain_state.json")
+        if os.path.exists(state_file):
+            try:
+                with open(state_file, 'r') as f:
+                    state = json.load(f)
+                    return set(state.get('scanned_domains', [])), state.get('last_scan_time', None)
+            except:
+                return set(), None
+        return set(), None
+    
+    def save_domain_state(self, scanned_domains, last_scan_time=None):
+        """Save the global domain state"""
+        state_file = os.path.join(self.state_dir, "domain_state.json")
+        try:
+            with open(state_file, 'w') as f:
+                json.dump({
+                    'scanned_domains': list(scanned_domains),
+                    'last_scan_time': last_scan_time or datetime.now().isoformat(),
+                    'updated': datetime.now().isoformat()
+                }, f, indent=2)
+        except Exception as e:
+            print(f"[!] Error saving domain state: {e}")
+    
+    def get_domain_hash(self, domain):
+        """Generate a unique hash for a domain"""
+        return hashlib.md5(domain.encode()).hexdigest()
     
     def check_bucket(self, bucket_name, region):
         urls = [
@@ -306,8 +336,34 @@ class S3ReconChunked:
         
         print(f"[*] Loaded {len(all_words)} words from {len(self.wordlist)} wordlist(s)")
         
-        chunks = [all_words[i:i + self.chunk_size] for i in range(0, len(all_words), self.chunk_size)]
-        print(f"[*] Split into {len(chunks)} chunks of {self.chunk_size} words each")
+        # Load domain state to track which domains have been scanned
+        scanned_domains, last_scan_time = self.load_domain_state()
+        print(f"[*] Previously scanned domains: {len(scanned_domains)}")
+        if last_scan_time:
+            print(f"[*] Last scan time: {last_scan_time}")
+        
+        # Filter out already scanned domains
+        remaining_domains = [word for word in all_words if self.get_domain_hash(word) not in scanned_domains]
+        print(f"[*] Remaining domains to scan: {len(remaining_domains)}")
+        
+        if not remaining_domains:
+            print("[*] All domains have been scanned. No work to do.")
+            return
+        
+        # Determine how many domains to process this run
+        if self.domains_per_hour:
+            domains_to_process = remaining_domains[:self.domains_per_hour]
+            print(f"[*] Processing {len(domains_to_process)} domains (limited to {self.domains_per_hour} per hour)")
+        else:
+            domains_to_process = remaining_domains
+            print(f"[*] Processing all {len(domains_to_process)} remaining domains")
+        
+        # Split into chunks
+        chunks = [domains_to_process[i:i + self.chunk_size] for i in range(0, len(domains_to_process), self.chunk_size)]
+        print(f"[*] Split into {len(chunks)} chunks of up to {self.chunk_size} words each")
+        
+        scan_start_time = datetime.now()
+        domains_scanned_this_run = []
         
         for idx, chunk in enumerate(chunks):
             print(f"\n[*] Starting chunk {idx + 1}/{len(chunks)}")
@@ -321,9 +377,23 @@ class S3ReconChunked:
             
             self.run_chunk(bucket_names, idx + 1, domain)
             
+            # Track scanned domains
+            for word in chunk:
+                domain_hash = self.get_domain_hash(word)
+                scanned_domains.add(domain_hash)
+                domains_scanned_this_run.append(word)
+            
+            # Save domain state after each chunk
+            self.save_domain_state(scanned_domains, scan_start_time.isoformat())
+            
             time.sleep(2)
         
-        print(f"\n[*] All chunks completed!")
+        print(f"\n{'='*60}")
+        print(f"[*] Scan session completed!")
+        print(f"[*] Domains scanned in this run: {len(domains_scanned_this_run)}")
+        print(f"[*] Total domains scanned so far: {len(scanned_domains)}")
+        print(f"[*] Remaining domains: {len(all_words) - len(scanned_domains)}")
+        print(f"{'='*60}")
 
 def main():
     parser = argparse.ArgumentParser(description='S3 Bucket Mass Reconnaissance Tool - Chunked Version')
@@ -337,6 +407,7 @@ def main():
     parser.add_argument('--state-dir', default='state', help='State directory (default: state)')
     parser.add_argument('--output-dir', default='results', help='Output directory (default: results)')
     parser.add_argument('--no-resume', action='store_true', help='Disable resume from previous state')
+    parser.add_argument('--domains-per-hour', type=int, help='Number of domains to scan per hour (default: all remaining)')
     
     args = parser.parse_args()
     
@@ -359,7 +430,8 @@ def main():
         chunk_size=args.chunk_size,
         state_dir=args.state_dir,
         output_dir=args.output_dir,
-        resume=not args.no_resume
+        resume=not args.no_resume,
+        domains_per_hour=args.domains_per_hour
     )
     
     recon.run()
