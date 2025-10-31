@@ -117,4 +117,3 @@ jobs:
           
           echo "" >> $GITHUB_STEP_SUMMARY
           echo "Total result files: $(find results -name "*.json" -type f | wc -l)" >> $GITHUB_STEP_SUMMARY
-
