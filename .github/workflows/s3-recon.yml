@@ -1,0 +1,117 @@
+name: S3 Bucket Reconnaissance
+
+on:
+  schedule:
+    - cron: '0 0 * * *'
+  workflow_dispatch:
+    inputs:
+      chunk_size:
+        description: 'Words per chunk'
+        required: false
+        default: '50'
+      workers:
+        description: 'Concurrent workers'
+        required: false
+        default: '30'
+
+jobs:
+  s3-recon:
+    runs-on: ubuntu-latest
+    timeout-minutes: 360
+    
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+      
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      
+      - name: Install dependencies
+        run: |
+          pip install requests
+      
+      - name: Check for existing base_wordlist
+        id: check_wordlist
+        run: |
+          if [ -f "base_wordlist.txt" ]; then
+            echo "exists=true" >> $GITHUB_OUTPUT
+            LINES=$(wc -l < base_wordlist.txt)
+            echo "lines=$LINES" >> $GITHUB_OUTPUT
+          else
+            echo "exists=false" >> $GITHUB_OUTPUT
+            echo "lines=0" >> $GITHUB_OUTPUT
+          fi
+      
+      - name: Fetch bug bounty programs
+        run: |
+          python3 .github/fetch_bugbounty.py base_wordlist_new.txt
+      
+      - name: Compare and merge wordlists
+        run: |
+          if [ -f "base_wordlist.txt" ]; then
+            cat base_wordlist.txt base_wordlist_new.txt | sort -u > base_wordlist_merged.txt
+            mv base_wordlist_merged.txt base_wordlist.txt
+            rm base_wordlist_new.txt
+            echo "Merged with existing wordlist"
+          else
+            mv base_wordlist_new.txt base_wordlist.txt
+            echo "Created new wordlist"
+          fi
+          
+          TOTAL_WORDS=$(wc -l < base_wordlist.txt)
+          echo "Total words in base_wordlist.txt: $TOTAL_WORDS"
+      
+      - name: Create directories
+        run: |
+          mkdir -p results
+          mkdir -p state
+      
+      - name: Restore previous state
+        continue-on-error: true
+        run: |
+          git fetch origin main
+          git checkout origin/main -- state/ 2>/dev/null || true
+      
+      - name: Run S3 Reconnaissance
+        env:
+          CHUNK_SIZE: ${{ github.event.inputs.chunk_size || '50' }}
+          WORKERS: ${{ github.event.inputs.workers || '30' }}
+        run: |
+          python3 .github/s3_recon_chunked.py base_wordlist.txt \
+            -c $CHUNK_SIZE \
+            -w $WORKERS \
+            -t 8 \
+            -e list.txt \
+            --state-dir state \
+            --output-dir results \
+            -p
+      
+      - name: Commit and push results
+        run: |
+          git config user.name "S3 Recon Bot"
+          git config user.email "action@github.com"
+          
+          git add base_wordlist.txt results/ state/
+          
+          DATE=$(date +%Y-%m-%d_%H-%M-%S)
+          git diff --cached --quiet || git commit -m "S3 Recon $DATE"
+          
+          git push origin main
+      
+      - name: Generate summary
+        run: |
+          echo "S3 Reconnaissance Summary" >> $GITHUB_STEP_SUMMARY
+          echo "Date: $(date +%Y-%m-%d)" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          
+          if command -v jq &> /dev/null; then
+            PUBLIC_COUNT=$(find results -name "*.json" -type f -exec jq -r '.stats.public_found // 0' {} \; 2>/dev/null | awk '{s+=$1} END {print s+0}')
+            PRIVATE_COUNT=$(find results -name "*.json" -type f -exec jq -r '.stats.private_found // 0' {} \; 2>/dev/null | awk '{s+=$1} END {print s+0}')
+            echo "Public Buckets: $PUBLIC_COUNT" >> $GITHUB_STEP_SUMMARY
+            echo "Private Buckets: $PRIVATE_COUNT" >> $GITHUB_STEP_SUMMARY
+          fi
+          
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "Total result files: $(find results -name "*.json" -type f | wc -l)" >> $GITHUB_STEP_SUMMARY
