@@ -100,7 +100,7 @@ class S3ReconChunked:
         return list(buckets)
     
     def get_bucket_hash(self, bucket_name, region):
-        return hashlib.md5(f"{bucket_name}:{region}".encode()).hexdigest()
+        return hashlib.sha256(f"{bucket_name}:{region}".encode()).hexdigest()
     
     def load_state(self, chunk_id):
         state_file = os.path.join(self.state_dir, f"chunk_{chunk_id}_state.json")
@@ -109,7 +109,8 @@ class S3ReconChunked:
                 with open(state_file, 'r') as f:
                     state = json.load(f)
                     return set(state.get('scanned', []))
-            except:
+            except (json.JSONDecodeError, IOError, KeyError) as e:
+                print(f"[!] Warning: Could not load chunk {chunk_id} state: {e}")
                 return set()
         return set()
     
@@ -129,7 +130,8 @@ class S3ReconChunked:
                 with open(state_file, 'r') as f:
                     state = json.load(f)
                     return set(state.get('scanned_domains', [])), state.get('last_scan_time', None)
-            except:
+            except (json.JSONDecodeError, IOError, KeyError) as e:
+                print(f"[!] Warning: Could not load domain state: {e}")
                 return set(), None
         return set(), None
     
@@ -148,7 +150,7 @@ class S3ReconChunked:
     
     def get_domain_hash(self, domain):
         """Generate a unique hash for a domain"""
-        return hashlib.md5(domain.encode()).hexdigest()
+        return hashlib.sha256(domain.encode()).hexdigest()
     
     def check_bucket(self, bucket_name, region):
         urls = [
