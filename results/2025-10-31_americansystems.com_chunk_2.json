@@ -1,0 +1,72 @@
+{
+  "chunk_id": 2,
+  "domain": "americansystems.com",
+  "date": "2025-10-31",
+  "timestamp": "2025-10-31T21:23:28.776365",
+  "results": {
+    "public": [
+      {
+        "url": "https://asia-cdn.s3.ap-southeast-1.amazonaws.com",
+        "bucket": "asia-cdn",
+        "region": "ap-southeast-1",
+        "status": 200,
+        "access": "public",
+        "timestamp": "2025-10-31T20:51:12.623330"
+      },
+      {
+        "url": "https://asia-dev.s3.eu-west-1.amazonaws.com",
+        "bucket": "asia-dev",
+        "region": "eu-west-1",
+        "status": 200,
+        "access": "public",
+        "timestamp": "2025-10-31T20:59:55.261683"
+      },
+      {
+        "url": "https://apple-s3.s3.us-west-1.amazonaws.com",
+        "bucket": "apple-s3",
+        "region": "us-west-1",
+        "status": 200,
+        "access": "public",
+        "timestamp": "2025-10-31T21:01:20.768444"
+      },
+      {
+        "url": "https://uploads-app.s3.us-east-1.amazonaws.com",
+        "bucket": "uploads-app",
+        "region": "us-east-1",
+        "status": 200,
+        "access": "public",
+        "timestamp": "2025-10-31T21:03:18.785783"
+      },
+      {
+        "url": "https://app-mobile-images.s3.eu-west-3.amazonaws.com",
+        "bucket": "app-mobile-images",
+        "region": "eu-west-3",
+        "status": 200,
+        "access": "public",
+        "timestamp": "2025-10-31T21:03:38.628816"
+      },
+      {
+        "url": "https://app-mobile-test.s3.ap-northeast-2.amazonaws.com",
+        "bucket": "app-mobile-test",
+        "region": "ap-northeast-2",
+        "status": 200,
+        "access": "public",
+        "timestamp": "2025-10-31T21:07:46.107214"
+      },
+      {
+        "url": "https://app-stage.s3.ap-southeast-2.amazonaws.com",
+        "bucket": "app-stage",
+        "region": "ap-southeast-2",
+        "status": 200,
+        "access": "public",
+        "timestamp": "2025-10-31T21:13:36.322869"
+      }
+    ],
+    "private": []
+  },
+  "stats": {
+    "total_checked": 57950,
+    "public_found": 7,
+    "private_found": 0
+  }
+}

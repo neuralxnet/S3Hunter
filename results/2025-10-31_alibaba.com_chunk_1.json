@@ -1,0 +1,40 @@
+{
+  "chunk_id": 1,
+  "domain": "alibaba.com",
+  "date": "2025-10-31",
+  "timestamp": "2025-10-31T20:50:47.672416",
+  "results": {
+    "public": [
+      {
+        "url": "https://amazon-de.s3.us-east-1.amazonaws.com",
+        "bucket": "amazon-de",
+        "region": "us-east-1",
+        "status": 200,
+        "access": "public",
+        "timestamp": "2025-10-31T20:26:19.081864"
+      },
+      {
+        "url": "https://alipay-test.s3.ap-northeast-1.amazonaws.com",
+        "bucket": "alipay-test",
+        "region": "ap-northeast-1",
+        "status": 200,
+        "access": "public",
+        "timestamp": "2025-10-31T20:26:48.554320"
+      },
+      {
+        "url": "https://amap.s3.eu-central-1.amazonaws.com",
+        "bucket": "amap",
+        "region": "eu-central-1",
+        "status": 200,
+        "access": "public",
+        "timestamp": "2025-10-31T20:40:32.066122"
+      }
+    ],
+    "private": []
+  },
+  "stats": {
+    "total_checked": 53257,
+    "public_found": 3,
+    "private_found": 0
+  }
+}
