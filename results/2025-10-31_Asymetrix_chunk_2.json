@@ -1,0 +1,80 @@
+{
+  "chunk_id": 2,
+  "domain": "Asymetrix",
+  "date": "2025-10-31",
+  "timestamp": "2025-10-31T11:15:04.603291",
+  "results": {
+    "public": [
+      {
+        "url": "https://aurora-media.s3.eu-central-1.amazonaws.com",
+        "bucket": "aurora-media",
+        "region": "eu-central-1",
+        "status": 200,
+        "access": "public",
+        "timestamp": "2025-10-31T10:43:12.434951"
+      },
+      {
+        "url": "https://uploads-aurora.s3.us-east-1.amazonaws.com",
+        "bucket": "uploads-aurora",
+        "region": "us-east-1",
+        "status": 200,
+        "access": "public",
+        "timestamp": "2025-10-31T10:44:08.602676"
+      },
+      {
+        "url": "https://aurora-content.s3.us-west-1.amazonaws.com",
+        "bucket": "aurora-content",
+        "region": "us-west-1",
+        "status": 200,
+        "access": "public",
+        "timestamp": "2025-10-31T10:47:53.941314"
+      },
+      {
+        "url": "https://binary-uploads.s3.us-west-1.amazonaws.com",
+        "bucket": "binary-uploads",
+        "region": "us-west-1",
+        "status": 200,
+        "access": "public",
+        "timestamp": "2025-10-31T10:49:50.078513"
+      },
+      {
+        "url": "https://binary-web.s3.us-east-1.amazonaws.com",
+        "bucket": "binary-web",
+        "region": "us-east-1",
+        "status": 200,
+        "access": "public",
+        "timestamp": "2025-10-31T10:49:57.157337"
+      },
+      {
+        "url": "https://site-binary.s3.us-east-1.amazonaws.com",
+        "bucket": "site-binary",
+        "region": "us-east-1",
+        "status": 200,
+        "access": "public",
+        "timestamp": "2025-10-31T10:56:09.164510"
+      },
+      {
+        "url": "https://aurora-public.s3.us-west-2.amazonaws.com",
+        "bucket": "aurora-public",
+        "region": "us-west-2",
+        "status": 200,
+        "access": "public",
+        "timestamp": "2025-10-31T10:58:14.462905"
+      },
+      {
+        "url": "https://caffeine-data.s3.ap-northeast-2.amazonaws.com",
+        "bucket": "caffeine-data",
+        "region": "ap-northeast-2",
+        "status": 200,
+        "access": "public",
+        "timestamp": "2025-10-31T11:06:28.853691"
+      }
+    ],
+    "private": []
+  },
+  "stats": {
+    "total_checked": 57950,
+    "public_found": 8,
+    "private_found": 0
+  }
+}

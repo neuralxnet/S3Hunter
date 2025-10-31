@@ -1,0 +1,80 @@
+{
+  "chunk_id": 1,
+  "domain": "10bis",
+  "date": "2025-10-31",
+  "timestamp": "2025-10-31T10:42:40.048636",
+  "results": {
+    "public": [
+      {
+        "url": "https://amazon-website.s3.us-east-1.amazonaws.com",
+        "bucket": "amazon-website",
+        "region": "us-east-1",
+        "status": 200,
+        "access": "public",
+        "timestamp": "2025-10-31T10:14:02.370198"
+      },
+      {
+        "url": "https://amazon-content.s3.us-east-1.amazonaws.com",
+        "bucket": "amazon-content",
+        "region": "us-east-1",
+        "status": 200,
+        "access": "public",
+        "timestamp": "2025-10-31T10:17:25.775897"
+      },
+      {
+        "url": "https://amazon-resources.s3.us-west-2.amazonaws.com",
+        "bucket": "amazon-resources",
+        "region": "us-west-2",
+        "status": 200,
+        "access": "public",
+        "timestamp": "2025-10-31T10:25:33.988771"
+      },
+      {
+        "url": "https://amazon-s3.s3.us-east-1.amazonaws.com",
+        "bucket": "amazon-s3",
+        "region": "us-east-1",
+        "status": 200,
+        "access": "public",
+        "timestamp": "2025-10-31T10:28:39.129284"
+      },
+      {
+        "url": "https://airtable.s3.us-east-1.amazonaws.com",
+        "bucket": "airtable",
+        "region": "us-east-1",
+        "status": 200,
+        "access": "public",
+        "timestamp": "2025-10-31T10:33:37.030361"
+      },
+      {
+        "url": "https://alphax.s3.sa-east-1.amazonaws.com",
+        "bucket": "alphax",
+        "region": "sa-east-1",
+        "status": 200,
+        "access": "public",
+        "timestamp": "2025-10-31T10:34:32.545599"
+      },
+      {
+        "url": "https://airbnb-uploads.s3.eu-north-1.amazonaws.com",
+        "bucket": "airbnb-uploads",
+        "region": "eu-north-1",
+        "status": 200,
+        "access": "public",
+        "timestamp": "2025-10-31T10:37:09.286229"
+      },
+      {
+        "url": "https://apple-s3.s3.us-west-1.amazonaws.com",
+        "bucket": "apple-s3",
+        "region": "us-west-1",
+        "status": 200,
+        "access": "public",
+        "timestamp": "2025-10-31T10:41:53.761856"
+      }
+    ],
+    "private": []
+  },
+  "stats": {
+    "total_checked": 57950,
+    "public_found": 8,
+    "private_found": 0
+  }
+}
