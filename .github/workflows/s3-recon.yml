@@ -3,8 +3,6 @@ name: S3 Bucket Reconnaissance
 on:
   schedule:
     - cron: '0 0 * * *'
-    - cron: '0 8 * * *'
-    - cron: '0 16 * * *'
   workflow_dispatch:
     inputs:
       chunk_size:
@@ -117,3 +115,4 @@ jobs:
           
           echo "" >> $GITHUB_STEP_SUMMARY
           echo "Total result files: $(find results -name "*.json" -type f | wc -l)" >> $GITHUB_STEP_SUMMARY
+
