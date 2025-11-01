@@ -38,9 +38,9 @@ jobs:
           DATE=$(date +%Y-%m-%d_%H-%M-%S)
           git diff --cached --quiet || git commit -m "Merge results into buckets.json - $DATE"
           
-          # Push with retry logic
-          MAX_RETRIES=5
-          RETRY_DELAY=10
+          # Push with enhanced retry logic
+          MAX_RETRIES=10
+          RETRY_DELAY=15
           
           for i in $(seq 1 $MAX_RETRIES); do
             echo "Push attempt $i of $MAX_RETRIES"
@@ -57,9 +57,55 @@ jobs:
               echo "Push failed, retrying in $RETRY_DELAY seconds..."
               sleep $RETRY_DELAY
               
-              # Pull with rebase before retrying
+              # Fetch and pull with rebase before retrying
+              echo "Fetching latest changes..."
+              git fetch origin main
+              
               echo "Pulling latest changes with rebase..."
-              git pull --rebase origin main || true
+              if git pull --rebase origin main; then
+                echo "Rebase successful"
+              else
+                echo "Rebase failed, attempting to resolve conflicts..."
+                
+                # If rebase fails, abort and try merge with auto-resolution
+                git rebase --abort 2>/dev/null || true
+                
+                # Fetch again and merge with strategy
+                git fetch origin main
+                
+                # Try merge with automatic conflict resolution
+                if git merge origin/main -m "Auto-merge from merge workflow"; then
+                  echo "Merge successful"
+                else
+                  echo "Merge has conflicts, attempting auto-resolution..."
+                  
+                  # For results directory, we want to keep our merged version
+                  git checkout --ours results/ 2>/dev/null || true
+                  git add results/ 2>/dev/null || true
+                  
+                  # For base_wordlist.txt, accept theirs (from recon workflow)
+                  if git status | grep -q "base_wordlist.txt"; then
+                    git checkout --theirs base_wordlist.txt 2>/dev/null || true
+                    git add base_wordlist.txt 2>/dev/null || true
+                  fi
+                  
+                  # For state files, accept theirs (most recent from recon workflow)
+                  if git status | grep -q "state/"; then
+                    git checkout --theirs state/ 2>/dev/null || true
+                    git add state/ 2>/dev/null || true
+                  fi
+                  
+                  # Complete the merge if we resolved conflicts
+                  if git diff --cached --quiet; then
+                    echo "No changes to commit after conflict resolution"
+                  else
+                    git commit -m "Auto-resolve conflicts in merge workflow" 2>/dev/null || true
+                  fi
+                fi
+              fi
+              
+              # Increase delay for next retry
+              RETRY_DELAY=$((RETRY_DELAY + 5))
             fi
           done
       
