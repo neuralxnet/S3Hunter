@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """
-Merge all JSON result files into a single buckets.json file.
-This script combines all individual scan results into one consolidated file.
+Merge all JSON result files into bucket files with automatic rotation.
+This script combines all individual scan results and rotates files when they exceed 20MB.
 """
 
 import json
@@ -11,13 +11,143 @@ from pathlib import Path
 from datetime import datetime
 
 
+# Maximum file size in bytes (20 MB)
+MAX_FILE_SIZE = 20 * 1024 * 1024
+
+
+def get_file_size(filepath):
+    """Get file size in bytes, return 0 if file doesn't exist."""
+    try:
+        return os.path.getsize(filepath)
+    except OSError:
+        return 0
+
+
+def find_existing_bucket_files(results_path):
+    """Find all existing bucket files (buckets.json, buckets_1.json, etc.)."""
+    bucket_files = []
+    
+    # Check for buckets.json
+    base_file = results_path / "buckets.json"
+    if base_file.exists():
+        bucket_files.append(base_file)
+    
+    # Check for buckets_N.json files
+    index = 1
+    while True:
+        numbered_file = results_path / f"buckets_{index}.json"
+        if numbered_file.exists():
+            bucket_files.append(numbered_file)
+            index += 1
+        else:
+            break
+    
+    return bucket_files
+
+
+def load_existing_buckets(results_path):
+    """Load all existing buckets from all bucket files."""
+    bucket_files = find_existing_bucket_files(results_path)
+    
+    all_public_buckets = []
+    all_private_buckets = []
+    
+    for bucket_file in bucket_files:
+        try:
+            print(f"Loading existing data from: {bucket_file.name}")
+            with open(bucket_file, 'r') as f:
+                data = json.load(f)
+                
+                # Extract public buckets
+                if 'buckets' in data and 'public' in data['buckets']:
+                    all_public_buckets.extend(data['buckets']['public'])
+                
+                # Extract private buckets
+                if 'buckets' in data and 'private' in data['buckets']:
+                    all_private_buckets.extend(data['buckets']['private'])
+                    
+        except Exception as e:
+            print(f"Warning: Failed to load {bucket_file.name}: {e}")
+            continue
+    
+    return all_public_buckets, all_private_buckets
+
+
+def estimate_json_size(data):
+    """Estimate the size of JSON data when serialized."""
+    return len(json.dumps(data, indent=2).encode('utf-8'))
+
+
+def split_buckets_by_size(public_buckets, private_buckets, max_size=MAX_FILE_SIZE):
+    """Split buckets into multiple files to respect size limit."""
+    files_data = []
+    current_file_data = {
+        "buckets": {
+            "public": [],
+            "private": []
+        }
+    }
+    
+    # Constants for performance optimization
+    # Average bucket entry is about 200-300 bytes based on typical S3 bucket data
+    AVERAGE_BUCKET_SIZE_BYTES = 250
+    # Check size every N buckets for performance - use smaller value for better accuracy
+    check_interval = max(50, max_size // (AVERAGE_BUCKET_SIZE_BYTES * 50))
+    # Size threshold for file rotation (95% of max size)
+    SIZE_THRESHOLD = max_size * 0.95
+    
+    def check_and_rotate_if_needed():
+        """Check current file size and rotate if approaching limit."""
+        current_size = estimate_json_size(current_file_data)
+        if current_size > SIZE_THRESHOLD:
+            # Save current file data
+            if current_file_data["buckets"]["public"] or current_file_data["buckets"]["private"]:
+                files_data.append(current_file_data)
+            
+            # Start new file
+            return {
+                "buckets": {
+                    "public": [],
+                    "private": []
+                }
+            }
+        return current_file_data
+    
+    bucket_count = 0
+    
+    # Add public buckets
+    for bucket in public_buckets:
+        current_file_data["buckets"]["public"].append(bucket)
+        bucket_count += 1
+        
+        # Only check size periodically for efficiency
+        if bucket_count % check_interval == 0:
+            current_file_data = check_and_rotate_if_needed()
+    
+    # Add private buckets (continue with same bucket_count for accurate tracking)
+    for bucket in private_buckets:
+        current_file_data["buckets"]["private"].append(bucket)
+        bucket_count += 1
+        
+        # Only check size periodically for efficiency
+        if bucket_count % check_interval == 0:
+            current_file_data = check_and_rotate_if_needed()
+    
+    # Add the last file if it has data
+    if current_file_data["buckets"]["public"] or current_file_data["buckets"]["private"]:
+        files_data.append(current_file_data)
+    
+    return files_data
+
+
 def merge_json_files(results_dir, output_file):
     """
-    Merge all JSON files from results directory into a single buckets.json file.
+    Merge all JSON files from results directory, appending to existing buckets.json.
+    Automatically rotates files when they exceed 20MB.
     
     Args:
         results_dir: Directory containing JSON result files
-        output_file: Output file path for merged results
+        output_file: Base output file name (e.g., "buckets.json")
     """
     results_path = Path(results_dir)
     
@@ -25,26 +155,33 @@ def merge_json_files(results_dir, output_file):
         print(f"Error: Results directory '{results_dir}' does not exist")
         sys.exit(1)
     
-    # Find all JSON files in results directory
+    # Find all JSON files in results directory (exclude bucket files)
     json_files = list(results_path.glob("*.json"))
     
-    # Exclude the buckets.json file itself if it exists
-    json_files = [f for f in json_files if f.name != "buckets.json"]
+    # Exclude all bucket files (buckets.json, buckets_1.json, etc.)
+    json_files = [f for f in json_files if not (f.name == "buckets.json" or f.name.startswith("buckets_"))]
     
     if not json_files:
-        print("No JSON files found to merge")
+        print("No new JSON files found to merge")
         sys.exit(0)
     
-    print(f"Found {len(json_files)} JSON files to merge")
+    print(f"Found {len(json_files)} new JSON files to merge")
     
-    # Collect all buckets
-    all_public_buckets = []
-    all_private_buckets = []
+    # Load existing buckets from all bucket files
+    print("\nLoading existing bucket data...")
+    existing_public, existing_private = load_existing_buckets(results_path)
+    print(f"  Loaded {len(existing_public)} existing public buckets")
+    print(f"  Loaded {len(existing_private)} existing private buckets")
+    
+    # Collect all buckets from new files
+    new_public_buckets = []
+    new_private_buckets = []
     
     # Statistics
     total_domains = set()
     total_chunks = 0
     
+    print("\nProcessing new result files...")
     for json_file in sorted(json_files):
         try:
             with open(json_file, 'r') as f:
@@ -56,15 +193,22 @@ def merge_json_files(results_dir, output_file):
                 
                 # Extract public buckets
                 if 'results' in data and 'public' in data['results']:
-                    all_public_buckets.extend(data['results']['public'])
+                    new_public_buckets.extend(data['results']['public'])
                 
                 # Extract private buckets
                 if 'results' in data and 'private' in data['results']:
-                    all_private_buckets.extend(data['results']['private'])
+                    new_private_buckets.extend(data['results']['private'])
                     
         except Exception as e:
             print(f"Warning: Failed to process {json_file.name}: {e}")
             continue
+    
+    print(f"  Found {len(new_public_buckets)} new public buckets")
+    print(f"  Found {len(new_private_buckets)} new private buckets")
+    
+    # Combine existing and new buckets
+    all_public_buckets = existing_public + new_public_buckets
+    all_private_buckets = existing_private + new_private_buckets
     
     # Remove duplicates based on bucket URL
     # Use a dictionary with URL as key to keep only unique buckets (last occurrence)
@@ -80,36 +224,82 @@ def merge_json_files(results_dir, output_file):
         if url:
             unique_private[url] = bucket
     
-    # Create merged output
-    merged_data = {
-        "generated_at": datetime.now().astimezone().isoformat(),
-        "source_files": len(json_files),
-        "domains_scanned": len(total_domains),
-        "total_chunks": total_chunks,
-        "stats": {
+    print(f"\nAfter deduplication:")
+    print(f"  Total unique public buckets: {len(unique_public)}")
+    print(f"  Total unique private buckets: {len(unique_private)}")
+    
+    # Sort buckets
+    sorted_public = sorted(list(unique_public.values()), key=lambda x: x.get('timestamp', ''))
+    sorted_private = sorted(list(unique_private.values()), key=lambda x: x.get('timestamp', ''))
+    
+    # Split buckets into multiple files if needed
+    print("\nSplitting data into files (max 20MB each)...")
+    files_data = split_buckets_by_size(sorted_public, sorted_private)
+    
+    print(f"  Data will be split into {len(files_data)} file(s)")
+    
+    # First, get list of old bucket files to delete later
+    old_bucket_files = find_existing_bucket_files(results_path)
+    
+    # Write data to NEW files first (to avoid data loss if write fails)
+    new_files_written = []
+    for idx, file_data in enumerate(files_data):
+        # Determine filename
+        if idx == 0:
+            filename = output_file
+        else:
+            filename = f"buckets_{idx}.json"
+        
+        output_path = results_path / filename
+        
+        # Add metadata
+        file_data["generated_at"] = datetime.now().astimezone().isoformat()
+        file_data["source_files"] = len(json_files)
+        file_data["domains_scanned"] = len(total_domains)
+        file_data["total_chunks"] = total_chunks
+        file_data["file_index"] = idx
+        file_data["total_files"] = len(files_data)
+        file_data["stats"] = {
+            "public_buckets_in_file": len(file_data["buckets"]["public"]),
+            "private_buckets_in_file": len(file_data["buckets"]["private"]),
+            "total_buckets_in_file": len(file_data["buckets"]["public"]) + len(file_data["buckets"]["private"]),
             "total_public_buckets": len(unique_public),
             "total_private_buckets": len(unique_private),
             "total_buckets": len(unique_public) + len(unique_private)
-        },
-        "buckets": {
-            "public": sorted(list(unique_public.values()), key=lambda x: x.get('timestamp', '')),
-            "private": sorted(list(unique_private.values()), key=lambda x: x.get('timestamp', ''))
         }
-    }
+        
+        # Write to file
+        with open(output_path, 'w') as f:
+            json.dump(file_data, f, indent=2)
+        
+        new_files_written.append(output_path)
+        
+        file_size = get_file_size(output_path)
+        file_size_mb = file_size / (1024 * 1024)
+        print(f"  Written: {filename} ({file_size_mb:.2f} MB)")
     
-    # Write merged data to output file
-    output_path = results_path / output_file
-    with open(output_path, 'w') as f:
-        json.dump(merged_data, f, indent=2)
+    # Only delete old bucket files AFTER successfully writing all new files
+    # This prevents data loss if the write operation fails
+    # Convert all paths to resolved absolute paths for reliable comparison
+    new_files_set = {f.resolve() for f in new_files_written}
+    
+    for old_file in old_bucket_files:
+        # Don't delete files we just wrote (compare resolved paths)
+        if old_file.resolve() not in new_files_set:
+            try:
+                old_file.unlink()
+                print(f"  Cleaned up old file: {old_file.name}")
+            except Exception as e:
+                print(f"  Warning: Failed to delete old file {old_file.name}: {e}")
     
     print(f"\nMerge Summary:")
-    print(f"  Source files: {len(json_files)}")
+    print(f"  New source files: {len(json_files)}")
     print(f"  Domains scanned: {len(total_domains)}")
     print(f"  Total chunks: {total_chunks}")
-    print(f"  Public buckets: {len(unique_public)}")
-    print(f"  Private buckets: {len(unique_private)}")
+    print(f"  Total unique public buckets: {len(unique_public)}")
+    print(f"  Total unique private buckets: {len(unique_private)}")
     print(f"  Total unique buckets: {len(unique_public) + len(unique_private)}")
-    print(f"\nOutput written to: {output_path}")
+    print(f"  Output files created: {len(files_data)}")
     
     # Delete the individual JSON files after successful merge
     print(f"\nDeleting {len(json_files)} merged source files...")

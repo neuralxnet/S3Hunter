@@ -104,7 +104,30 @@ jobs:
           DATE=$(date +%Y-%m-%d_%H-%M-%S)
           git diff --cached --quiet || git commit -m "S3 Recon $DATE"
           
-          git push origin main
+          # Push with retry logic
+          MAX_RETRIES=5
+          RETRY_DELAY=10
+          
+          for i in $(seq 1 $MAX_RETRIES); do
+            echo "Push attempt $i of $MAX_RETRIES"
+            
+            if git push origin main; then
+              echo "Successfully pushed changes"
+              break
+            else
+              if [ $i -eq $MAX_RETRIES ]; then
+                echo "Failed to push after $MAX_RETRIES attempts"
+                exit 1
+              fi
+              
+              echo "Push failed, retrying in $RETRY_DELAY seconds..."
+              sleep $RETRY_DELAY
+              
+              # Pull with rebase before retrying
+              echo "Pulling latest changes with rebase..."
+              git pull --rebase origin main || true
+            fi
+          done
       
       - name: Generate summary
         run: |
