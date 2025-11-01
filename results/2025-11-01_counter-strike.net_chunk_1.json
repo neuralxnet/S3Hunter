@@ -1,0 +1,72 @@
+{
+  "chunk_id": 1,
+  "domain": "counter-strike.net",
+  "date": "2025-11-01",
+  "timestamp": "2025-11-01T09:44:31.940075",
+  "results": {
+    "public": [
+      {
+        "url": "https://data-cdn.s3.ap-southeast-1.amazonaws.com",
+        "bucket": "data-cdn",
+        "region": "ap-southeast-1",
+        "status": 200,
+        "access": "public",
+        "timestamp": "2025-11-01T09:22:37.164369"
+      },
+      {
+        "url": "https://crypto-cdn.s3.eu-central-1.amazonaws.com",
+        "bucket": "crypto-cdn",
+        "region": "eu-central-1",
+        "status": 200,
+        "access": "public",
+        "timestamp": "2025-11-01T09:25:46.926638"
+      },
+      {
+        "url": "https://crypto-web.s3.ap-northeast-1.amazonaws.com",
+        "bucket": "crypto-web",
+        "region": "ap-northeast-1",
+        "status": 200,
+        "access": "public",
+        "timestamp": "2025-11-01T09:26:02.292098"
+      },
+      {
+        "url": "https://web-data.s3.us-east-1.amazonaws.com",
+        "bucket": "web-data",
+        "region": "us-east-1",
+        "status": 200,
+        "access": "public",
+        "timestamp": "2025-11-01T09:27:13.827551"
+      },
+      {
+        "url": "https://images-crypto.s3.us-east-2.amazonaws.com",
+        "bucket": "images-crypto",
+        "region": "us-east-2",
+        "status": 200,
+        "access": "public",
+        "timestamp": "2025-11-01T09:37:05.290720"
+      },
+      {
+        "url": "https://cdn-crypto.s3.eu-central-1.amazonaws.com",
+        "bucket": "cdn-crypto",
+        "region": "eu-central-1",
+        "status": 200,
+        "access": "public",
+        "timestamp": "2025-11-01T09:38:09.304627"
+      },
+      {
+        "url": "https://media-data.s3.ap-south-1.amazonaws.com",
+        "bucket": "media-data",
+        "region": "ap-south-1",
+        "status": 200,
+        "access": "public",
+        "timestamp": "2025-11-01T09:40:29.703670"
+      }
+    ],
+    "private": []
+  },
+  "stats": {
+    "total_checked": 47481,
+    "public_found": 7,
+    "private_found": 0
+  }
+}
