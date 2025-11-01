@@ -91,10 +91,27 @@ def split_buckets_by_size(public_buckets, private_buckets, max_size=MAX_FILE_SIZ
     # Constants for performance optimization
     # Average bucket entry is about 200-300 bytes based on typical S3 bucket data
     AVERAGE_BUCKET_SIZE_BYTES = 250
-    SIZE_CHECK_FREQUENCY = 100  # Check size every N buckets for performance
+    # Check size every N buckets for performance - use smaller value for better accuracy
+    check_interval = max(50, max_size // (AVERAGE_BUCKET_SIZE_BYTES * 50))
+    # Size threshold for file rotation (95% of max size)
+    SIZE_THRESHOLD = max_size * 0.95
     
-    # Calculate how often to check size based on file size limit
-    check_interval = max(1, max_size // (AVERAGE_BUCKET_SIZE_BYTES * SIZE_CHECK_FREQUENCY))
+    def check_and_rotate_if_needed():
+        """Check current file size and rotate if approaching limit."""
+        current_size = estimate_json_size(current_file_data)
+        if current_size > SIZE_THRESHOLD:
+            # Save current file data
+            if current_file_data["buckets"]["public"] or current_file_data["buckets"]["private"]:
+                files_data.append(current_file_data)
+            
+            # Start new file
+            return {
+                "buckets": {
+                    "public": [],
+                    "private": []
+                }
+            }
+        return current_file_data
     
     bucket_count = 0
     
@@ -105,45 +122,16 @@ def split_buckets_by_size(public_buckets, private_buckets, max_size=MAX_FILE_SIZ
         
         # Only check size periodically for efficiency
         if bucket_count % check_interval == 0:
-            current_size = estimate_json_size(current_file_data)
-            
-            # If we're approaching the limit, save current file
-            if current_size > max_size * 0.95:  # 95% threshold
-                # Save current file data
-                if current_file_data["buckets"]["public"] or current_file_data["buckets"]["private"]:
-                    files_data.append(current_file_data)
-                
-                # Start new file
-                current_file_data = {
-                    "buckets": {
-                        "public": [],
-                        "private": []
-                    }
-                }
+            current_file_data = check_and_rotate_if_needed()
     
-    # Add private buckets
-    bucket_count = 0
+    # Add private buckets (continue with same bucket_count for accurate tracking)
     for bucket in private_buckets:
         current_file_data["buckets"]["private"].append(bucket)
         bucket_count += 1
         
         # Only check size periodically for efficiency
         if bucket_count % check_interval == 0:
-            current_size = estimate_json_size(current_file_data)
-            
-            # If we're approaching the limit, save current file
-            if current_size > max_size * 0.95:  # 95% threshold
-                # Save current file data
-                if current_file_data["buckets"]["public"] or current_file_data["buckets"]["private"]:
-                    files_data.append(current_file_data)
-                
-                # Start new file
-                current_file_data = {
-                    "buckets": {
-                        "public": [],
-                        "private": []
-                    }
-                }
+            current_file_data = check_and_rotate_if_needed()
     
     # Add the last file if it has data
     if current_file_data["buckets"]["public"] or current_file_data["buckets"]["private"]:
@@ -292,9 +280,12 @@ def merge_json_files(results_dir, output_file):
     
     # Only delete old bucket files AFTER successfully writing all new files
     # This prevents data loss if the write operation fails
+    # Convert all paths to resolved absolute paths for reliable comparison
+    new_files_set = {f.resolve() for f in new_files_written}
+    
     for old_file in old_bucket_files:
-        # Don't delete files we just wrote
-        if old_file not in new_files_written:
+        # Don't delete files we just wrote (compare resolved paths)
+        if old_file.resolve() not in new_files_set:
             try:
                 old_file.unlink()
                 print(f"  Cleaned up old file: {old_file.name}")
