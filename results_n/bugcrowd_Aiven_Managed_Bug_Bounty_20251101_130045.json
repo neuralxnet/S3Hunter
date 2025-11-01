@@ -1,0 +1,10 @@
+{
+  "program": "Aiven Managed Bug Bounty",
+  "platform": "bugcrowd",
+  "url": "https://bugcrowd.com/engagements/aiven-mbb-og",
+  "domains_count": 17,
+  "urls_scanned": 5,
+  "findings_count": 0,
+  "findings": [],
+  "scan_date": "2025-11-01T13:00:45.217852"
+}

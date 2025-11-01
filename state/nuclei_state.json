@@ -1,12 +1,14 @@
 {
   "scanned_programs": [
-    "bugcrowd:Afterpay Bug Bounty Program",
     "bugcrowd:CoinDesk Data - Data API ",
+    "bugcrowd:Aiven Managed Bug Bounty",
+    "bugcrowd:Afterpay Bug Bounty Program",
     "bugcrowd:Acorns Grow, Inc."
   ],
   "last_scan": {
     "bugcrowd:CoinDesk Data - Data API ": "2025-11-01T11:17:55.855375",
     "bugcrowd:Acorns Grow, Inc.": "2025-11-01T11:26:59.026777",
-    "bugcrowd:Afterpay Bug Bounty Program": "2025-11-01T12:11:11.207711"
+    "bugcrowd:Afterpay Bug Bounty Program": "2025-11-01T12:11:11.207711",
+    "bugcrowd:Aiven Managed Bug Bounty": "2025-11-01T13:00:45.218249"
   }
 }
