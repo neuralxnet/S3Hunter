@@ -1,0 +1,40 @@
+{
+  "chunk_id": 1,
+  "domain": "braintree-api.com",
+  "date": "2025-11-01",
+  "timestamp": "2025-11-01T03:43:43.256065",
+  "results": {
+    "public": [
+      {
+        "url": "https://caffeine-data.s3.ap-northeast-2.amazonaws.com",
+        "bucket": "caffeine-data",
+        "region": "ap-northeast-2",
+        "status": 200,
+        "access": "public",
+        "timestamp": "2025-11-01T03:15:21.015061"
+      },
+      {
+        "url": "https://build-resources.s3.us-east-1.amazonaws.com",
+        "bucket": "build-resources",
+        "region": "us-east-1",
+        "status": 200,
+        "access": "public",
+        "timestamp": "2025-11-01T03:15:52.614245"
+      },
+      {
+        "url": "https://build-web.s3.us-west-2.amazonaws.com",
+        "bucket": "build-web",
+        "region": "us-west-2",
+        "status": 200,
+        "access": "public",
+        "timestamp": "2025-11-01T03:41:41.949453"
+      }
+    ],
+    "private": []
+  },
+  "stats": {
+    "total_checked": 57950,
+    "public_found": 3,
+    "private_found": 0
+  }
+}

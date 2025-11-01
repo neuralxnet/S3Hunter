@@ -1,0 +1,64 @@
+{
+  "chunk_id": 2,
+  "domain": "capitalfm",
+  "date": "2025-11-01",
+  "timestamp": "2025-11-01T04:16:11.623042",
+  "results": {
+    "public": [
+      {
+        "url": "https://casino-public.s3.eu-west-1.amazonaws.com",
+        "bucket": "casino-public",
+        "region": "eu-west-1",
+        "status": 200,
+        "access": "public",
+        "timestamp": "2025-11-01T03:48:21.582110"
+      },
+      {
+        "url": "https://careers-images.s3.eu-west-1.amazonaws.com",
+        "bucket": "careers-images",
+        "region": "eu-west-1",
+        "status": 200,
+        "access": "public",
+        "timestamp": "2025-11-01T03:48:29.251821"
+      },
+      {
+        "url": "https://challonge-test.s3.ap-southeast-2.amazonaws.com",
+        "bucket": "challonge-test",
+        "region": "ap-southeast-2",
+        "status": 200,
+        "access": "public",
+        "timestamp": "2025-11-01T03:48:32.678122"
+      },
+      {
+        "url": "https://casino-test.s3.us-west-2.amazonaws.com",
+        "bucket": "casino-test",
+        "region": "us-west-2",
+        "status": 200,
+        "access": "public",
+        "timestamp": "2025-11-01T03:49:50.609248"
+      },
+      {
+        "url": "https://images-casino.s3.us-east-2.amazonaws.com",
+        "bucket": "images-casino",
+        "region": "us-east-2",
+        "status": 200,
+        "access": "public",
+        "timestamp": "2025-11-01T03:50:04.294799"
+      },
+      {
+        "url": "https://casino-images.s3.us-east-1.amazonaws.com",
+        "bucket": "casino-images",
+        "region": "us-east-1",
+        "status": 200,
+        "access": "public",
+        "timestamp": "2025-11-01T03:55:23.092261"
+      }
+    ],
+    "private": []
+  },
+  "stats": {
+    "total_checked": 56715,
+    "public_found": 6,
+    "private_found": 0
+  }
+}
