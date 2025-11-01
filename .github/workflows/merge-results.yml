@@ -84,7 +84,7 @@ jobs:
                   git add results/ 2>/dev/null || true
                   
                   # For base_wordlist.txt, accept theirs (from recon workflow)
-                  if git status --porcelain | grep -qE "^[UAD][UAD] .*base_wordlist\.txt$"; then
+                  if git status --porcelain | grep -qE "^[UAD][UAD] base_wordlist\.txt$"; then
                     git checkout --theirs base_wordlist.txt 2>/dev/null || true
                     git add base_wordlist.txt 2>/dev/null || true
                   fi
