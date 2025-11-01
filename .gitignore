@@ -6,3 +6,6 @@ __pycache__/
 # Test files
 *.pyc
 .pytest_cache/
+
+# Temporary files
+bounty_programs.json
