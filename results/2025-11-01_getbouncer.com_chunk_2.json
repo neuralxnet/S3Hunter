@@ -1,0 +1,88 @@
+{
+  "chunk_id": 2,
+  "domain": "getbouncer.com",
+  "date": "2025-11-01",
+  "timestamp": "2025-11-01T15:17:44.628658",
+  "results": {
+    "public": [
+      {
+        "url": "https://goldman.s3.us-east-1.amazonaws.com",
+        "bucket": "goldman",
+        "region": "us-east-1",
+        "status": 200,
+        "access": "public",
+        "timestamp": "2025-11-01T14:46:35.625736"
+      },
+      {
+        "url": "https://gmx-web.s3.us-west-2.amazonaws.com",
+        "bucket": "gmx-web",
+        "region": "us-west-2",
+        "status": 200,
+        "access": "public",
+        "timestamp": "2025-11-01T14:47:44.054526"
+      },
+      {
+        "url": "https://global-s3.s3.us-west-2.amazonaws.com",
+        "bucket": "global-s3",
+        "region": "us-west-2",
+        "status": 200,
+        "access": "public",
+        "timestamp": "2025-11-01T14:51:28.909808"
+      },
+      {
+        "url": "https://github-files.s3.eu-west-1.amazonaws.com",
+        "bucket": "github-files",
+        "region": "eu-west-1",
+        "status": 200,
+        "access": "public",
+        "timestamp": "2025-11-01T14:54:31.036856"
+      },
+      {
+        "url": "https://media-global.s3.us-east-1.amazonaws.com",
+        "bucket": "media-global",
+        "region": "us-east-1",
+        "status": 200,
+        "access": "public",
+        "timestamp": "2025-11-01T14:55:23.178790"
+      },
+      {
+        "url": "https://githubapp.s3.us-east-1.amazonaws.com",
+        "bucket": "githubapp",
+        "region": "us-east-1",
+        "status": 200,
+        "access": "public",
+        "timestamp": "2025-11-01T15:02:43.625833"
+      },
+      {
+        "url": "https://global-test.s3.ap-northeast-1.amazonaws.com",
+        "bucket": "global-test",
+        "region": "ap-northeast-1",
+        "status": 200,
+        "access": "public",
+        "timestamp": "2025-11-01T15:03:26.622401"
+      },
+      {
+        "url": "https://test-global.s3.us-east-1.amazonaws.com",
+        "bucket": "test-global",
+        "region": "us-east-1",
+        "status": 200,
+        "access": "public",
+        "timestamp": "2025-11-01T15:08:39.260215"
+      },
+      {
+        "url": "https://site-global.s3.us-east-1.amazonaws.com",
+        "bucket": "site-global",
+        "region": "us-east-1",
+        "status": 200,
+        "access": "public",
+        "timestamp": "2025-11-01T15:16:28.554907"
+      }
+    ],
+    "private": []
+  },
+  "stats": {
+    "total_checked": 55594,
+    "public_found": 9,
+    "private_found": 0
+  }
+}
