@@ -1,0 +1,48 @@
+{
+  "chunk_id": 1,
+  "domain": "keepersecurity",
+  "date": "2025-11-01",
+  "timestamp": "2025-11-01T22:58:12.114677",
+  "results": {
+    "public": [
+      {
+        "url": "https://lbc-videos.s3.us-west-2.amazonaws.com",
+        "bucket": "lbc-videos",
+        "region": "us-west-2",
+        "status": 200,
+        "access": "public",
+        "timestamp": "2025-11-01T22:22:09.663618"
+      },
+      {
+        "url": "https://kiwi-bucket.s3.us-east-1.amazonaws.com",
+        "bucket": "kiwi-bucket",
+        "region": "us-east-1",
+        "status": 200,
+        "access": "public",
+        "timestamp": "2025-11-01T22:35:37.402944"
+      },
+      {
+        "url": "https://kraken.s3.us-east-1.amazonaws.com",
+        "bucket": "kraken",
+        "region": "us-east-1",
+        "status": 200,
+        "access": "public",
+        "timestamp": "2025-11-01T22:36:21.403530"
+      },
+      {
+        "url": "https://lbc-data.s3.us-east-1.amazonaws.com",
+        "bucket": "lbc-data",
+        "region": "us-east-1",
+        "status": 200,
+        "access": "public",
+        "timestamp": "2025-11-01T22:43:49.123301"
+      }
+    ],
+    "private": []
+  },
+  "stats": {
+    "total_checked": 57931,
+    "public_found": 4,
+    "private_found": 0
+  }
+}
