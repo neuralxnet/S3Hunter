@@ -88,10 +88,13 @@ def split_buckets_by_size(public_buckets, private_buckets, max_size=MAX_FILE_SIZ
         }
     }
     
-    # Estimate size of a single bucket entry (with some metadata overhead)
-    # Average bucket entry is about 200-300 bytes
-    avg_bucket_size = 250
-    check_interval = max(1, max_size // (avg_bucket_size * 100))  # Check every N buckets
+    # Constants for performance optimization
+    # Average bucket entry is about 200-300 bytes based on typical S3 bucket data
+    AVERAGE_BUCKET_SIZE_BYTES = 250
+    SIZE_CHECK_FREQUENCY = 100  # Check size every N buckets for performance
+    
+    # Calculate how often to check size based on file size limit
+    check_interval = max(1, max_size // (AVERAGE_BUCKET_SIZE_BYTES * SIZE_CHECK_FREQUENCY))
     
     bucket_count = 0
     
@@ -247,16 +250,11 @@ def merge_json_files(results_dir, output_file):
     
     print(f"  Data will be split into {len(files_data)} file(s)")
     
-    # Delete old bucket files before writing new ones
+    # First, get list of old bucket files to delete later
     old_bucket_files = find_existing_bucket_files(results_path)
-    for old_file in old_bucket_files:
-        try:
-            old_file.unlink()
-            print(f"  Deleted old file: {old_file.name}")
-        except Exception as e:
-            print(f"  Warning: Failed to delete {old_file.name}: {e}")
     
-    # Write data to files
+    # Write data to NEW files first (to avoid data loss if write fails)
+    new_files_written = []
     for idx, file_data in enumerate(files_data):
         # Determine filename
         if idx == 0:
@@ -286,9 +284,22 @@ def merge_json_files(results_dir, output_file):
         with open(output_path, 'w') as f:
             json.dump(file_data, f, indent=2)
         
+        new_files_written.append(output_path)
+        
         file_size = get_file_size(output_path)
         file_size_mb = file_size / (1024 * 1024)
         print(f"  Written: {filename} ({file_size_mb:.2f} MB)")
+    
+    # Only delete old bucket files AFTER successfully writing all new files
+    # This prevents data loss if the write operation fails
+    for old_file in old_bucket_files:
+        # Don't delete files we just wrote
+        if old_file not in new_files_written:
+            try:
+                old_file.unlink()
+                print(f"  Cleaned up old file: {old_file.name}")
+            except Exception as e:
+                print(f"  Warning: Failed to delete old file {old_file.name}: {e}")
     
     print(f"\nMerge Summary:")
     print(f"  New source files: {len(json_files)}")
