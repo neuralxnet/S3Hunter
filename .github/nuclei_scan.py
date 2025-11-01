@@ -105,10 +105,36 @@ def run_httpx(domains: List[str]) -> List[str]:
                 pass
         return []
 
+def update_nuclei_templates():
+    """Update nuclei templates"""
+    print('[*] Updating nuclei templates...')
+    
+    try:
+        result = subprocess.run(
+            ['nuclei', '-ut'],
+            capture_output=True,
+            text=True,
+            timeout=300
+        )
+        
+        if result.returncode == 0:
+            print('[+] Nuclei templates updated successfully')
+            return True
+        else:
+            print(f'[!] Failed to update nuclei templates: {result.stderr}')
+            return False
+            
+    except Exception as e:
+        print(f'[!] Error updating nuclei templates: {e}')
+        return False
+
 def run_nuclei(urls: List[str]) -> List[Dict]:
     """Run nuclei scan on URLs"""
     if not urls:
         return []
+    
+    # Update templates before scanning
+    update_nuclei_templates()
     
     print(f'[*] Running nuclei on {len(urls)} URLs...')
     
