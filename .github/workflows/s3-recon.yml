@@ -154,16 +154,18 @@ jobs:
                   git add state/ 2>/dev/null || true
                   
                   # For base_wordlist.txt, accept theirs and re-merge
-                  if git status | grep -q "base_wordlist.txt"; then
+                  if git status --porcelain | grep -q "^[UAD][UAD] base_wordlist.txt$"; then
                     git checkout --theirs base_wordlist.txt 2>/dev/null || true
                     git add base_wordlist.txt 2>/dev/null || true
                   fi
                   
                   # Complete the merge if we resolved conflicts
-                  if git diff --cached --quiet; then
-                    echo "No changes to commit after conflict resolution"
+                  if [ -z "$(git status --porcelain | grep '^[UAD][UAD]')" ]; then
+                    echo "All conflicts resolved, committing merge"
+                    git commit --no-edit 2>/dev/null || git commit -m "Auto-resolve conflicts in S3 Recon workflow" 2>/dev/null || true
                   else
-                    git commit -m "Auto-resolve conflicts in S3 Recon workflow" 2>/dev/null || true
+                    echo "Warning: Some conflicts remain unresolved"
+                    git status --porcelain
                   fi
                 fi
               fi
