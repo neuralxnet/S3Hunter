@@ -1,0 +1,32 @@
+{
+  "chunk_id": 1,
+  "domain": "heytap",
+  "date": "2025-11-01",
+  "timestamp": "2025-11-01T18:55:53.862074",
+  "results": {
+    "public": [
+      {
+        "url": "https://hilton-public.s3.us-east-1.amazonaws.com",
+        "bucket": "hilton-public",
+        "region": "us-east-1",
+        "status": 200,
+        "access": "public",
+        "timestamp": "2025-11-01T18:49:29.988008"
+      },
+      {
+        "url": "https://hotornot-images.s3.eu-west-1.amazonaws.com",
+        "bucket": "hotornot-images",
+        "region": "eu-west-1",
+        "status": 200,
+        "access": "public",
+        "timestamp": "2025-11-01T18:54:52.864813"
+      }
+    ],
+    "private": []
+  },
+  "stats": {
+    "total_checked": 54473,
+    "public_found": 2,
+    "private_found": 0
+  }
+}

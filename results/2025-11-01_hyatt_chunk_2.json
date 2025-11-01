@@ -1,0 +1,15 @@
+{
+  "chunk_id": 2,
+  "domain": "hyatt",
+  "date": "2025-11-01",
+  "timestamp": "2025-11-01T19:29:11.983327",
+  "results": {
+    "public": [],
+    "private": []
+  },
+  "stats": {
+    "total_checked": 56753,
+    "public_found": 0,
+    "private_found": 0
+  }
+}
