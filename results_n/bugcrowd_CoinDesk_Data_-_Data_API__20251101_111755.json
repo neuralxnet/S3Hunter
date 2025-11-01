@@ -1,0 +1,10 @@
+{
+  "program": "CoinDesk Data - Data API ",
+  "platform": "bugcrowd",
+  "url": "https://bugcrowd.com/engagements/CCData-mbb-og",
+  "domains_count": 2,
+  "urls_scanned": 2,
+  "findings_count": 0,
+  "findings": [],
+  "scan_date": "2025-11-01T11:17:55.855199"
+}
