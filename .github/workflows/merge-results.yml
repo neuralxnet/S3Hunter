@@ -1,0 +1,62 @@
+name: Merge S3 Results
+
+on:
+  schedule:
+    - cron: '0 */12 * * *'  # Run every 12 hours
+  workflow_dispatch:  # Allow manual trigger
+
+jobs:
+  merge-results:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    permissions:
+      contents: write  # Required to commit and push results
+    
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0  # Fetch all history to get latest results
+      
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      
+      - name: Merge JSON results
+        run: |
+          python3 .github/merge_results.py results buckets.json
+      
+      - name: Commit and push merged results
+        run: |
+          git config user.name "S3 Merge Bot"
+          git config user.email "action@github.com"
+          
+          # Add the merged buckets.json and remove deleted source files
+          git add results/
+          
+          DATE=$(date +%Y-%m-%d_%H-%M-%S)
+          git diff --cached --quiet || git commit -m "Merge results into buckets.json - $DATE"
+          
+          git push origin main
+      
+      - name: Generate summary
+        run: |
+          echo "S3 Results Merge Summary" >> $GITHUB_STEP_SUMMARY
+          echo "Date: $(date +%Y-%m-%d)" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          
+          if [ -f "results/buckets.json" ] && command -v jq &> /dev/null; then
+            PUBLIC_COUNT=$(jq -r '.stats.total_public_buckets // 0' results/buckets.json)
+            PRIVATE_COUNT=$(jq -r '.stats.total_private_buckets // 0' results/buckets.json)
+            TOTAL_COUNT=$(jq -r '.stats.total_buckets // 0' results/buckets.json)
+            SOURCE_FILES=$(jq -r '.source_files // 0' results/buckets.json)
+            DOMAINS=$(jq -r '.domains_scanned // 0' results/buckets.json)
+            
+            echo "Merged from $SOURCE_FILES source files" >> $GITHUB_STEP_SUMMARY
+            echo "Domains scanned: $DOMAINS" >> $GITHUB_STEP_SUMMARY
+            echo "" >> $GITHUB_STEP_SUMMARY
+            echo "Total Buckets: $TOTAL_COUNT" >> $GITHUB_STEP_SUMMARY
+            echo "  - Public: $PUBLIC_COUNT" >> $GITHUB_STEP_SUMMARY
+            echo "  - Private: $PRIVATE_COUNT" >> $GITHUB_STEP_SUMMARY
+          fi

@@ -44,14 +44,23 @@ python3 .github/s3_recon_chunked.py base_wordlist.txt \
 
 ### Automated Scanning with GitHub Actions
 
-The tool includes a GitHub Actions workflow that:
+The tool includes two GitHub Actions workflows:
+
+#### S3 Reconnaissance Workflow (`s3-recon.yml`)
 - Runs automatically every hour
 - Fetches and updates bug bounty program domains
 - Scans a configurable number of domains per run
 - Maintains state across runs to avoid duplicate scanning
 - Commits results back to the repository
+- Configure the workflow by setting the `domains_per_hour` parameter
 
-Configure the workflow by setting the `domains_per_hour` parameter in `.github/workflows/s3-recon.yml`.
+#### Results Merge Workflow (`merge-results.yml`)
+- Runs automatically every 12 hours
+- Merges all individual JSON result files into a single `buckets.json`
+- Removes duplicate bucket entries
+- Deletes the individual split files after successful merge
+- Provides comprehensive statistics on discovered buckets
+- Can be manually triggered via workflow_dispatch
 
 ## How It Works
 
@@ -116,7 +125,9 @@ Tracks which specific bucket/region combinations have been checked within each c
 
 ## Output
 
-Results are saved in JSON format in the `results` directory:
+### Individual Scan Results
+
+Individual scan results are saved in JSON format in the `results` directory:
 
 ```json
 {
@@ -135,6 +146,39 @@ Results are saved in JSON format in the `results` directory:
   }
 }
 ```
+
+### Merged Results (buckets.json)
+
+Every 12 hours, all individual result files are merged into a single `buckets.json` file:
+
+```json
+{
+  "generated_at": "2024-10-31T10:00:00Z",
+  "source_files": 22,
+  "domains_scanned": 22,
+  "total_chunks": 22,
+  "stats": {
+    "total_public_buckets": 138,
+    "total_private_buckets": 0,
+    "total_buckets": 138
+  },
+  "buckets": {
+    "public": [
+      {
+        "url": "https://example-bucket.s3.amazonaws.com",
+        "bucket": "example-bucket",
+        "region": "us-east-1",
+        "status": 200,
+        "access": "public",
+        "timestamp": "2024-10-31T10:00:00"
+      }
+    ],
+    "private": [...]
+  }
+}
+```
+
+**Note:** After the merge, individual JSON files are automatically deleted to save space, and only `buckets.json` remains.
 
 ## Example Workflow
 
