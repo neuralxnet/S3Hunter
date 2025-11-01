@@ -37,7 +37,7 @@ jobs:
         run: |
           cd /tmp/tools
           wget -q https://github.com/projectdiscovery/nuclei/releases/download/v3.4.10/nuclei_3.4.10_linux_amd64.zip
-          unzip -q nuclei_3.4.10_linux_amd64.zip
+          unzip -u -q nuclei_3.4.10_linux_amd64.zip
           sudo mv nuclei /usr/local/bin/
           sudo chmod +x /usr/local/bin/nuclei
           nuclei -version
@@ -46,7 +46,7 @@ jobs:
         run: |
           cd /tmp/tools
           wget -q https://github.com/projectdiscovery/subfinder/releases/download/v2.9.0/subfinder_2.9.0_linux_amd64.zip
-          unzip -q subfinder_2.9.0_linux_amd64.zip
+          unzip -u -q subfinder_2.9.0_linux_amd64.zip
           sudo mv subfinder /usr/local/bin/
           sudo chmod +x /usr/local/bin/subfinder
           subfinder -version
@@ -55,7 +55,7 @@ jobs:
         run: |
           cd /tmp/tools
           wget -q https://github.com/projectdiscovery/httpx/releases/download/v1.6.9/httpx_1.6.9_linux_amd64.zip
-          unzip -q httpx_1.6.9_linux_amd64.zip
+          unzip -u -q httpx_1.6.9_linux_amd64.zip
           sudo mv httpx /usr/local/bin/
           sudo chmod +x /usr/local/bin/httpx
           httpx -version
