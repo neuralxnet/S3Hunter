@@ -1,0 +1,80 @@
+{
+  "chunk_id": 1,
+  "domain": "cisco",
+  "date": "2025-11-01",
+  "timestamp": "2025-11-01T04:47:30.388626",
+  "results": {
+    "public": [
+      {
+        "url": "https://cloudkarafka.s3.us-east-1.amazonaws.com",
+        "bucket": "cloudkarafka",
+        "region": "us-east-1",
+        "status": 200,
+        "access": "public",
+        "timestamp": "2025-11-01T04:23:33.435693"
+      },
+      {
+        "url": "https://cloud-images.s3.eu-west-1.amazonaws.com",
+        "bucket": "cloud-images",
+        "region": "eu-west-1",
+        "status": 200,
+        "access": "public",
+        "timestamp": "2025-11-01T04:26:22.377558"
+      },
+      {
+        "url": "https://s3-cloud.s3.us-east-1.amazonaws.com",
+        "bucket": "s3-cloud",
+        "region": "us-east-1",
+        "status": 200,
+        "access": "public",
+        "timestamp": "2025-11-01T04:34:21.429063"
+      },
+      {
+        "url": "https://cdn-cloud.s3.eu-west-1.amazonaws.com",
+        "bucket": "cdn-cloud",
+        "region": "eu-west-1",
+        "status": 200,
+        "access": "public",
+        "timestamp": "2025-11-01T04:35:35.501861"
+      },
+      {
+        "url": "https://bucket-cloudfront.s3.sa-east-1.amazonaws.com",
+        "bucket": "bucket-cloudfront",
+        "region": "sa-east-1",
+        "status": 200,
+        "access": "public",
+        "timestamp": "2025-11-01T04:40:53.096625"
+      },
+      {
+        "url": "https://cloud-live.s3.us-west-2.amazonaws.com",
+        "bucket": "cloud-live",
+        "region": "us-west-2",
+        "status": 200,
+        "access": "public",
+        "timestamp": "2025-11-01T04:45:37.667424"
+      },
+      {
+        "url": "https://cloudfront-resources.s3.us-west-2.amazonaws.com",
+        "bucket": "cloudfront-resources",
+        "region": "us-west-2",
+        "status": 200,
+        "access": "public",
+        "timestamp": "2025-11-01T04:46:30.380480"
+      },
+      {
+        "url": "https://cloud-public.s3.eu-west-1.amazonaws.com",
+        "bucket": "cloud-public",
+        "region": "eu-west-1",
+        "status": 200,
+        "access": "public",
+        "timestamp": "2025-11-01T04:47:15.238185"
+      }
+    ],
+    "private": []
+  },
+  "stats": {
+    "total_checked": 48678,
+    "public_found": 8,
+    "private_found": 0
+  }
+}
