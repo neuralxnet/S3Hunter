@@ -1,0 +1,24 @@
+{
+  "chunk_id": 2,
+  "domain": "jaybirdsport.com",
+  "date": "2025-11-01",
+  "timestamp": "2025-11-01T21:19:21.413786",
+  "results": {
+    "public": [
+      {
+        "url": "https://just-eat-it-images.s3.eu-central-1.amazonaws.com",
+        "bucket": "just-eat-it-images",
+        "region": "eu-central-1",
+        "status": 200,
+        "access": "public",
+        "timestamp": "2025-11-01T21:18:08.133547"
+      }
+    ],
+    "private": []
+  },
+  "stats": {
+    "total_checked": 53276,
+    "public_found": 1,
+    "private_found": 0
+  }
+}
