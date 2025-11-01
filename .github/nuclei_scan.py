@@ -5,6 +5,7 @@ import json
 import os
 import subprocess
 import tempfile
+import shutil
 from datetime import datetime
 from typing import List, Dict, Set
 
@@ -262,7 +263,6 @@ def process_program(program: Dict) -> Dict:
     finally:
         # Cleanup temporary directory
         try:
-            import shutil
             shutil.rmtree(scan_dir)
         except:
             pass
