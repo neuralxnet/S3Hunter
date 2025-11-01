@@ -1,13 +1,4 @@
 {
-  "generated_at": "2025-11-01T06:22:45.910412+00:00",
-  "source_files": 22,
-  "domains_scanned": 22,
-  "total_chunks": 22,
-  "stats": {
-    "total_public_buckets": 138,
-    "total_private_buckets": 0,
-    "total_buckets": 138
-  },
   "buckets": {
     "public": [
       {
@@ -1113,8 +1104,166 @@
         "status": 200,
         "access": "public",
         "timestamp": "2025-11-01T05:13:54.670463"
+      },
+      {
+        "url": "https://data-cdn.s3.ap-southeast-1.amazonaws.com",
+        "bucket": "data-cdn",
+        "region": "ap-southeast-1",
+        "status": 200,
+        "access": "public",
+        "timestamp": "2025-11-01T09:22:37.164369"
+      },
+      {
+        "url": "https://crypto-cdn.s3.eu-central-1.amazonaws.com",
+        "bucket": "crypto-cdn",
+        "region": "eu-central-1",
+        "status": 200,
+        "access": "public",
+        "timestamp": "2025-11-01T09:25:46.926638"
+      },
+      {
+        "url": "https://crypto-web.s3.ap-northeast-1.amazonaws.com",
+        "bucket": "crypto-web",
+        "region": "ap-northeast-1",
+        "status": 200,
+        "access": "public",
+        "timestamp": "2025-11-01T09:26:02.292098"
+      },
+      {
+        "url": "https://web-data.s3.us-east-1.amazonaws.com",
+        "bucket": "web-data",
+        "region": "us-east-1",
+        "status": 200,
+        "access": "public",
+        "timestamp": "2025-11-01T09:27:13.827551"
+      },
+      {
+        "url": "https://images-crypto.s3.us-east-2.amazonaws.com",
+        "bucket": "images-crypto",
+        "region": "us-east-2",
+        "status": 200,
+        "access": "public",
+        "timestamp": "2025-11-01T09:37:05.290720"
+      },
+      {
+        "url": "https://cdn-crypto.s3.eu-central-1.amazonaws.com",
+        "bucket": "cdn-crypto",
+        "region": "eu-central-1",
+        "status": 200,
+        "access": "public",
+        "timestamp": "2025-11-01T09:38:09.304627"
+      },
+      {
+        "url": "https://media-data.s3.ap-south-1.amazonaws.com",
+        "bucket": "media-data",
+        "region": "ap-south-1",
+        "status": 200,
+        "access": "public",
+        "timestamp": "2025-11-01T09:40:29.703670"
+      },
+      {
+        "url": "https://blog-dev.s3.us-east-1.amazonaws.com",
+        "bucket": "blog-dev",
+        "region": "us-east-1",
+        "status": 200,
+        "access": "public",
+        "timestamp": "2025-11-01T09:46:29.898626"
+      },
+      {
+        "url": "https://web-dev.s3.us-east-1.amazonaws.com",
+        "bucket": "web-dev",
+        "region": "us-east-1",
+        "status": 200,
+        "access": "public",
+        "timestamp": "2025-11-01T09:46:46.123585"
+      },
+      {
+        "url": "https://cdn-dev.s3.us-east-1.amazonaws.com",
+        "bucket": "cdn-dev",
+        "region": "us-east-1",
+        "status": 200,
+        "access": "public",
+        "timestamp": "2025-11-01T09:47:37.265406"
+      },
+      {
+        "url": "https://delta-public.s3.us-east-1.amazonaws.com",
+        "bucket": "delta-public",
+        "region": "us-east-1",
+        "status": 200,
+        "access": "public",
+        "timestamp": "2025-11-01T09:51:26.282856"
+      },
+      {
+        "url": "https://dev-web.s3.us-west-2.amazonaws.com",
+        "bucket": "dev-web",
+        "region": "us-west-2",
+        "status": 200,
+        "access": "public",
+        "timestamp": "2025-11-01T09:51:37.918797"
+      },
+      {
+        "url": "https://designify.s3.us-east-1.amazonaws.com",
+        "bucket": "designify",
+        "region": "us-east-1",
+        "status": 200,
+        "access": "public",
+        "timestamp": "2025-11-01T09:52:35.145056"
+      },
+      {
+        "url": "https://uk-delta.s3.eu-west-2.amazonaws.com",
+        "bucket": "uk-delta",
+        "region": "eu-west-2",
+        "status": 200,
+        "access": "public",
+        "timestamp": "2025-11-01T09:55:55.946963"
+      },
+      {
+        "url": "https://diamonds-images.s3.eu-west-2.amazonaws.com",
+        "bucket": "diamonds-images",
+        "region": "eu-west-2",
+        "status": 200,
+        "access": "public",
+        "timestamp": "2025-11-01T10:03:38.217706"
+      },
+      {
+        "url": "https://delta-videos.s3.us-east-1.amazonaws.com",
+        "bucket": "delta-videos",
+        "region": "us-east-1",
+        "status": 200,
+        "access": "public",
+        "timestamp": "2025-11-01T10:04:53.839481"
+      },
+      {
+        "url": "https://resources-dev.s3.ap-south-1.amazonaws.com",
+        "bucket": "resources-dev",
+        "region": "ap-south-1",
+        "status": 200,
+        "access": "public",
+        "timestamp": "2025-11-01T10:10:07.972306"
+      },
+      {
+        "url": "https://test-delta.s3.us-west-1.amazonaws.com",
+        "bucket": "test-delta",
+        "region": "us-west-1",
+        "status": 200,
+        "access": "public",
+        "timestamp": "2025-11-01T10:12:46.221277"
       }
     ],
     "private": []
+  },
+  "generated_at": "2025-11-01T10:39:55.410971+00:00",
+  "source_files": 2,
+  "domains_scanned": 2,
+  "total_chunks": 2,
+  "file_index": 0,
+  "total_files": 1,
+  "stats": {
+    "public_buckets_in_file": 156,
+    "private_buckets_in_file": 0,
+    "total_buckets_in_file": 156,
+    "total_public_buckets": 156,
+    "total_private_buckets": 0,
+    "total_buckets": 156
   }
 }
