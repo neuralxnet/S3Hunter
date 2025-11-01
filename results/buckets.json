@@ -106,14 +106,6 @@
         "timestamp": "2025-10-31T11:59:40.112678"
       },
       {
-        "url": "https://cdn-discord.s3.us-west-2.amazonaws.com",
-        "bucket": "cdn-discord",
-        "region": "us-west-2",
-        "status": 200,
-        "access": "public",
-        "timestamp": "2025-10-31T12:01:01.012986"
-      },
-      {
         "url": "https://exodus-website.s3.eu-west-2.amazonaws.com",
         "bucket": "exodus-website",
         "region": "eu-west-2",
@@ -144,14 +136,6 @@
         "status": 200,
         "access": "public",
         "timestamp": "2025-10-31T12:07:16.822263"
-      },
-      {
-        "url": "https://discord-uploads.s3.us-west-2.amazonaws.com",
-        "bucket": "discord-uploads",
-        "region": "us-west-2",
-        "status": 200,
-        "access": "public",
-        "timestamp": "2025-10-31T12:07:50.084317"
       },
       {
         "url": "https://floqast.s3.us-west-2.amazonaws.com",
@@ -1248,22 +1232,110 @@
         "status": 200,
         "access": "public",
         "timestamp": "2025-11-01T10:12:46.221277"
+      },
+      {
+        "url": "https://cdn-discord.s3.us-west-2.amazonaws.com",
+        "bucket": "cdn-discord",
+        "region": "us-west-2",
+        "status": 200,
+        "access": "public",
+        "timestamp": "2025-11-01T11:21:15.363837"
+      },
+      {
+        "url": "https://discord-uploads.s3.us-west-2.amazonaws.com",
+        "bucket": "discord-uploads",
+        "region": "us-west-2",
+        "status": 200,
+        "access": "public",
+        "timestamp": "2025-11-01T11:29:46.186382"
+      },
+      {
+        "url": "https://edu-videos.s3.us-east-1.amazonaws.com",
+        "bucket": "edu-videos",
+        "region": "us-east-1",
+        "status": 200,
+        "access": "public",
+        "timestamp": "2025-11-01T11:46:07.811284"
+      },
+      {
+        "url": "https://ele-data.s3.us-west-1.amazonaws.com",
+        "bucket": "ele-data",
+        "region": "us-west-1",
+        "status": 200,
+        "access": "public",
+        "timestamp": "2025-11-01T11:47:21.169140"
+      },
+      {
+        "url": "https://edu.s3.us-east-1.amazonaws.com",
+        "bucket": "edu",
+        "region": "us-east-1",
+        "status": 200,
+        "access": "public",
+        "timestamp": "2025-11-01T11:51:32.292358"
+      },
+      {
+        "url": "https://eat-media.s3.ap-southeast-1.amazonaws.com",
+        "bucket": "eat-media",
+        "region": "ap-southeast-1",
+        "status": 200,
+        "access": "public",
+        "timestamp": "2025-11-01T11:55:26.609757"
+      },
+      {
+        "url": "https://emc-videos.s3.eu-west-1.amazonaws.com",
+        "bucket": "emc-videos",
+        "region": "eu-west-1",
+        "status": 200,
+        "access": "public",
+        "timestamp": "2025-11-01T12:01:28.997125"
+      },
+      {
+        "url": "https://dubsmash.s3.us-east-1.amazonaws.com",
+        "bucket": "dubsmash",
+        "region": "us-east-1",
+        "status": 200,
+        "access": "public",
+        "timestamp": "2025-11-01T12:07:10.866648"
+      },
+      {
+        "url": "https://emc-website.s3.us-east-1.amazonaws.com",
+        "bucket": "emc-website",
+        "region": "us-east-1",
+        "status": 200,
+        "access": "public",
+        "timestamp": "2025-11-01T12:07:14.082056"
+      },
+      {
+        "url": "https://emc-resources.s3.ap-northeast-2.amazonaws.com",
+        "bucket": "emc-resources",
+        "region": "ap-northeast-2",
+        "status": 200,
+        "access": "public",
+        "timestamp": "2025-11-01T12:08:18.251980"
+      },
+      {
+        "url": "https://eat-public.s3.eu-west-2.amazonaws.com",
+        "bucket": "eat-public",
+        "region": "eu-west-2",
+        "status": 200,
+        "access": "public",
+        "timestamp": "2025-11-01T12:12:19.166454"
       }
     ],
     "private": []
   },
-  "generated_at": "2025-11-01T10:39:55.410971+00:00",
+  "generated_at": "2025-11-01T12:41:19.791579+00:00",
   "source_files": 2,
   "domains_scanned": 2,
   "total_chunks": 2,
   "file_index": 0,
   "total_files": 1,
   "stats": {
-    "public_buckets_in_file": 156,
+    "public_buckets_in_file": 165,
     "private_buckets_in_file": 0,
-    "total_buckets_in_file": 156,
-    "total_public_buckets": 156,
+    "total_buckets_in_file": 165,
+    "total_public_buckets": 165,
     "total_private_buckets": 0,
-    "total_buckets": 156
+    "total_buckets": 165
   }
 }
