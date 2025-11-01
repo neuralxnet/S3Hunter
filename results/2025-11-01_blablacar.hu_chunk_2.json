@@ -1,0 +1,24 @@
+{
+  "chunk_id": 2,
+  "domain": "blablacar.hu",
+  "date": "2025-11-01",
+  "timestamp": "2025-11-01T02:32:41.017984",
+  "results": {
+    "public": [
+      {
+        "url": "https://blend-content.s3.eu-west-1.amazonaws.com",
+        "bucket": "blend-content",
+        "region": "eu-west-1",
+        "status": 200,
+        "access": "public",
+        "timestamp": "2025-11-01T02:30:52.637253"
+      }
+    ],
+    "private": []
+  },
+  "stats": {
+    "total_checked": 54473,
+    "public_found": 1,
+    "private_found": 0
+  }
+}
