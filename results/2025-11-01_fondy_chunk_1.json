@@ -1,0 +1,40 @@
+{
+  "chunk_id": 1,
+  "domain": "fondy",
+  "date": "2025-11-01",
+  "timestamp": "2025-11-01T15:46:22.406400",
+  "results": {
+    "public": [
+      {
+        "url": "https://fund-media.s3.eu-central-1.amazonaws.com",
+        "bucket": "fund-media",
+        "region": "eu-central-1",
+        "status": 200,
+        "access": "public",
+        "timestamp": "2025-11-01T15:18:29.157208"
+      },
+      {
+        "url": "https://fortnite.s3.ap-southeast-1.amazonaws.com",
+        "bucket": "fortnite",
+        "region": "ap-southeast-1",
+        "status": 200,
+        "access": "public",
+        "timestamp": "2025-11-01T15:38:46.424969"
+      },
+      {
+        "url": "https://foundation-images.s3.us-east-1.amazonaws.com",
+        "bucket": "foundation-images",
+        "region": "us-east-1",
+        "status": 200,
+        "access": "public",
+        "timestamp": "2025-11-01T15:44:38.797068"
+      }
+    ],
+    "private": []
+  },
+  "stats": {
+    "total_checked": 54435,
+    "public_found": 3,
+    "private_found": 0
+  }
+}
