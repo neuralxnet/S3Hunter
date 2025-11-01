@@ -1,16 +1,18 @@
 {
   "scanned_programs": [
-    "bugcrowd:AnyTask: Freelancer Platform",
-    "bugcrowd:Aiven Managed Bug Bounty",
     "bugcrowd:Acorns Grow, Inc.",
+    "bugcrowd:Aiven Managed Bug Bounty",
     "bugcrowd:CoinDesk Data - Data API ",
-    "bugcrowd:Afterpay Bug Bounty Program"
+    "bugcrowd:Afterpay Bug Bounty Program",
+    "bugcrowd:Arlo Cash Rewards",
+    "bugcrowd:AnyTask: Freelancer Platform"
   ],
   "last_scan": {
     "bugcrowd:CoinDesk Data - Data API ": "2025-11-01T11:17:55.855375",
     "bugcrowd:Acorns Grow, Inc.": "2025-11-01T11:26:59.026777",
     "bugcrowd:Afterpay Bug Bounty Program": "2025-11-01T12:11:11.207711",
     "bugcrowd:Aiven Managed Bug Bounty": "2025-11-01T13:00:45.218249",
-    "bugcrowd:AnyTask: Freelancer Platform": "2025-11-01T15:26:28.923420"
+    "bugcrowd:AnyTask: Freelancer Platform": "2025-11-01T15:26:28.923420",
+    "bugcrowd:Arlo Cash Rewards": "2025-11-01T19:13:31.311561"
   }
 }
