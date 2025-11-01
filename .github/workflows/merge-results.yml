@@ -32,7 +32,8 @@ jobs:
           git config user.name "S3 Merge Bot"
           git config user.email "action@github.com"
           
-          git add results/buckets.json
+          # Add the merged buckets.json and remove deleted source files
+          git add results/
           
           DATE=$(date +%Y-%m-%d_%H-%M-%S)
           git diff --cached --quiet || git commit -m "Merge results into buckets.json - $DATE"

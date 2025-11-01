@@ -110,6 +110,25 @@ def merge_json_files(results_dir, output_file):
     print(f"  Private buckets: {len(unique_private)}")
     print(f"  Total unique buckets: {len(unique_public) + len(unique_private)}")
     print(f"\nOutput written to: {output_path}")
+    
+    # Delete the individual JSON files after successful merge
+    print(f"\nDeleting {len(json_files)} merged source files...")
+    deleted_count = 0
+    failed_deletes = []
+    
+    for json_file in json_files:
+        try:
+            json_file.unlink()
+            deleted_count += 1
+        except Exception as e:
+            failed_deletes.append((json_file.name, str(e)))
+    
+    print(f"  Successfully deleted: {deleted_count} files")
+    
+    if failed_deletes:
+        print(f"  Failed to delete {len(failed_deletes)} files:")
+        for filename, error in failed_deletes:
+            print(f"    - {filename}: {error}")
 
 
 if __name__ == "__main__":
