@@ -1,0 +1,56 @@
+{
+  "chunk_id": 1,
+  "domain": "goldmansachs",
+  "date": "2025-11-01",
+  "timestamp": "2025-11-01T17:42:34.019871",
+  "results": {
+    "public": [
+      {
+        "url": "https://gsa-uploads.s3.us-east-1.amazonaws.com",
+        "bucket": "gsa-uploads",
+        "region": "us-east-1",
+        "status": 200,
+        "access": "public",
+        "timestamp": "2025-11-01T17:22:20.840080"
+      },
+      {
+        "url": "https://greenhouse-website.s3.eu-west-2.amazonaws.com",
+        "bucket": "greenhouse-website",
+        "region": "eu-west-2",
+        "status": 200,
+        "access": "public",
+        "timestamp": "2025-11-01T17:30:42.032760"
+      },
+      {
+        "url": "https://data-gov-sg.s3.ap-southeast-1.amazonaws.com",
+        "bucket": "data-gov-sg",
+        "region": "ap-southeast-1",
+        "status": 200,
+        "access": "public",
+        "timestamp": "2025-11-01T17:35:41.834072"
+      },
+      {
+        "url": "https://greenhouse-cdn.s3.us-west-2.amazonaws.com",
+        "bucket": "greenhouse-cdn",
+        "region": "us-west-2",
+        "status": 200,
+        "access": "public",
+        "timestamp": "2025-11-01T17:36:47.031527"
+      },
+      {
+        "url": "https://gsa-data.s3.us-east-1.amazonaws.com",
+        "bucket": "gsa-data",
+        "region": "us-east-1",
+        "status": 200,
+        "access": "public",
+        "timestamp": "2025-11-01T17:42:27.679044"
+      }
+    ],
+    "private": []
+  },
+  "stats": {
+    "total_checked": 48640,
+    "public_found": 5,
+    "private_found": 0
+  }
+}
