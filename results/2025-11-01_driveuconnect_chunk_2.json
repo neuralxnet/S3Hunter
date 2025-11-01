@@ -1,0 +1,88 @@
+{
+  "chunk_id": 2,
+  "domain": "driveuconnect",
+  "date": "2025-11-01",
+  "timestamp": "2025-11-01T11:19:49.171123",
+  "results": {
+    "public": [
+      {
+        "url": "https://eat-public.s3.eu-west-2.amazonaws.com",
+        "bucket": "eat-public",
+        "region": "eu-west-2",
+        "status": 200,
+        "access": "public",
+        "timestamp": "2025-11-01T10:56:13.024895"
+      },
+      {
+        "url": "https://dubsmash.s3.us-east-1.amazonaws.com",
+        "bucket": "dubsmash",
+        "region": "us-east-1",
+        "status": 200,
+        "access": "public",
+        "timestamp": "2025-11-01T10:57:25.141931"
+      },
+      {
+        "url": "https://ele-data.s3.us-west-1.amazonaws.com",
+        "bucket": "ele-data",
+        "region": "us-west-1",
+        "status": 200,
+        "access": "public",
+        "timestamp": "2025-11-01T10:59:22.733263"
+      },
+      {
+        "url": "https://emc-website.s3.us-east-1.amazonaws.com",
+        "bucket": "emc-website",
+        "region": "us-east-1",
+        "status": 200,
+        "access": "public",
+        "timestamp": "2025-11-01T10:59:41.190470"
+      },
+      {
+        "url": "https://edu-videos.s3.us-east-1.amazonaws.com",
+        "bucket": "edu-videos",
+        "region": "us-east-1",
+        "status": 200,
+        "access": "public",
+        "timestamp": "2025-11-01T11:01:04.357375"
+      },
+      {
+        "url": "https://edu.s3.us-east-1.amazonaws.com",
+        "bucket": "edu",
+        "region": "us-east-1",
+        "status": 200,
+        "access": "public",
+        "timestamp": "2025-11-01T11:06:40.878977"
+      },
+      {
+        "url": "https://eat-media.s3.ap-southeast-1.amazonaws.com",
+        "bucket": "eat-media",
+        "region": "ap-southeast-1",
+        "status": 200,
+        "access": "public",
+        "timestamp": "2025-11-01T11:07:45.916348"
+      },
+      {
+        "url": "https://emc-resources.s3.ap-northeast-2.amazonaws.com",
+        "bucket": "emc-resources",
+        "region": "ap-northeast-2",
+        "status": 200,
+        "access": "public",
+        "timestamp": "2025-11-01T11:08:58.160126"
+      },
+      {
+        "url": "https://emc-videos.s3.eu-west-1.amazonaws.com",
+        "bucket": "emc-videos",
+        "region": "eu-west-1",
+        "status": 200,
+        "access": "public",
+        "timestamp": "2025-11-01T11:11:25.329667"
+      }
+    ],
+    "private": []
+  },
+  "stats": {
+    "total_checked": 50939,
+    "public_found": 9,
+    "private_found": 0
+  }
+}
