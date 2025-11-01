@@ -20,11 +20,18 @@ This repository contains automated workflows for security reconnaissance and vul
   - HackerOne
   - Intigriti
   - YesWeHack
-- Processes different domain types:
-  - Wildcard domains (*.example.com) → Uses Subfinder for subdomain enumeration
-  - Plain domains (example.com) → Uses Httpx for probing
-  - URLs with protocols (https://example.com) → Scans directly
-- Runs Nuclei with high, medium, and critical severity templates
+- Processes different domain types with file-based workflow:
+  - Wildcard domains (*.example.com):
+    - Runs Subfinder for subdomain enumeration → saves to file
+    - Runs Httpx to probe live subdomains → saves to file
+  - Plain domains (example.com):
+    - Saves to file → runs Httpx for probing → saves live URLs to file
+  - URLs with protocols (https://example.com):
+    - Uses directly in scan
+- Aggregates all live URLs and runs Nuclei scan with:
+  - High, medium, and critical severity templates
+  - JSONL output format for proper parsing
+  - Results saved with detailed findings
 - Stores results in `results_n/` directory
 - Tracks scanned programs to avoid duplicates
 - Scans one program per run for efficient resource usage
