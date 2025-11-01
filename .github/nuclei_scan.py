@@ -75,7 +75,7 @@ def run_httpx(input_file: str, output_file: str) -> List[str]:
     
     # Count domains
     with open(input_file, 'r') as f:
-        domain_count = len([line for line in f if line.strip()])
+        domain_count = sum(1 for line in f if line.strip())
     
     print(f'[*] Running httpx to probe {domain_count} domains...')
     
@@ -130,7 +130,7 @@ def run_nuclei(input_file: str, output_file: str) -> List[Dict]:
     
     # Count URLs
     with open(input_file, 'r') as f:
-        url_count = len([line for line in f if line.strip()])
+        url_count = sum(1 for line in f if line.strip())
     
     if url_count == 0:
         return []
@@ -141,7 +141,7 @@ def run_nuclei(input_file: str, output_file: str) -> List[Dict]:
     print(f'[*] Running nuclei on {url_count} URLs...')
     
     try:
-        # Run nuclei with text output (one finding per line)
+        # Run nuclei with JSONL output (one JSON finding per line)
         result = subprocess.run(
             ['nuclei', '-l', input_file, '-s', 'high,medium,critical', 
              '-jsonl', '-o', output_file, '-silent'],
@@ -264,7 +264,9 @@ def process_program(program: Dict) -> Dict:
         # Cleanup temporary directory
         try:
             shutil.rmtree(scan_dir)
-        except:
+        except (OSError, PermissionError) as e:
+            # Log but don't fail if cleanup fails
+            print(f'[!] Warning: Could not cleanup temp directory: {e}')
             pass
 
 def save_results(program_name: str, platform: str, result: Dict):
