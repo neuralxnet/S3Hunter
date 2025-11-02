@@ -1,0 +1,136 @@
+{
+  "chunk_id": 2,
+  "domain": "legalrobot",
+  "date": "2025-11-02",
+  "timestamp": "2025-11-02T00:18:52.206890",
+  "results": {
+    "public": [
+      {
+        "url": "https://uk-live.s3.eu-west-1.amazonaws.com",
+        "bucket": "uk-live",
+        "region": "eu-west-1",
+        "status": 200,
+        "access": "public",
+        "timestamp": "2025-11-01T23:51:28.058376"
+      },
+      {
+        "url": "https://public-live.s3.us-east-1.amazonaws.com",
+        "bucket": "public-live",
+        "region": "us-east-1",
+        "status": 200,
+        "access": "public",
+        "timestamp": "2025-11-01T23:51:40.334592"
+      },
+      {
+        "url": "https://link-test.s3.us-east-1.amazonaws.com",
+        "bucket": "link-test",
+        "region": "us-east-1",
+        "status": 200,
+        "access": "public",
+        "timestamp": "2025-11-01T23:53:21.328972"
+      },
+      {
+        "url": "https://uploads-live.s3.us-east-1.amazonaws.com",
+        "bucket": "uploads-live",
+        "region": "us-east-1",
+        "status": 200,
+        "access": "public",
+        "timestamp": "2025-11-01T23:55:29.868594"
+      },
+      {
+        "url": "https://link-resources.s3.us-west-2.amazonaws.com",
+        "bucket": "link-resources",
+        "region": "us-west-2",
+        "status": 200,
+        "access": "public",
+        "timestamp": "2025-11-01T23:55:35.164684"
+      },
+      {
+        "url": "https://live-link.s3.us-east-1.amazonaws.com",
+        "bucket": "live-link",
+        "region": "us-east-1",
+        "status": 200,
+        "access": "public",
+        "timestamp": "2025-11-01T23:57:45.276395"
+      },
+      {
+        "url": "https://videos-live.s3.eu-central-1.amazonaws.com",
+        "bucket": "videos-live",
+        "region": "eu-central-1",
+        "status": 200,
+        "access": "public",
+        "timestamp": "2025-11-01T23:57:49.261360"
+      },
+      {
+        "url": "https://web-link.s3.us-east-1.amazonaws.com",
+        "bucket": "web-link",
+        "region": "us-east-1",
+        "status": 200,
+        "access": "public",
+        "timestamp": "2025-11-01T23:58:00.904278"
+      },
+      {
+        "url": "https://live-bucket.s3.ap-northeast-2.amazonaws.com",
+        "bucket": "live-bucket",
+        "region": "ap-northeast-2",
+        "status": 200,
+        "access": "public",
+        "timestamp": "2025-11-01T23:58:30.882373"
+      },
+      {
+        "url": "https://link-uploads.s3.eu-west-2.amazonaws.com",
+        "bucket": "link-uploads",
+        "region": "eu-west-2",
+        "status": 200,
+        "access": "public",
+        "timestamp": "2025-11-02T00:01:19.896060"
+      },
+      {
+        "url": "https://lob-assets.s3.us-west-2.amazonaws.com",
+        "bucket": "lob-assets",
+        "region": "us-west-2",
+        "status": 200,
+        "access": "public",
+        "timestamp": "2025-11-02T00:05:14.178824"
+      },
+      {
+        "url": "https://link-images.s3.us-east-1.amazonaws.com",
+        "bucket": "link-images",
+        "region": "us-east-1",
+        "status": 200,
+        "access": "public",
+        "timestamp": "2025-11-02T00:11:32.533902"
+      },
+      {
+        "url": "https://us-live.s3.us-east-1.amazonaws.com",
+        "bucket": "us-live",
+        "region": "us-east-1",
+        "status": 200,
+        "access": "public",
+        "timestamp": "2025-11-02T00:12:58.766418"
+      },
+      {
+        "url": "https://link-dev.s3.us-east-1.amazonaws.com",
+        "bucket": "link-dev",
+        "region": "us-east-1",
+        "status": 200,
+        "access": "public",
+        "timestamp": "2025-11-02T00:15:09.391617"
+      },
+      {
+        "url": "https://link-website.s3.ap-southeast-1.amazonaws.com",
+        "bucket": "link-website",
+        "region": "ap-southeast-1",
+        "status": 200,
+        "access": "public",
+        "timestamp": "2025-11-02T00:17:41.449806"
+      }
+    ],
+    "private": []
+  },
+  "stats": {
+    "total_checked": 47348,
+    "public_found": 15,
+    "private_found": 0
+  }
+}
