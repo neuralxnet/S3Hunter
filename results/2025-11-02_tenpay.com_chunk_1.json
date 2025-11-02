@@ -1,0 +1,48 @@
+{
+  "chunk_id": 1,
+  "domain": "tenpay.com",
+  "date": "2025-11-02",
+  "timestamp": "2025-11-02T22:48:12.057115",
+  "results": {
+    "public": [
+      {
+        "url": "https://test-tinder.s3.us-west-2.amazonaws.com",
+        "bucket": "test-tinder",
+        "region": "us-west-2",
+        "status": 200,
+        "access": "public",
+        "timestamp": "2025-11-02T22:20:33.825582"
+      },
+      {
+        "url": "https://cdn-tickets.s3.ap-south-1.amazonaws.com",
+        "bucket": "cdn-tickets",
+        "region": "ap-south-1",
+        "status": 200,
+        "access": "public",
+        "timestamp": "2025-11-02T22:26:36.381888"
+      },
+      {
+        "url": "https://tinder-bucket.s3.us-east-1.amazonaws.com",
+        "bucket": "tinder-bucket",
+        "region": "us-east-1",
+        "status": 200,
+        "access": "public",
+        "timestamp": "2025-11-02T22:36:38.720123"
+      },
+      {
+        "url": "https://tiktok-uploads.s3.us-west-2.amazonaws.com",
+        "bucket": "tiktok-uploads",
+        "region": "us-west-2",
+        "status": 200,
+        "access": "public",
+        "timestamp": "2025-11-02T22:44:45.649704"
+      }
+    ],
+    "private": []
+  },
+  "stats": {
+    "total_checked": 57912,
+    "public_found": 4,
+    "private_found": 0
+  }
+}
