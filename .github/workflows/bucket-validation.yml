@@ -26,6 +26,7 @@ jobs:
       - name: Install dependencies
         run: |
           pip install requests
+          sudo apt-get update && sudo apt-get install -y jq
       
       - name: Validate buckets
         run: |

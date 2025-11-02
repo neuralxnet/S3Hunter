@@ -8,7 +8,6 @@ Dead buckets (non-200 responses) are removed from the files.
 import json
 import os
 import sys
-import time
 from pathlib import Path
 from datetime import datetime
 from concurrent.futures import ThreadPoolExecutor, as_completed
@@ -19,6 +18,7 @@ import requests
 MAX_FILE_SIZE = 20 * 1024 * 1024  # 20 MB
 REQUEST_TIMEOUT = 10  # seconds
 MAX_WORKERS = 30  # concurrent validation threads
+AVERAGE_BUCKET_SIZE_BYTES = 250  # Average size of a bucket entry in JSON
 
 
 def find_bucket_files(results_path):
@@ -43,6 +43,25 @@ def find_bucket_files(results_path):
     return bucket_files
 
 
+def is_valid_s3_url(url):
+    """
+    Validate that the URL is a legitimate S3 endpoint.
+    Returns True if URL points to amazonaws.com or known S3-compatible endpoints.
+    """
+    if not url.startswith(('http://', 'https://')):
+        return False
+    
+    # Allow AWS S3 endpoints and common S3-compatible services
+    allowed_domains = [
+        '.amazonaws.com',
+        '.s3.amazonaws.com',
+        's3.amazonaws.com',
+        's3-'  # For region-specific endpoints like s3-us-west-2.amazonaws.com
+    ]
+    
+    return any(domain in url for domain in allowed_domains)
+
+
 def validate_bucket(bucket):
     """
     Validate a single bucket by checking its URL.
@@ -51,6 +70,10 @@ def validate_bucket(bucket):
     url = bucket.get('url', '')
     
     if not url:
+        return bucket, False
+    
+    # Validate that URL is a legitimate S3 endpoint to prevent SSRF
+    if not is_valid_s3_url(url):
         return bucket, False
     
     try:
@@ -137,7 +160,6 @@ def split_buckets_by_size(public_buckets, private_buckets, max_size=MAX_FILE_SIZ
     }
     
     # Constants for performance optimization
-    AVERAGE_BUCKET_SIZE_BYTES = 250
     check_interval = max(50, max_size // (AVERAGE_BUCKET_SIZE_BYTES * 50))
     SIZE_THRESHOLD = max_size * 0.95
     
