@@ -2,7 +2,7 @@
   "chunk_id": 2,
   "domain": "reckostaging",
   "date": "2025-11-02",
-  "timestamp": "2025-11-02T13:41:12.067654",
+  "timestamp": "2025-11-02T14:29:42.105033",
   "results": {
     "public": [
       {
@@ -11,7 +11,7 @@
         "region": "ap-southeast-2",
         "status": 200,
         "access": "public",
-        "timestamp": "2025-11-02T13:09:05.402634"
+        "timestamp": "2025-11-02T14:25:49.390769"
       }
     ],
     "private": []

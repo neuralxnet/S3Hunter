@@ -11,6 +11,8 @@ import threading
 import os
 from datetime import datetime
 import hashlib
+import gzip
+import struct
 
 AWS_REGIONS = [
     'us-east-1', 'us-east-2', 'us-west-1', 'us-west-2',
@@ -32,7 +34,7 @@ DEFAULT_ENVIRONMENTS = [
 class S3ReconChunked:
     def __init__(self, wordlist, timeout=10, max_workers=30, public_only=False, 
                  env_file=None, verbose=False, chunk_size=50, state_dir='state', 
-                 output_dir='results', resume=True, domains_per_hour=None):
+                 output_dir='results', resume=True, domains_per_hour=None, max_state_size_mb=28):
         self.wordlist = wordlist
         self.timeout = timeout
         self.max_workers = max_workers
@@ -44,6 +46,8 @@ class S3ReconChunked:
         self.output_dir = output_dir
         self.resume = resume
         self.domains_per_hour = domains_per_hour
+        self.max_state_size_mb = max_state_size_mb
+        self.max_state_size_bytes = max_state_size_mb * 1024 * 1024
         self.environments = self.load_environments()
         self.results = {'public': [], 'private': []}
         self.total_checked = 0
@@ -103,23 +107,15 @@ class S3ReconChunked:
         return hashlib.md5(f"{bucket_name}:{region}".encode()).hexdigest()
     
     def load_state(self, chunk_id):
-        state_file = os.path.join(self.state_dir, f"chunk_{chunk_id}_state.json")
-        if os.path.exists(state_file):
-            try:
-                with open(state_file, 'r') as f:
-                    state = json.load(f)
-                    return set(state.get('scanned', []))
-            except:
-                return set()
+        """Simplified: no per-bucket tracking, rely on domain-level state only"""
+        # Return empty set - we only track domains now, not individual buckets
         return set()
     
     def save_state(self, chunk_id, scanned_hashes):
-        state_file = os.path.join(self.state_dir, f"chunk_{chunk_id}_state.json")
-        try:
-            with open(state_file, 'w') as f:
-                json.dump({'scanned': list(scanned_hashes), 'updated': datetime.now().isoformat()}, f)
-        except Exception as e:
-            print(f"[!] Error saving state: {e}")
+        """Simplified: no per-bucket tracking needed, only track at domain level"""
+        # No need to save per-bucket state anymore
+        # Domain tracking in domain_state.json is sufficient
+        pass
     
     def load_domain_state(self):
         """Load the global domain state to track which domains have been scanned"""
@@ -276,10 +272,8 @@ class S3ReconChunked:
         print(f"[*] Domain: {domain}")
         print(f"[*] Bucket names in chunk: {len(bucket_names)}")
         
+        # Simplified: no per-bucket state tracking
         scanned_hashes = set()
-        if self.resume:
-            scanned_hashes = self.load_state(chunk_id)
-            print(f"[*] Loaded {len(scanned_hashes)} previously scanned buckets")
         
         combinations = list(itertools.product(bucket_names, AWS_REGIONS))
         print(f"[*] Total combinations to check: {len(combinations)}")
@@ -309,9 +303,6 @@ class S3ReconChunked:
                     elapsed = time.time() - start_time
                     rate = completed / elapsed if elapsed > 0 else 0
                     print(f"[*] Progress: {completed}/{total} ({(completed/total*100):.1f}%) | Rate: {rate:.1f} req/s | Found: {found_count}")
-                    self.save_state(chunk_id, scanned_hashes)
-        
-        self.save_state(chunk_id, scanned_hashes)
         
         elapsed_time = time.time() - start_time
         
@@ -408,6 +399,7 @@ def main():
     parser.add_argument('--output-dir', default='results', help='Output directory (default: results)')
     parser.add_argument('--no-resume', action='store_true', help='Disable resume from previous state')
     parser.add_argument('--domains-per-hour', type=int, help='Number of domains to scan per hour (default: all remaining)')
+    parser.add_argument('--max-state-size', type=int, default=28, help='Maximum state file size in MB before rotation (default: 28)')
     
     args = parser.parse_args()
     
@@ -431,7 +423,8 @@ def main():
         state_dir=args.state_dir,
         output_dir=args.output_dir,
         resume=not args.no_resume,
-        domains_per_hour=args.domains_per_hour
+        domains_per_hour=args.domains_per_hour,
+        max_state_size_mb=args.max_state_size
     )
     
     recon.run()
