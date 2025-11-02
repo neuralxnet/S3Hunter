@@ -1,0 +1,24 @@
+{
+  "chunk_id": 2,
+  "domain": "palm.tech",
+  "date": "2025-11-02",
+  "timestamp": "2025-11-02T10:20:51.465117",
+  "results": {
+    "public": [
+      {
+        "url": "https://content-partners.s3.us-east-1.amazonaws.com",
+        "bucket": "content-partners",
+        "region": "us-east-1",
+        "status": 200,
+        "access": "public",
+        "timestamp": "2025-11-02T10:02:33.772636"
+      }
+    ],
+    "private": []
+  },
+  "stats": {
+    "total_checked": 50977,
+    "public_found": 1,
+    "private_found": 0
+  }
+}
