@@ -1,0 +1,56 @@
+{
+  "chunk_id": 2,
+  "domain": "machinefi.com",
+  "date": "2025-11-02",
+  "timestamp": "2025-11-02T02:37:52.602746",
+  "results": {
+    "public": [
+      {
+        "url": "https://bucket-marcus.s3.us-east-1.amazonaws.com",
+        "bucket": "bucket-marcus",
+        "region": "us-east-1",
+        "status": 200,
+        "access": "public",
+        "timestamp": "2025-11-02T02:12:45.642504"
+      },
+      {
+        "url": "https://market-content.s3.us-east-1.amazonaws.com",
+        "bucket": "market-content",
+        "region": "us-east-1",
+        "status": 200,
+        "access": "public",
+        "timestamp": "2025-11-02T02:18:47.139350"
+      },
+      {
+        "url": "https://site-mail.s3.eu-west-1.amazonaws.com",
+        "bucket": "site-mail",
+        "region": "eu-west-1",
+        "status": 200,
+        "access": "public",
+        "timestamp": "2025-11-02T02:20:43.144083"
+      },
+      {
+        "url": "https://market-uploads.s3.us-east-1.amazonaws.com",
+        "bucket": "market-uploads",
+        "region": "us-east-1",
+        "status": 200,
+        "access": "public",
+        "timestamp": "2025-11-02T02:22:00.005138"
+      },
+      {
+        "url": "https://market-cdn.s3.ap-southeast-1.amazonaws.com",
+        "bucket": "market-cdn",
+        "region": "ap-southeast-1",
+        "status": 200,
+        "access": "public",
+        "timestamp": "2025-11-02T02:34:49.743767"
+      }
+    ],
+    "private": []
+  },
+  "stats": {
+    "total_checked": 48640,
+    "public_found": 5,
+    "private_found": 0
+  }
+}
