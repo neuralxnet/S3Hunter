@@ -322,14 +322,6 @@
         "timestamp": "2025-10-31T15:02:55.986332"
       },
       {
-        "url": "https://optimizely-files.s3.us-east-1.amazonaws.com",
-        "bucket": "optimizely-files",
-        "region": "us-east-1",
-        "status": 200,
-        "access": "public",
-        "timestamp": "2025-10-31T15:03:41.370807"
-      },
-      {
         "url": "https://pinterest-bucket.s3.us-west-2.amazonaws.com",
         "bucket": "pinterest-bucket",
         "region": "us-west-2",
@@ -2008,22 +2000,110 @@
         "status": 200,
         "access": "public",
         "timestamp": "2025-11-02T07:53:51.286090"
+      },
+      {
+        "url": "https://p2pb2b.s3.eu-central-1.amazonaws.com",
+        "bucket": "p2pb2b",
+        "region": "eu-central-1",
+        "status": 200,
+        "access": "public",
+        "timestamp": "2025-11-02T09:19:32.119661"
+      },
+      {
+        "url": "https://ops-stage.s3.us-east-1.amazonaws.com",
+        "bucket": "ops-stage",
+        "region": "us-east-1",
+        "status": 200,
+        "access": "public",
+        "timestamp": "2025-11-02T09:28:08.812144"
+      },
+      {
+        "url": "https://optimizely-files.s3.us-east-1.amazonaws.com",
+        "bucket": "optimizely-files",
+        "region": "us-east-1",
+        "status": 200,
+        "access": "public",
+        "timestamp": "2025-11-02T09:30:06.925258"
+      },
+      {
+        "url": "https://ops-cdn.s3.us-east-1.amazonaws.com",
+        "bucket": "ops-cdn",
+        "region": "us-east-1",
+        "status": 200,
+        "access": "public",
+        "timestamp": "2025-11-02T09:35:55.406546"
+      },
+      {
+        "url": "https://p2pb2b-storage.s3.eu-central-1.amazonaws.com",
+        "bucket": "p2pb2b-storage",
+        "region": "eu-central-1",
+        "status": 200,
+        "access": "public",
+        "timestamp": "2025-11-02T09:39:37.653177"
+      },
+      {
+        "url": "https://palm-dev.s3.us-west-1.amazonaws.com",
+        "bucket": "palm-dev",
+        "region": "us-west-1",
+        "status": 200,
+        "access": "public",
+        "timestamp": "2025-11-02T09:39:41.712715"
+      },
+      {
+        "url": "https://org-images.s3.us-east-1.amazonaws.com",
+        "bucket": "org-images",
+        "region": "us-east-1",
+        "status": 200,
+        "access": "public",
+        "timestamp": "2025-11-02T09:41:55.535216"
+      },
+      {
+        "url": "https://p2pb2b-images.s3.eu-central-1.amazonaws.com",
+        "bucket": "p2pb2b-images",
+        "region": "eu-central-1",
+        "status": 200,
+        "access": "public",
+        "timestamp": "2025-11-02T09:46:43.494527"
+      },
+      {
+        "url": "https://ops-site.s3.us-east-1.amazonaws.com",
+        "bucket": "ops-site",
+        "region": "us-east-1",
+        "status": 200,
+        "access": "public",
+        "timestamp": "2025-11-02T09:48:30.652745"
+      },
+      {
+        "url": "https://ops-live.s3.us-east-1.amazonaws.com",
+        "bucket": "ops-live",
+        "region": "us-east-1",
+        "status": 200,
+        "access": "public",
+        "timestamp": "2025-11-02T09:49:47.141515"
+      },
+      {
+        "url": "https://content-partners.s3.us-east-1.amazonaws.com",
+        "bucket": "content-partners",
+        "region": "us-east-1",
+        "status": 200,
+        "access": "public",
+        "timestamp": "2025-11-02T10:02:33.772636"
       }
     ],
     "private": []
   },
-  "generated_at": "2025-11-02T08:52:42.276370+00:00",
-  "source_files": 4,
-  "domains_scanned": 4,
-  "total_chunks": 4,
+  "generated_at": "2025-11-02T10:45:19.978944+00:00",
+  "source_files": 2,
+  "domains_scanned": 2,
+  "total_chunks": 2,
   "file_index": 0,
   "total_files": 1,
   "stats": {
-    "public_buckets_in_file": 251,
+    "public_buckets_in_file": 261,
     "private_buckets_in_file": 0,
-    "total_buckets_in_file": 251,
-    "total_public_buckets": 251,
+    "total_buckets_in_file": 261,
+    "total_public_buckets": 261,
     "total_private_buckets": 0,
-    "total_buckets": 251
+    "total_buckets": 261
   }
 }
