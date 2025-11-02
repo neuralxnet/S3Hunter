@@ -1,0 +1,72 @@
+{
+  "chunk_id": 1,
+  "domain": "nubank",
+  "date": "2025-11-02",
+  "timestamp": "2025-11-02T06:56:09.872731",
+  "results": {
+    "public": [
+      {
+        "url": "https://office365.s3.us-east-1.amazonaws.com",
+        "bucket": "office365",
+        "region": "us-east-1",
+        "status": 200,
+        "access": "public",
+        "timestamp": "2025-11-02T06:31:44.088809"
+      },
+      {
+        "url": "https://dev-office.s3.us-east-2.amazonaws.com",
+        "bucket": "dev-office",
+        "region": "us-east-2",
+        "status": 200,
+        "access": "public",
+        "timestamp": "2025-11-02T06:33:27.412029"
+      },
+      {
+        "url": "https://one-resources.s3.ap-southeast-1.amazonaws.com",
+        "bucket": "one-resources",
+        "region": "ap-southeast-1",
+        "status": 200,
+        "access": "public",
+        "timestamp": "2025-11-02T06:37:00.555647"
+      },
+      {
+        "url": "https://office-dev.s3.ap-southeast-1.amazonaws.com",
+        "bucket": "office-dev",
+        "region": "ap-southeast-1",
+        "status": 200,
+        "access": "public",
+        "timestamp": "2025-11-02T06:38:48.284203"
+      },
+      {
+        "url": "https://one-org.s3.us-east-1.amazonaws.com",
+        "bucket": "one-org",
+        "region": "us-east-1",
+        "status": 200,
+        "access": "public",
+        "timestamp": "2025-11-02T06:49:18.448848"
+      },
+      {
+        "url": "https://site-one.s3.us-west-2.amazonaws.com",
+        "bucket": "site-one",
+        "region": "us-west-2",
+        "status": 200,
+        "access": "public",
+        "timestamp": "2025-11-02T06:51:20.311105"
+      },
+      {
+        "url": "https://storage-one.s3.us-west-1.amazonaws.com",
+        "bucket": "storage-one",
+        "region": "us-west-1",
+        "status": 200,
+        "access": "public",
+        "timestamp": "2025-11-02T06:53:31.191426"
+      }
+    ],
+    "private": []
+  },
+  "stats": {
+    "total_checked": 48659,
+    "public_found": 7,
+    "private_found": 0
+  }
+}
