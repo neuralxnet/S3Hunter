@@ -1,0 +1,10 @@
+{
+  "program": "HPE Aruba Networking Infrastructure Public Program",
+  "platform": "bugcrowd",
+  "url": "https://bugcrowd.com/engagements/aruba-public",
+  "domains_count": 9,
+  "urls_scanned": 8,
+  "findings_count": 0,
+  "findings": [],
+  "scan_date": "2025-11-02T02:14:44.558306"
+}
