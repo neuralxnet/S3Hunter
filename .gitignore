@@ -9,3 +9,9 @@ __pycache__/
 
 # Temporary files
 bounty_programs.json
+
+# State files - only track domain state, not per-bucket state
+state/chunk_*_state*.json
+state/chunk_*_state*.bin.gz
+state/chunk_*_meta.json
+# Keep domain_state.json and nuclei_state.json as they're small and important
