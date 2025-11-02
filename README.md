@@ -56,6 +56,18 @@ Results are stored as JSON files in `results_n/` with the following structure:
 - **Schedule**: Runs every 12 hours
 - **Purpose**: Merges S3 scan results into consolidated files
 
+### Bucket Validation
+- **File**: `.github/workflows/bucket-validation.yml`
+- **Schedule**: Runs every 24 hours
+- **Purpose**: Validates buckets in buckets.json and removes dead ones
+
+#### Features:
+- Validates all buckets by checking their HTTP status
+- Removes dead buckets (non-200 responses)
+- Updates timestamps for alive buckets
+- Maintains file rotation for large datasets (20MB per file)
+- Concurrent validation with configurable workers (default: 30)
+
 ## State Management
 
 The workflows maintain state in the `state/` directory to track progress and avoid redundant scans.
