@@ -1,0 +1,32 @@
+{
+  "chunk_id": 1,
+  "domain": "qntrl",
+  "date": "2025-11-02",
+  "timestamp": "2025-11-02T13:06:55.750816",
+  "results": {
+    "public": [
+      {
+        "url": "https://quizlet-bucket.s3.ap-southeast-2.amazonaws.com",
+        "bucket": "quizlet-bucket",
+        "region": "ap-southeast-2",
+        "status": 200,
+        "access": "public",
+        "timestamp": "2025-11-02T12:34:26.398227"
+      },
+      {
+        "url": "https://rbx-website.s3.us-east-1.amazonaws.com",
+        "bucket": "rbx-website",
+        "region": "us-east-1",
+        "status": 200,
+        "access": "public",
+        "timestamp": "2025-11-02T12:54:55.993626"
+      }
+    ],
+    "private": []
+  },
+  "stats": {
+    "total_checked": 55613,
+    "public_found": 2,
+    "private_found": 0
+  }
+}
