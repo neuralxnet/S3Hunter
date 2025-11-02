@@ -1,0 +1,48 @@
+{
+  "chunk_id": 2,
+  "domain": "swisspass.ch",
+  "date": "2025-11-02",
+  "timestamp": "2025-11-02T21:20:57.869506",
+  "results": {
+    "public": [
+      {
+        "url": "https://teleport-dev-public.s3.eu-west-1.amazonaws.com",
+        "bucket": "teleport-dev-public",
+        "region": "eu-west-1",
+        "status": 200,
+        "access": "public",
+        "timestamp": "2025-11-02T20:52:02.573450"
+      },
+      {
+        "url": "https://t-mobile-test.s3.us-east-1.amazonaws.com",
+        "bucket": "t-mobile-test",
+        "region": "us-east-1",
+        "status": 200,
+        "access": "public",
+        "timestamp": "2025-11-02T20:54:07.769541"
+      },
+      {
+        "url": "https://tech.s3.ap-south-1.amazonaws.com",
+        "bucket": "tech",
+        "region": "ap-south-1",
+        "status": 200,
+        "access": "public",
+        "timestamp": "2025-11-02T20:57:13.449089"
+      },
+      {
+        "url": "https://tech-images.s3.us-east-1.amazonaws.com",
+        "bucket": "tech-images",
+        "region": "us-east-1",
+        "status": 200,
+        "access": "public",
+        "timestamp": "2025-11-02T21:14:29.616903"
+      }
+    ],
+    "private": []
+  },
+  "stats": {
+    "total_checked": 57893,
+    "public_found": 4,
+    "private_found": 0
+  }
+}
