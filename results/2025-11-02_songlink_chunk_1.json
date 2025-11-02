@@ -1,0 +1,40 @@
+{
+  "chunk_id": 1,
+  "domain": "songlink",
+  "date": "2025-11-02",
+  "timestamp": "2025-11-02T19:44:24.724438",
+  "results": {
+    "public": [
+      {
+        "url": "https://spotify-data.s3.us-east-2.amazonaws.com",
+        "bucket": "spotify-data",
+        "region": "us-east-2",
+        "status": 200,
+        "access": "public",
+        "timestamp": "2025-11-02T19:29:33.147960"
+      },
+      {
+        "url": "https://test-spotify.s3.ap-northeast-2.amazonaws.com",
+        "bucket": "test-spotify",
+        "region": "ap-northeast-2",
+        "status": 200,
+        "access": "public",
+        "timestamp": "2025-11-02T19:33:45.954339"
+      },
+      {
+        "url": "https://spotify-images.s3.us-east-1.amazonaws.com",
+        "bucket": "spotify-images",
+        "region": "us-east-1",
+        "status": 200,
+        "access": "public",
+        "timestamp": "2025-11-02T19:39:04.543710"
+      }
+    ],
+    "private": []
+  },
+  "stats": {
+    "total_checked": 57836,
+    "public_found": 3,
+    "private_found": 0
+  }
+}

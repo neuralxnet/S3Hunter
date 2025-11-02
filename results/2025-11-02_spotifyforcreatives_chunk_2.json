@@ -1,0 +1,32 @@
+{
+  "chunk_id": 2,
+  "domain": "spotifyforcreatives",
+  "date": "2025-11-02",
+  "timestamp": "2025-11-02T20:16:05.310576",
+  "results": {
+    "public": [
+      {
+        "url": "https://stanford-images.s3.us-east-1.amazonaws.com",
+        "bucket": "stanford-images",
+        "region": "us-east-1",
+        "status": 200,
+        "access": "public",
+        "timestamp": "2025-11-02T19:45:48.397065"
+      },
+      {
+        "url": "https://test-stanford.s3.us-east-1.amazonaws.com",
+        "bucket": "test-stanford",
+        "region": "us-east-1",
+        "status": 200,
+        "access": "public",
+        "timestamp": "2025-11-02T19:50:09.316893"
+      }
+    ],
+    "private": []
+  },
+  "stats": {
+    "total_checked": 57893,
+    "public_found": 2,
+    "private_found": 0
+  }
+}
