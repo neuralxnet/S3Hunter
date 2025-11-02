@@ -1,0 +1,24 @@
+{
+  "chunk_id": 2,
+  "domain": "savedroid.com",
+  "date": "2025-11-02",
+  "timestamp": "2025-11-02T16:19:49.346393",
+  "results": {
+    "public": [
+      {
+        "url": "https://say.s3.us-east-1.amazonaws.com",
+        "bucket": "say",
+        "region": "us-east-1",
+        "status": 200,
+        "access": "public",
+        "timestamp": "2025-11-02T16:10:26.198715"
+      }
+    ],
+    "private": []
+  },
+  "stats": {
+    "total_checked": 57893,
+    "public_found": 1,
+    "private_found": 0
+  }
+}

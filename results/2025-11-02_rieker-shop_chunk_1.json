@@ -1,0 +1,40 @@
+{
+  "chunk_id": 1,
+  "domain": "rieker-shop",
+  "date": "2025-11-02",
+  "timestamp": "2025-11-02T15:48:07.608467",
+  "results": {
+    "public": [
+      {
+        "url": "https://rsa.s3.us-east-1.amazonaws.com",
+        "bucket": "rsa",
+        "region": "us-east-1",
+        "status": 200,
+        "access": "public",
+        "timestamp": "2025-11-02T15:28:59.505121"
+      },
+      {
+        "url": "https://rivals-site.s3.eu-central-1.amazonaws.com",
+        "bucket": "rivals-site",
+        "region": "eu-central-1",
+        "status": 200,
+        "access": "public",
+        "timestamp": "2025-11-02T15:30:50.289578"
+      },
+      {
+        "url": "https://rocketleague-web.s3.ap-southeast-1.amazonaws.com",
+        "bucket": "rocketleague-web",
+        "region": "ap-southeast-1",
+        "status": 200,
+        "access": "public",
+        "timestamp": "2025-11-02T15:42:47.719530"
+      }
+    ],
+    "private": []
+  },
+  "stats": {
+    "total_checked": 57912,
+    "public_found": 3,
+    "private_found": 0
+  }
+}
