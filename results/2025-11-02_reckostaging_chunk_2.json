@@ -1,0 +1,24 @@
+{
+  "chunk_id": 2,
+  "domain": "reckostaging",
+  "date": "2025-11-02",
+  "timestamp": "2025-11-02T14:29:42.105033",
+  "results": {
+    "public": [
+      {
+        "url": "https://reflexion-staging.s3.ap-southeast-2.amazonaws.com",
+        "bucket": "reflexion-staging",
+        "region": "ap-southeast-2",
+        "status": 200,
+        "access": "public",
+        "timestamp": "2025-11-02T14:25:49.390769"
+      }
+    ],
+    "private": []
+  },
+  "stats": {
+    "total_checked": 57912,
+    "public_found": 1,
+    "private_found": 0
+  }
+}
