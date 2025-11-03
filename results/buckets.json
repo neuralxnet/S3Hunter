@@ -2,6 +2,270 @@
   "buckets": {
     "public": [
       {
+        "url": "https://images-services.s3.us-east-1.amazonaws.com",
+        "bucket": "images-services",
+        "region": "us-east-1",
+        "status": 200,
+        "access": "public",
+        "timestamp": "2025-11-02T17:18:32.224785"
+      },
+      {
+        "url": "https://sharepoint-videos.s3.us-east-1.amazonaws.com",
+        "bucket": "sharepoint-videos",
+        "region": "us-east-1",
+        "status": 200,
+        "access": "public",
+        "timestamp": "2025-11-02T17:20:08.939506"
+      },
+      {
+        "url": "https://simple-s3.s3.us-east-1.amazonaws.com",
+        "bucket": "simple-s3",
+        "region": "us-east-1",
+        "status": 200,
+        "access": "public",
+        "timestamp": "2025-11-02T17:22:12.084876"
+      },
+      {
+        "url": "https://public-shopify.s3.eu-central-1.amazonaws.com",
+        "bucket": "public-shopify",
+        "region": "eu-central-1",
+        "status": 200,
+        "access": "public",
+        "timestamp": "2025-11-02T17:23:38.679100"
+      },
+      {
+        "url": "https://shopify-us.s3.us-west-1.amazonaws.com",
+        "bucket": "shopify-us",
+        "region": "us-west-1",
+        "status": 200,
+        "access": "public",
+        "timestamp": "2025-11-02T17:28:04.843464"
+      },
+      {
+        "url": "https://web-services.s3.us-east-1.amazonaws.com",
+        "bucket": "web-services",
+        "region": "us-east-1",
+        "status": 200,
+        "access": "public",
+        "timestamp": "2025-11-02T17:28:20.887571"
+      },
+      {
+        "url": "https://sharepoint-images.s3.us-east-1.amazonaws.com",
+        "bucket": "sharepoint-images",
+        "region": "us-east-1",
+        "status": 200,
+        "access": "public",
+        "timestamp": "2025-11-02T17:30:06.535668"
+      },
+      {
+        "url": "https://simple-videos.s3.eu-west-1.amazonaws.com",
+        "bucket": "simple-videos",
+        "region": "eu-west-1",
+        "status": 200,
+        "access": "public",
+        "timestamp": "2025-11-02T17:34:34.835496"
+      },
+      {
+        "url": "https://shopify-1.s3.us-east-1.amazonaws.com",
+        "bucket": "shopify-1",
+        "region": "us-east-1",
+        "status": 200,
+        "access": "public",
+        "timestamp": "2025-11-02T17:42:54.586284"
+      },
+      {
+        "url": "https://test-song.s3.us-east-1.amazonaws.com",
+        "bucket": "test-song",
+        "region": "us-east-1",
+        "status": 200,
+        "access": "public",
+        "timestamp": "2025-11-02T17:53:51.851100"
+      },
+      {
+        "url": "https://slack-blog.s3.us-east-1.amazonaws.com",
+        "bucket": "slack-blog",
+        "region": "us-east-1",
+        "status": 200,
+        "access": "public",
+        "timestamp": "2025-11-02T17:54:20.065494"
+      },
+      {
+        "url": "https://smartsheet-videos.s3.us-west-2.amazonaws.com",
+        "bucket": "smartsheet-videos",
+        "region": "us-west-2",
+        "status": 200,
+        "access": "public",
+        "timestamp": "2025-11-02T18:04:21.977178"
+      },
+      {
+        "url": "https://spotify-data.s3.us-east-2.amazonaws.com",
+        "bucket": "spotify-data",
+        "region": "us-east-2",
+        "status": 200,
+        "access": "public",
+        "timestamp": "2025-11-02T19:29:33.147960"
+      },
+      {
+        "url": "https://test-spotify.s3.ap-northeast-2.amazonaws.com",
+        "bucket": "test-spotify",
+        "region": "ap-northeast-2",
+        "status": 200,
+        "access": "public",
+        "timestamp": "2025-11-02T19:33:45.954339"
+      },
+      {
+        "url": "https://spotify-images.s3.us-east-1.amazonaws.com",
+        "bucket": "spotify-images",
+        "region": "us-east-1",
+        "status": 200,
+        "access": "public",
+        "timestamp": "2025-11-02T19:39:04.543710"
+      },
+      {
+        "url": "https://stanford-images.s3.us-east-1.amazonaws.com",
+        "bucket": "stanford-images",
+        "region": "us-east-1",
+        "status": 200,
+        "access": "public",
+        "timestamp": "2025-11-02T19:45:48.397065"
+      },
+      {
+        "url": "https://test-stanford.s3.us-east-1.amazonaws.com",
+        "bucket": "test-stanford",
+        "region": "us-east-1",
+        "status": 200,
+        "access": "public",
+        "timestamp": "2025-11-02T19:50:09.316893"
+      },
+      {
+        "url": "https://sunday-videos.s3.ap-southeast-2.amazonaws.com",
+        "bucket": "sunday-videos",
+        "region": "ap-southeast-2",
+        "status": 200,
+        "access": "public",
+        "timestamp": "2025-11-02T21:16:13.798644"
+      },
+      {
+        "url": "https://blog-stories.s3.ap-south-1.amazonaws.com",
+        "bucket": "blog-stories",
+        "region": "ap-south-1",
+        "status": 200,
+        "access": "public",
+        "timestamp": "2025-11-02T21:31:02.938350"
+      },
+      {
+        "url": "https://stories-dev.s3.us-east-1.amazonaws.com",
+        "bucket": "stories-dev",
+        "region": "us-east-1",
+        "status": 200,
+        "access": "public",
+        "timestamp": "2025-11-02T21:47:21.450422"
+      },
+      {
+        "url": "https://teleport-dev-public.s3.eu-west-1.amazonaws.com",
+        "bucket": "teleport-dev-public",
+        "region": "eu-west-1",
+        "status": 200,
+        "access": "public",
+        "timestamp": "2025-11-02T22:02:50.215289"
+      },
+      {
+        "url": "https://tech.s3.ap-south-1.amazonaws.com",
+        "bucket": "tech",
+        "region": "ap-south-1",
+        "status": 200,
+        "access": "public",
+        "timestamp": "2025-11-02T22:12:41.590202"
+      },
+      {
+        "url": "https://t-mobile-test.s3.us-east-1.amazonaws.com",
+        "bucket": "t-mobile-test",
+        "region": "us-east-1",
+        "status": 200,
+        "access": "public",
+        "timestamp": "2025-11-02T22:14:01.293462"
+      },
+      {
+        "url": "https://tech-images.s3.us-east-1.amazonaws.com",
+        "bucket": "tech-images",
+        "region": "us-east-1",
+        "status": 200,
+        "access": "public",
+        "timestamp": "2025-11-02T22:21:32.951678"
+      },
+      {
+        "url": "https://cdn-tickets.s3.ap-south-1.amazonaws.com",
+        "bucket": "cdn-tickets",
+        "region": "ap-south-1",
+        "status": 200,
+        "access": "public",
+        "timestamp": "2025-11-02T23:16:31.556095"
+      },
+      {
+        "url": "https://tiktok-uploads.s3.us-west-2.amazonaws.com",
+        "bucket": "tiktok-uploads",
+        "region": "us-west-2",
+        "status": 200,
+        "access": "public",
+        "timestamp": "2025-11-02T23:17:09.698226"
+      },
+      {
+        "url": "https://test-tinder.s3.us-west-2.amazonaws.com",
+        "bucket": "test-tinder",
+        "region": "us-west-2",
+        "status": 200,
+        "access": "public",
+        "timestamp": "2025-11-02T23:17:12.406608"
+      },
+      {
+        "url": "https://tinder-bucket.s3.us-east-1.amazonaws.com",
+        "bucket": "tinder-bucket",
+        "region": "us-east-1",
+        "status": 200,
+        "access": "public",
+        "timestamp": "2025-11-02T23:48:19.550625"
+      },
+      {
+        "url": "https://ton-bucket.s3.ap-northeast-1.amazonaws.com",
+        "bucket": "ton-bucket",
+        "region": "ap-northeast-1",
+        "status": 200,
+        "access": "public",
+        "timestamp": "2025-11-02T23:49:02.865400"
+      },
+      {
+        "url": "https://live-tools.s3.us-east-1.amazonaws.com",
+        "bucket": "live-tools",
+        "region": "us-east-1",
+        "status": 200,
+        "access": "public",
+        "timestamp": "2025-11-02T23:56:53.172282"
+      },
+      {
+        "url": "https://tools-dev.s3.us-east-1.amazonaws.com",
+        "bucket": "tools-dev",
+        "region": "us-east-1",
+        "status": 200,
+        "access": "public",
+        "timestamp": "2025-11-02T23:58:57.466155"
+      },
+      {
+        "url": "https://cdn-tools.s3.us-east-1.amazonaws.com",
+        "bucket": "cdn-tools",
+        "region": "us-east-1",
+        "status": 200,
+        "access": "public",
+        "timestamp": "2025-11-03T00:00:22.335660"
+      },
+      {
+        "url": "https://trello-test.s3.eu-west-2.amazonaws.com",
+        "bucket": "trello-test",
+        "region": "eu-west-2",
+        "status": 200,
+        "access": "public",
+        "timestamp": "2025-11-03T00:14:18.409669"
+      },
+      {
         "url": "https://curve-videos.s3.us-east-1.amazonaws.com",
         "bucket": "curve-videos",
         "region": "us-east-1",
@@ -202,14 +466,6 @@
         "timestamp": "2025-11-03T01:23:55.514207+00:00"
       },
       {
-        "url": "https://shopify-1.s3.us-east-1.amazonaws.com",
-        "bucket": "shopify-1",
-        "region": "us-east-1",
-        "status": 200,
-        "access": "public",
-        "timestamp": "2025-11-03T01:23:55.520071+00:00"
-      },
-      {
         "url": "https://videos-facebook.s3.us-west-1.amazonaws.com",
         "bucket": "videos-facebook",
         "region": "us-west-1",
@@ -224,14 +480,6 @@
         "status": 200,
         "access": "public",
         "timestamp": "2025-11-03T01:23:55.544307+00:00"
-      },
-      {
-        "url": "https://spotify-images.s3.us-east-1.amazonaws.com",
-        "bucket": "spotify-images",
-        "region": "us-east-1",
-        "status": 200,
-        "access": "public",
-        "timestamp": "2025-11-03T01:23:55.571554+00:00"
       },
       {
         "url": "https://cdn-okto.s3.us-west-2.amazonaws.com",
@@ -282,22 +530,6 @@
         "timestamp": "2025-11-03T01:23:55.705331+00:00"
       },
       {
-        "url": "https://tinder-bucket.s3.us-east-1.amazonaws.com",
-        "bucket": "tinder-bucket",
-        "region": "us-east-1",
-        "status": 200,
-        "access": "public",
-        "timestamp": "2025-11-03T01:23:55.729325+00:00"
-      },
-      {
-        "url": "https://simple-s3.s3.us-east-1.amazonaws.com",
-        "bucket": "simple-s3",
-        "region": "us-east-1",
-        "status": 200,
-        "access": "public",
-        "timestamp": "2025-11-03T01:23:55.731829+00:00"
-      },
-      {
         "url": "https://lime-s3.s3.ap-northeast-2.amazonaws.com",
         "bucket": "lime-s3",
         "region": "ap-northeast-2",
@@ -312,30 +544,6 @@
         "status": 200,
         "access": "public",
         "timestamp": "2025-11-03T01:23:55.774718+00:00"
-      },
-      {
-        "url": "https://slack-blog.s3.us-east-1.amazonaws.com",
-        "bucket": "slack-blog",
-        "region": "us-east-1",
-        "status": 200,
-        "access": "public",
-        "timestamp": "2025-11-03T01:23:55.776374+00:00"
-      },
-      {
-        "url": "https://spotify-data.s3.us-east-2.amazonaws.com",
-        "bucket": "spotify-data",
-        "region": "us-east-2",
-        "status": 200,
-        "access": "public",
-        "timestamp": "2025-11-03T01:23:55.794888+00:00"
-      },
-      {
-        "url": "https://public-shopify.s3.eu-central-1.amazonaws.com",
-        "bucket": "public-shopify",
-        "region": "eu-central-1",
-        "status": 200,
-        "access": "public",
-        "timestamp": "2025-11-03T01:23:55.816127+00:00"
       },
       {
         "url": "https://facebook-blog.s3.ap-southeast-1.amazonaws.com",
@@ -370,14 +578,6 @@
         "timestamp": "2025-11-03T01:23:55.857733+00:00"
       },
       {
-        "url": "https://smartsheet-videos.s3.us-west-2.amazonaws.com",
-        "bucket": "smartsheet-videos",
-        "region": "us-west-2",
-        "status": 200,
-        "access": "public",
-        "timestamp": "2025-11-03T01:23:55.864041+00:00"
-      },
-      {
         "url": "https://curve-public.s3.ap-southeast-2.amazonaws.com",
         "bucket": "curve-public",
         "region": "ap-southeast-2",
@@ -392,22 +592,6 @@
         "status": 200,
         "access": "public",
         "timestamp": "2025-11-03T01:23:55.872866+00:00"
-      },
-      {
-        "url": "https://simple-videos.s3.eu-west-1.amazonaws.com",
-        "bucket": "simple-videos",
-        "region": "eu-west-1",
-        "status": 200,
-        "access": "public",
-        "timestamp": "2025-11-03T01:23:55.886328+00:00"
-      },
-      {
-        "url": "https://shopify-us.s3.us-west-1.amazonaws.com",
-        "bucket": "shopify-us",
-        "region": "us-west-1",
-        "status": 200,
-        "access": "public",
-        "timestamp": "2025-11-03T01:23:55.895661+00:00"
       },
       {
         "url": "https://twitter-s3.s3.us-east-1.amazonaws.com",
@@ -482,14 +666,6 @@
         "timestamp": "2025-11-03T01:23:55.986480+00:00"
       },
       {
-        "url": "https://test-tinder.s3.us-west-2.amazonaws.com",
-        "bucket": "test-tinder",
-        "region": "us-west-2",
-        "status": 200,
-        "access": "public",
-        "timestamp": "2025-11-03T01:23:55.995558+00:00"
-      },
-      {
         "url": "https://dev-upwork.s3.us-east-1.amazonaws.com",
         "bucket": "dev-upwork",
         "region": "us-east-1",
@@ -546,14 +722,6 @@
         "timestamp": "2025-11-03T01:23:56.131345+00:00"
       },
       {
-        "url": "https://tiktok-uploads.s3.us-west-2.amazonaws.com",
-        "bucket": "tiktok-uploads",
-        "region": "us-west-2",
-        "status": 200,
-        "access": "public",
-        "timestamp": "2025-11-03T01:23:56.131873+00:00"
-      },
-      {
         "url": "https://tyk.s3.sa-east-1.amazonaws.com",
         "bucket": "tyk",
         "region": "sa-east-1",
@@ -576,14 +744,6 @@
         "status": 200,
         "access": "public",
         "timestamp": "2025-11-03T01:23:56.158311+00:00"
-      },
-      {
-        "url": "https://trello-test.s3.eu-west-2.amazonaws.com",
-        "bucket": "trello-test",
-        "region": "eu-west-2",
-        "status": 200,
-        "access": "public",
-        "timestamp": "2025-11-03T01:23:56.172306+00:00"
       },
       {
         "url": "https://monolith-media.s3.ap-southeast-1.amazonaws.com",
@@ -632,14 +792,6 @@
         "status": 200,
         "access": "public",
         "timestamp": "2025-11-03T01:23:56.328669+00:00"
-      },
-      {
-        "url": "https://test-spotify.s3.ap-northeast-2.amazonaws.com",
-        "bucket": "test-spotify",
-        "region": "ap-northeast-2",
-        "status": 200,
-        "access": "public",
-        "timestamp": "2025-11-03T01:23:56.352556+00:00"
       },
       {
         "url": "https://app-mobile-images.s3.eu-west-3.amazonaws.com",
@@ -2188,16 +2340,18 @@
     ],
     "private": []
   },
-  "generated_at": "2025-11-03T01:23:59.641644+00:00",
-  "validated_at": "2025-11-03T01:23:59.641656+00:00",
+  "generated_at": "2025-11-03T01:54:14.126034+00:00",
+  "source_files": 9,
+  "domains_scanned": 8,
+  "total_chunks": 9,
   "file_index": 0,
   "total_files": 1,
   "stats": {
-    "public_buckets_in_file": 273,
+    "public_buckets_in_file": 292,
     "private_buckets_in_file": 0,
-    "total_buckets_in_file": 273,
-    "total_public_buckets": 273,
+    "total_buckets_in_file": 292,
+    "total_public_buckets": 292,
     "total_private_buckets": 0,
-    "total_buckets": 273
+    "total_buckets": 292
   }
 }
