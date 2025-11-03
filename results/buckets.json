@@ -490,14 +490,6 @@
         "timestamp": "2025-11-03T01:23:55.595310+00:00"
       },
       {
-        "url": "https://twilio-resources.s3.us-east-1.amazonaws.com",
-        "bucket": "twilio-resources",
-        "region": "us-east-1",
-        "status": 200,
-        "access": "public",
-        "timestamp": "2025-11-03T01:23:55.641910+00:00"
-      },
-      {
         "url": "https://ovh-test.s3.us-west-2.amazonaws.com",
         "bucket": "ovh-test",
         "region": "us-west-2",
@@ -554,30 +546,6 @@
         "timestamp": "2025-11-03T01:23:55.822080+00:00"
       },
       {
-        "url": "https://bucket-twitter.s3.us-east-1.amazonaws.com",
-        "bucket": "bucket-twitter",
-        "region": "us-east-1",
-        "status": 200,
-        "access": "public",
-        "timestamp": "2025-11-03T01:23:55.835324+00:00"
-      },
-      {
-        "url": "https://test-usaa.s3.us-east-1.amazonaws.com",
-        "bucket": "test-usaa",
-        "region": "us-east-1",
-        "status": 200,
-        "access": "public",
-        "timestamp": "2025-11-03T01:23:55.847526+00:00"
-      },
-      {
-        "url": "https://twilio-us.s3.us-east-1.amazonaws.com",
-        "bucket": "twilio-us",
-        "region": "us-east-1",
-        "status": 200,
-        "access": "public",
-        "timestamp": "2025-11-03T01:23:55.857733+00:00"
-      },
-      {
         "url": "https://curve-public.s3.ap-southeast-2.amazonaws.com",
         "bucket": "curve-public",
         "region": "ap-southeast-2",
@@ -592,14 +560,6 @@
         "status": 200,
         "access": "public",
         "timestamp": "2025-11-03T01:23:55.872866+00:00"
-      },
-      {
-        "url": "https://twitter-s3.s3.us-east-1.amazonaws.com",
-        "bucket": "twitter-s3",
-        "region": "us-east-1",
-        "status": 200,
-        "access": "public",
-        "timestamp": "2025-11-03T01:23:55.902315+00:00"
       },
       {
         "url": "https://smilee.s3.eu-west-1.amazonaws.com",
@@ -634,14 +594,6 @@
         "timestamp": "2025-11-03T01:23:55.935001+00:00"
       },
       {
-        "url": "https://zoom-uk.s3.us-east-1.amazonaws.com",
-        "bucket": "zoom-uk",
-        "region": "us-east-1",
-        "status": 200,
-        "access": "public",
-        "timestamp": "2025-11-03T01:23:55.957940+00:00"
-      },
-      {
         "url": "https://airtable.s3.us-east-1.amazonaws.com",
         "bucket": "airtable",
         "region": "us-east-1",
@@ -650,36 +602,12 @@
         "timestamp": "2025-11-03T01:23:55.975381+00:00"
       },
       {
-        "url": "https://vivo-public.s3.us-east-1.amazonaws.com",
-        "bucket": "vivo-public",
-        "region": "us-east-1",
-        "status": 200,
-        "access": "public",
-        "timestamp": "2025-11-03T01:23:55.975805+00:00"
-      },
-      {
         "url": "https://router-test.s3.ap-northeast-1.amazonaws.com",
         "bucket": "router-test",
         "region": "ap-northeast-1",
         "status": 200,
         "access": "public",
         "timestamp": "2025-11-03T01:23:55.986480+00:00"
-      },
-      {
-        "url": "https://dev-upwork.s3.us-east-1.amazonaws.com",
-        "bucket": "dev-upwork",
-        "region": "us-east-1",
-        "status": 200,
-        "access": "public",
-        "timestamp": "2025-11-03T01:23:56.014732+00:00"
-      },
-      {
-        "url": "https://zoom-staging.s3.us-east-1.amazonaws.com",
-        "bucket": "zoom-staging",
-        "region": "us-east-1",
-        "status": 200,
-        "access": "public",
-        "timestamp": "2025-11-03T01:23:56.030386+00:00"
       },
       {
         "url": "https://test-album.s3.us-east-1.amazonaws.com",
@@ -698,14 +626,6 @@
         "timestamp": "2025-11-03T01:23:56.045333+00:00"
       },
       {
-        "url": "https://zoom-us.s3.us-east-1.amazonaws.com",
-        "bucket": "zoom-us",
-        "region": "us-east-1",
-        "status": 200,
-        "access": "public",
-        "timestamp": "2025-11-03T01:23:56.055321+00:00"
-      },
-      {
         "url": "https://amazon-de.s3.us-east-1.amazonaws.com",
         "bucket": "amazon-de",
         "region": "us-east-1",
@@ -722,28 +642,12 @@
         "timestamp": "2025-11-03T01:23:56.131345+00:00"
       },
       {
-        "url": "https://tyk.s3.sa-east-1.amazonaws.com",
-        "bucket": "tyk",
-        "region": "sa-east-1",
-        "status": 200,
-        "access": "public",
-        "timestamp": "2025-11-03T01:23:56.140862+00:00"
-      },
-      {
         "url": "https://uploads-aurora.s3.us-east-1.amazonaws.com",
         "bucket": "uploads-aurora",
         "region": "us-east-1",
         "status": 200,
         "access": "public",
         "timestamp": "2025-11-03T01:23:56.148310+00:00"
-      },
-      {
-        "url": "https://vivo-dev.s3.eu-west-1.amazonaws.com",
-        "bucket": "vivo-dev",
-        "region": "eu-west-1",
-        "status": 200,
-        "access": "public",
-        "timestamp": "2025-11-03T01:23:56.158311+00:00"
       },
       {
         "url": "https://monolith-media.s3.ap-southeast-1.amazonaws.com",
@@ -850,14 +754,6 @@
         "timestamp": "2025-11-03T01:23:56.517410+00:00"
       },
       {
-        "url": "https://zoom-web.s3.ap-south-1.amazonaws.com",
-        "bucket": "zoom-web",
-        "region": "ap-south-1",
-        "status": 200,
-        "access": "public",
-        "timestamp": "2025-11-03T01:23:56.520510+00:00"
-      },
-      {
         "url": "https://airbnb-uploads.s3.eu-north-1.amazonaws.com",
         "bucket": "airbnb-uploads",
         "region": "eu-north-1",
@@ -888,14 +784,6 @@
         "status": 200,
         "access": "public",
         "timestamp": "2025-11-03T01:23:56.576332+00:00"
-      },
-      {
-        "url": "https://yatra-bucket.s3.ap-south-1.amazonaws.com",
-        "bucket": "yatra-bucket",
-        "region": "ap-south-1",
-        "status": 200,
-        "access": "public",
-        "timestamp": "2025-11-03T01:23:56.600521+00:00"
       },
       {
         "url": "https://images-casino.s3.us-east-2.amazonaws.com",
@@ -1018,14 +906,6 @@
         "timestamp": "2025-11-03T01:23:56.751597+00:00"
       },
       {
-        "url": "https://web-data.s3.us-east-1.amazonaws.com",
-        "bucket": "web-data",
-        "region": "us-east-1",
-        "status": 200,
-        "access": "public",
-        "timestamp": "2025-11-03T01:23:56.807217+00:00"
-      },
-      {
         "url": "https://blog-dev.s3.us-east-1.amazonaws.com",
         "bucket": "blog-dev",
         "region": "us-east-1",
@@ -1040,14 +920,6 @@
         "status": 200,
         "access": "public",
         "timestamp": "2025-11-03T01:23:56.832735+00:00"
-      },
-      {
-        "url": "https://web-dev.s3.us-east-1.amazonaws.com",
-        "bucket": "web-dev",
-        "region": "us-east-1",
-        "status": 200,
-        "access": "public",
-        "timestamp": "2025-11-03T01:23:56.847307+00:00"
       },
       {
         "url": "https://app-mobile-test.s3.ap-northeast-2.amazonaws.com",
@@ -1168,14 +1040,6 @@
         "status": 200,
         "access": "public",
         "timestamp": "2025-11-03T01:23:57.070356+00:00"
-      },
-      {
-        "url": "https://dev-web.s3.us-west-2.amazonaws.com",
-        "bucket": "dev-web",
-        "region": "us-west-2",
-        "status": 200,
-        "access": "public",
-        "timestamp": "2025-11-03T01:23:57.093604+00:00"
       },
       {
         "url": "https://crypto-cdn.s3.eu-central-1.amazonaws.com",
@@ -2336,22 +2200,326 @@
         "status": 200,
         "access": "public",
         "timestamp": "2025-11-03T01:23:59.636210+00:00"
+      },
+      {
+        "url": "https://twilio-resources.s3.us-east-1.amazonaws.com",
+        "bucket": "twilio-resources",
+        "region": "us-east-1",
+        "status": 200,
+        "access": "public",
+        "timestamp": "2025-11-03T01:29:38.646775"
+      },
+      {
+        "url": "https://tyk.s3.sa-east-1.amazonaws.com",
+        "bucket": "tyk",
+        "region": "sa-east-1",
+        "status": 200,
+        "access": "public",
+        "timestamp": "2025-11-03T01:36:57.228518"
+      },
+      {
+        "url": "https://bucket-twitter.s3.us-east-1.amazonaws.com",
+        "bucket": "bucket-twitter",
+        "region": "us-east-1",
+        "status": 200,
+        "access": "public",
+        "timestamp": "2025-11-03T01:48:17.606484"
+      },
+      {
+        "url": "https://twitter-s3.s3.us-east-1.amazonaws.com",
+        "bucket": "twitter-s3",
+        "region": "us-east-1",
+        "status": 200,
+        "access": "public",
+        "timestamp": "2025-11-03T01:52:52.196173"
+      },
+      {
+        "url": "https://twilio-us.s3.us-east-1.amazonaws.com",
+        "bucket": "twilio-us",
+        "region": "us-east-1",
+        "status": 200,
+        "access": "public",
+        "timestamp": "2025-11-03T01:56:20.674080"
+      },
+      {
+        "url": "https://test-usaa.s3.us-east-1.amazonaws.com",
+        "bucket": "test-usaa",
+        "region": "us-east-1",
+        "status": 200,
+        "access": "public",
+        "timestamp": "2025-11-03T02:04:54.624077"
+      },
+      {
+        "url": "https://content-usa.s3.us-east-2.amazonaws.com",
+        "bucket": "content-usa",
+        "region": "us-east-2",
+        "status": 200,
+        "access": "public",
+        "timestamp": "2025-11-03T02:09:57.525609"
+      },
+      {
+        "url": "https://usa-cdn.s3.us-east-2.amazonaws.com",
+        "bucket": "usa-cdn",
+        "region": "us-east-2",
+        "status": 200,
+        "access": "public",
+        "timestamp": "2025-11-03T02:15:47.765134"
+      },
+      {
+        "url": "https://dev-upwork.s3.us-east-1.amazonaws.com",
+        "bucket": "dev-upwork",
+        "region": "us-east-1",
+        "status": 200,
+        "access": "public",
+        "timestamp": "2025-11-03T02:25:11.909444"
+      },
+      {
+        "url": "https://web-test.s3.us-east-1.amazonaws.com",
+        "bucket": "web-test",
+        "region": "us-east-1",
+        "status": 200,
+        "access": "public",
+        "timestamp": "2025-11-03T03:51:34.234223"
+      },
+      {
+        "url": "https://vote-images.s3.us-west-2.amazonaws.com",
+        "bucket": "vote-images",
+        "region": "us-west-2",
+        "status": 200,
+        "access": "public",
+        "timestamp": "2025-11-03T03:53:35.505506"
+      },
+      {
+        "url": "https://web-data.s3.us-east-1.amazonaws.com",
+        "bucket": "web-data",
+        "region": "us-east-1",
+        "status": 200,
+        "access": "public",
+        "timestamp": "2025-11-03T03:58:46.333626"
+      },
+      {
+        "url": "https://web-dev.s3.us-east-1.amazonaws.com",
+        "bucket": "web-dev",
+        "region": "us-east-1",
+        "status": 200,
+        "access": "public",
+        "timestamp": "2025-11-03T04:04:55.511244"
+      },
+      {
+        "url": "https://vivo-public.s3.us-east-1.amazonaws.com",
+        "bucket": "vivo-public",
+        "region": "us-east-1",
+        "status": 200,
+        "access": "public",
+        "timestamp": "2025-11-03T04:06:03.025439"
+      },
+      {
+        "url": "https://videos-website.s3.us-east-1.amazonaws.com",
+        "bucket": "videos-website",
+        "region": "us-east-1",
+        "status": 200,
+        "access": "public",
+        "timestamp": "2025-11-03T04:06:55.006652"
+      },
+      {
+        "url": "https://web-s3.s3.us-east-1.amazonaws.com",
+        "bucket": "web-s3",
+        "region": "us-east-1",
+        "status": 200,
+        "access": "public",
+        "timestamp": "2025-11-03T04:07:16.018973"
+      },
+      {
+        "url": "https://storage-website.s3.eu-west-3.amazonaws.com",
+        "bucket": "storage-website",
+        "region": "eu-west-3",
+        "status": 200,
+        "access": "public",
+        "timestamp": "2025-11-03T04:15:19.348066"
+      },
+      {
+        "url": "https://dev-web.s3.us-west-2.amazonaws.com",
+        "bucket": "dev-web",
+        "region": "us-west-2",
+        "status": 200,
+        "access": "public",
+        "timestamp": "2025-11-03T04:15:25.058301"
+      },
+      {
+        "url": "https://web-site.s3.us-east-1.amazonaws.com",
+        "bucket": "web-site",
+        "region": "us-east-1",
+        "status": 200,
+        "access": "public",
+        "timestamp": "2025-11-03T04:19:07.237551"
+      },
+      {
+        "url": "https://vivo-dev.s3.eu-west-1.amazonaws.com",
+        "bucket": "vivo-dev",
+        "region": "eu-west-1",
+        "status": 200,
+        "access": "public",
+        "timestamp": "2025-11-03T04:20:35.914059"
+      },
+      {
+        "url": "https://work-images.s3.ap-northeast-1.amazonaws.com",
+        "bucket": "work-images",
+        "region": "ap-northeast-1",
+        "status": 200,
+        "access": "public",
+        "timestamp": "2025-11-03T05:26:50.724425"
+      },
+      {
+        "url": "https://whatsapp-content.s3.ap-south-1.amazonaws.com",
+        "bucket": "whatsapp-content",
+        "region": "ap-south-1",
+        "status": 200,
+        "access": "public",
+        "timestamp": "2025-11-03T05:28:14.148318"
+      },
+      {
+        "url": "https://work-web.s3.us-east-1.amazonaws.com",
+        "bucket": "work-web",
+        "region": "us-east-1",
+        "status": 200,
+        "access": "public",
+        "timestamp": "2025-11-03T05:33:47.756475"
+      },
+      {
+        "url": "https://work-public.s3.ap-northeast-1.amazonaws.com",
+        "bucket": "work-public",
+        "region": "ap-northeast-1",
+        "status": 200,
+        "access": "public",
+        "timestamp": "2025-11-03T05:48:22.316376"
+      },
+      {
+        "url": "https://wombat.s3.ap-southeast-2.amazonaws.com",
+        "bucket": "wombat",
+        "region": "ap-southeast-2",
+        "status": 200,
+        "access": "public",
+        "timestamp": "2025-11-03T05:48:53.658922"
+      },
+      {
+        "url": "https://au-work.s3.ap-southeast-1.amazonaws.com",
+        "bucket": "au-work",
+        "region": "ap-southeast-1",
+        "status": 200,
+        "access": "public",
+        "timestamp": "2025-11-03T05:52:59.264154"
+      },
+      {
+        "url": "https://web-whatsapp.s3.sa-east-1.amazonaws.com",
+        "bucket": "web-whatsapp",
+        "region": "sa-east-1",
+        "status": 200,
+        "access": "public",
+        "timestamp": "2025-11-03T05:55:05.847190"
+      },
+      {
+        "url": "https://yatra-bucket.s3.ap-south-1.amazonaws.com",
+        "bucket": "yatra-bucket",
+        "region": "ap-south-1",
+        "status": 200,
+        "access": "public",
+        "timestamp": "2025-11-03T06:09:42.305135"
+      },
+      {
+        "url": "https://zdev.s3.us-east-1.amazonaws.com",
+        "bucket": "zdev",
+        "region": "us-east-1",
+        "status": 200,
+        "access": "public",
+        "timestamp": "2025-11-03T07:28:04.054559"
+      },
+      {
+        "url": "https://yimg.s3.us-east-1.amazonaws.com",
+        "bucket": "yimg",
+        "region": "us-east-1",
+        "status": 200,
+        "access": "public",
+        "timestamp": "2025-11-03T07:29:02.336093"
+      },
+      {
+        "url": "https://youtube-test.s3.us-east-1.amazonaws.com",
+        "bucket": "youtube-test",
+        "region": "us-east-1",
+        "status": 200,
+        "access": "public",
+        "timestamp": "2025-11-03T07:34:10.974960"
+      },
+      {
+        "url": "https://zen-public.s3.us-east-1.amazonaws.com",
+        "bucket": "zen-public",
+        "region": "us-east-1",
+        "status": 200,
+        "access": "public",
+        "timestamp": "2025-11-03T07:36:50.456809"
+      },
+      {
+        "url": "https://youtube-videos.s3.us-east-1.amazonaws.com",
+        "bucket": "youtube-videos",
+        "region": "us-east-1",
+        "status": 200,
+        "access": "public",
+        "timestamp": "2025-11-03T07:47:38.566379"
+      },
+      {
+        "url": "https://zoom-web.s3.ap-south-1.amazonaws.com",
+        "bucket": "zoom-web",
+        "region": "ap-south-1",
+        "status": 200,
+        "access": "public",
+        "timestamp": "2025-11-03T07:51:44.920668"
+      },
+      {
+        "url": "https://zoom-uk.s3.us-east-1.amazonaws.com",
+        "bucket": "zoom-uk",
+        "region": "us-east-1",
+        "status": 200,
+        "access": "public",
+        "timestamp": "2025-11-03T07:56:19.193180"
+      },
+      {
+        "url": "https://zoom-staging.s3.us-east-1.amazonaws.com",
+        "bucket": "zoom-staging",
+        "region": "us-east-1",
+        "status": 200,
+        "access": "public",
+        "timestamp": "2025-11-03T07:56:29.040732"
+      },
+      {
+        "url": "https://zoomus.s3.us-east-1.amazonaws.com",
+        "bucket": "zoomus",
+        "region": "us-east-1",
+        "status": 200,
+        "access": "public",
+        "timestamp": "2025-11-03T08:00:45.469124"
+      },
+      {
+        "url": "https://zoom-us.s3.us-east-1.amazonaws.com",
+        "bucket": "zoom-us",
+        "region": "us-east-1",
+        "status": 200,
+        "access": "public",
+        "timestamp": "2025-11-03T08:04:18.259218"
       }
     ],
     "private": []
   },
-  "generated_at": "2025-11-03T01:54:14.126034+00:00",
-  "source_files": 9,
+  "generated_at": "2025-11-03T08:30:09.185111+00:00",
+  "source_files": 8,
   "domains_scanned": 8,
-  "total_chunks": 9,
+  "total_chunks": 8,
   "file_index": 0,
   "total_files": 1,
   "stats": {
-    "public_buckets_in_file": 292,
+    "public_buckets_in_file": 313,
     "private_buckets_in_file": 0,
-    "total_buckets_in_file": 292,
-    "total_public_buckets": 292,
+    "total_buckets_in_file": 313,
+    "total_public_buckets": 313,
     "total_private_buckets": 0,
-    "total_buckets": 292
+    "total_buckets": 313
   }
 }
