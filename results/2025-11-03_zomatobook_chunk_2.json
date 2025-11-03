@@ -1,0 +1,56 @@
+{
+  "chunk_id": 2,
+  "domain": "zomatobook",
+  "date": "2025-11-03",
+  "timestamp": "2025-11-03T07:19:06.832569",
+  "results": {
+    "public": [
+      {
+        "url": "https://zoom-web.s3.ap-south-1.amazonaws.com",
+        "bucket": "zoom-web",
+        "region": "ap-south-1",
+        "status": 200,
+        "access": "public",
+        "timestamp": "2025-11-03T07:08:01.715115"
+      },
+      {
+        "url": "https://zoom-uk.s3.us-east-1.amazonaws.com",
+        "bucket": "zoom-uk",
+        "region": "us-east-1",
+        "status": 200,
+        "access": "public",
+        "timestamp": "2025-11-03T07:08:03.139004"
+      },
+      {
+        "url": "https://zoom-us.s3.us-east-1.amazonaws.com",
+        "bucket": "zoom-us",
+        "region": "us-east-1",
+        "status": 200,
+        "access": "public",
+        "timestamp": "2025-11-03T07:08:29.068458"
+      },
+      {
+        "url": "https://zoom-staging.s3.us-east-1.amazonaws.com",
+        "bucket": "zoom-staging",
+        "region": "us-east-1",
+        "status": 200,
+        "access": "public",
+        "timestamp": "2025-11-03T07:09:52.777198"
+      },
+      {
+        "url": "https://zoomus.s3.us-east-1.amazonaws.com",
+        "bucket": "zoomus",
+        "region": "us-east-1",
+        "status": 200,
+        "access": "public",
+        "timestamp": "2025-11-03T07:13:32.238910"
+      }
+    ],
+    "private": []
+  },
+  "stats": {
+    "total_checked": 30096,
+    "public_found": 5,
+    "private_found": 0
+  }
+}
