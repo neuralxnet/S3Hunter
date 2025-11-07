@@ -24,6 +24,10 @@ AWS_REGIONS = [
 
 SEPARATORS = ['', '-', '_', '.']
 
+# Separator subsets for specific use cases
+SEPARATORS_NO_DOT = ['', '-', '_']  # Common separators without dot (used for most permutations)
+SEPARATORS_DASH_ONLY = ['-', '']    # Most common separators for short forms
+
 DEFAULT_ENVIRONMENTS = [
     '', 'dev', 'prod', 'test', 'staging', 'stage', 'qa', 'uat',
     'backup', 'backups', 'data', 'files', 'assets',
@@ -122,23 +126,22 @@ class S3ReconChunked:
             # Use all environments instead of limiting to first 30
             for env in self.environments:
                 if env:
-                    # Use all separators instead of just first 2
+                    # Use all separators for environment combinations
                     for sep in SEPARATORS:
-                        if sep or not env:  # Allow no separator for base word
-                            buckets.add(f"{word}{sep}{env}")
-                            buckets.add(f"{env}{sep}{word}")
+                        buckets.add(f"{word}{sep}{env}")
+                        buckets.add(f"{env}{sep}{word}")
             
             # Level 2+: Add year variations
             if self.permutation_level >= 2:
-                # Add years
+                # Add years with all separators
                 for year in YEARS:
                     for sep in SEPARATORS:
                         buckets.add(f"{word}{sep}{year}")
                         buckets.add(f"{year}{sep}{word}")
                 
-                # Add short years
+                # Add short years (typically use dash or no separator)
                 for year in SHORT_YEARS:
-                    for sep in ['-', '']:
+                    for sep in SEPARATORS_DASH_ONLY:
                         buckets.add(f"{word}{sep}{year}")
                         buckets.add(f"{year}{sep}{word}")
                 
@@ -147,33 +150,35 @@ class S3ReconChunked:
                     for sep in SEPARATORS:
                         buckets.add(f"{word}{sep}{num}")
                 
-                # Add region variations
+                # Add region variations (commonly use dash, underscore, or no separator)
                 for region in REGIONS_SHORT:
-                    for sep in ['-', '_', '']:
+                    for sep in SEPARATORS_NO_DOT:
                         buckets.add(f"{word}{sep}{region}")
                         buckets.add(f"{region}{sep}{word}")
             
             # Level 3: Add common prefixes and suffixes
             if self.permutation_level >= 3:
+                # Common suffixes (typically use dash, underscore, or no separator)
                 for suffix in COMMON_SUFFIXES:
-                    for sep in ['-', '_', '']:
+                    for sep in SEPARATORS_NO_DOT:
                         buckets.add(f"{word}{sep}{suffix}")
                 
+                # Common prefixes (typically use dash, underscore, or no separator)
                 for prefix in COMMON_PREFIXES:
-                    for sep in ['-', '_', '']:
+                    for sep in SEPARATORS_NO_DOT:
                         buckets.add(f"{prefix}{sep}{word}")
                 
                 # Combine environment + year patterns (common in real-world)
                 for env in ['dev', 'prod', 'test', 'staging']:
                     for year in ['2023', '2024', '2025']:
-                        for sep in ['-', '_']:
+                        for sep in ['-', '_']:  # Only dash and underscore for multi-part names
                             buckets.add(f"{word}{sep}{env}{sep}{year}")
                             buckets.add(f"{word}{sep}{year}{sep}{env}")
                 
                 # Add environment + region combinations
                 for env in ['dev', 'prod', 'staging', 'test']:
                     for region in ['us', 'eu', 'ap']:
-                        for sep in ['-', '_']:
+                        for sep in ['-', '_']:  # Only dash and underscore for multi-part names
                             buckets.add(f"{word}{sep}{env}{sep}{region}")
                             buckets.add(f"{word}{sep}{region}{sep}{env}")
         
