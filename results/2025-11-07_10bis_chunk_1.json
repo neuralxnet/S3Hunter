@@ -1,0 +1,80 @@
+{
+  "chunk_id": 1,
+  "domain": "10bis",
+  "date": "2025-11-07",
+  "timestamp": "2025-11-07T21:46:04.859851",
+  "results": {
+    "public": [
+      {
+        "url": "https://amazon-content.s3.us-east-1.amazonaws.com",
+        "bucket": "amazon-content",
+        "region": "us-east-1",
+        "status": 200,
+        "access": "public",
+        "timestamp": "2025-11-07T21:15:09.282081"
+      },
+      {
+        "url": "https://airtable.s3.us-east-1.amazonaws.com",
+        "bucket": "airtable",
+        "region": "us-east-1",
+        "status": 200,
+        "access": "public",
+        "timestamp": "2025-11-07T21:18:51.177378"
+      },
+      {
+        "url": "https://alphax.s3.sa-east-1.amazonaws.com",
+        "bucket": "alphax",
+        "region": "sa-east-1",
+        "status": 200,
+        "access": "public",
+        "timestamp": "2025-11-07T21:22:58.366416"
+      },
+      {
+        "url": "https://amazon-s3.s3.us-east-1.amazonaws.com",
+        "bucket": "amazon-s3",
+        "region": "us-east-1",
+        "status": 200,
+        "access": "public",
+        "timestamp": "2025-11-07T21:27:54.316056"
+      },
+      {
+        "url": "https://apple-s3.s3.us-west-1.amazonaws.com",
+        "bucket": "apple-s3",
+        "region": "us-west-1",
+        "status": 200,
+        "access": "public",
+        "timestamp": "2025-11-07T21:38:21.430261"
+      },
+      {
+        "url": "https://amazon-website.s3.us-east-1.amazonaws.com",
+        "bucket": "amazon-website",
+        "region": "us-east-1",
+        "status": 200,
+        "access": "public",
+        "timestamp": "2025-11-07T21:40:48.982993"
+      },
+      {
+        "url": "https://airbnb-uploads.s3.eu-north-1.amazonaws.com",
+        "bucket": "airbnb-uploads",
+        "region": "eu-north-1",
+        "status": 200,
+        "access": "public",
+        "timestamp": "2025-11-07T21:43:28.251211"
+      },
+      {
+        "url": "https://amazon-resources.s3.us-west-2.amazonaws.com",
+        "bucket": "amazon-resources",
+        "region": "us-west-2",
+        "status": 200,
+        "access": "public",
+        "timestamp": "2025-11-07T21:43:35.878752"
+      }
+    ],
+    "private": []
+  },
+  "stats": {
+    "total_checked": 57950,
+    "public_found": 8,
+    "private_found": 0
+  }
+}
