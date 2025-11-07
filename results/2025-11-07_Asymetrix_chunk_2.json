@@ -2,16 +2,16 @@
   "chunk_id": 2,
   "domain": "Asymetrix",
   "date": "2025-11-07",
-  "timestamp": "2025-11-07T21:23:09.705340",
+  "timestamp": "2025-11-07T22:18:45.310358",
   "results": {
     "public": [
       {
-        "url": "https://aurora-content.s3.us-west-1.amazonaws.com",
-        "bucket": "aurora-content",
-        "region": "us-west-1",
+        "url": "https://caffeine-data.s3.ap-northeast-2.amazonaws.com",
+        "bucket": "caffeine-data",
+        "region": "ap-northeast-2",
         "status": 200,
         "access": "public",
-        "timestamp": "2025-11-07T20:58:02.192653"
+        "timestamp": "2025-11-07T21:49:24.071760"
       },
       {
         "url": "https://site-binary.s3.us-east-1.amazonaws.com",
@@ -19,39 +19,7 @@
         "region": "us-east-1",
         "status": 200,
         "access": "public",
-        "timestamp": "2025-11-07T21:00:14.969844"
-      },
-      {
-        "url": "https://aurora-media.s3.eu-central-1.amazonaws.com",
-        "bucket": "aurora-media",
-        "region": "eu-central-1",
-        "status": 200,
-        "access": "public",
-        "timestamp": "2025-11-07T21:00:49.698678"
-      },
-      {
-        "url": "https://uploads-aurora.s3.us-east-1.amazonaws.com",
-        "bucket": "uploads-aurora",
-        "region": "us-east-1",
-        "status": 200,
-        "access": "public",
-        "timestamp": "2025-11-07T21:07:57.507552"
-      },
-      {
-        "url": "https://aurora-public.s3.us-west-2.amazonaws.com",
-        "bucket": "aurora-public",
-        "region": "us-west-2",
-        "status": 200,
-        "access": "public",
-        "timestamp": "2025-11-07T21:09:43.207866"
-      },
-      {
-        "url": "https://caffeine-data.s3.ap-northeast-2.amazonaws.com",
-        "bucket": "caffeine-data",
-        "region": "ap-northeast-2",
-        "status": 200,
-        "access": "public",
-        "timestamp": "2025-11-07T21:10:28.292473"
+        "timestamp": "2025-11-07T21:49:33.704728"
       },
       {
         "url": "https://binary-uploads.s3.us-west-1.amazonaws.com",
@@ -59,7 +27,15 @@
         "region": "us-west-1",
         "status": 200,
         "access": "public",
-        "timestamp": "2025-11-07T21:21:14.963552"
+        "timestamp": "2025-11-07T21:51:21.031174"
+      },
+      {
+        "url": "https://aurora-media.s3.eu-central-1.amazonaws.com",
+        "bucket": "aurora-media",
+        "region": "eu-central-1",
+        "status": 200,
+        "access": "public",
+        "timestamp": "2025-11-07T21:51:46.082639"
       },
       {
         "url": "https://binary-web.s3.us-east-1.amazonaws.com",
@@ -67,7 +43,31 @@
         "region": "us-east-1",
         "status": 200,
         "access": "public",
-        "timestamp": "2025-11-07T21:22:16.424361"
+        "timestamp": "2025-11-07T21:58:08.628772"
+      },
+      {
+        "url": "https://aurora-content.s3.us-west-1.amazonaws.com",
+        "bucket": "aurora-content",
+        "region": "us-west-1",
+        "status": 200,
+        "access": "public",
+        "timestamp": "2025-11-07T22:11:07.577512"
+      },
+      {
+        "url": "https://uploads-aurora.s3.us-east-1.amazonaws.com",
+        "bucket": "uploads-aurora",
+        "region": "us-east-1",
+        "status": 200,
+        "access": "public",
+        "timestamp": "2025-11-07T22:14:00.014677"
+      },
+      {
+        "url": "https://aurora-public.s3.us-west-2.amazonaws.com",
+        "bucket": "aurora-public",
+        "region": "us-west-2",
+        "status": 200,
+        "access": "public",
+        "timestamp": "2025-11-07T22:17:56.590021"
       }
     ],
     "private": []
