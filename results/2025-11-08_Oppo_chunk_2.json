@@ -1,0 +1,72 @@
+{
+  "chunk_id": 2,
+  "domain": "Oppo",
+  "date": "2025-11-08",
+  "timestamp": "2025-11-08T04:05:38.257235",
+  "results": {
+    "public": [
+      {
+        "url": "https://pinterest-bucket.s3.us-west-2.amazonaws.com",
+        "bucket": "pinterest-bucket",
+        "region": "us-west-2",
+        "status": 200,
+        "access": "public",
+        "timestamp": "2025-11-08T03:41:06.332085"
+      },
+      {
+        "url": "https://porkbun-media.s3.us-west-2.amazonaws.com",
+        "bucket": "porkbun-media",
+        "region": "us-west-2",
+        "status": 200,
+        "access": "public",
+        "timestamp": "2025-11-08T03:41:56.729770"
+      },
+      {
+        "url": "https://quizlet-bucket.s3.ap-southeast-2.amazonaws.com",
+        "bucket": "quizlet-bucket",
+        "region": "ap-southeast-2",
+        "status": 200,
+        "access": "public",
+        "timestamp": "2025-11-08T03:47:43.820538"
+      },
+      {
+        "url": "https://parity-wordpress.s3.ca-central-1.amazonaws.com",
+        "bucket": "parity-wordpress",
+        "region": "ca-central-1",
+        "status": 200,
+        "access": "public",
+        "timestamp": "2025-11-08T03:50:48.453216"
+      },
+      {
+        "url": "https://optimizely-files.s3.us-east-1.amazonaws.com",
+        "bucket": "optimizely-files",
+        "region": "us-east-1",
+        "status": 200,
+        "access": "public",
+        "timestamp": "2025-11-08T03:52:48.802750"
+      },
+      {
+        "url": "https://images-pixabay.s3.us-east-1.amazonaws.com",
+        "bucket": "images-pixabay",
+        "region": "us-east-1",
+        "status": 200,
+        "access": "public",
+        "timestamp": "2025-11-08T03:56:46.609254"
+      },
+      {
+        "url": "https://pinterest-1.s3.eu-west-2.amazonaws.com",
+        "bucket": "pinterest-1",
+        "region": "eu-west-2",
+        "status": 200,
+        "access": "public",
+        "timestamp": "2025-11-08T04:00:02.495955"
+      }
+    ],
+    "private": []
+  },
+  "stats": {
+    "total_checked": 57950,
+    "public_found": 7,
+    "private_found": 0
+  }
+}
