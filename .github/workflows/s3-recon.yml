@@ -17,6 +17,10 @@ on:
         description: 'Domains to scan per hour (leave empty for all)'
         required: false
         default: ''
+      permutation_level:
+        description: 'Permutation level (0=base, 1=basic, 2=enhanced, 3=comprehensive)'
+        required: false
+        default: '1'
 
 jobs:
   s3-recon:
@@ -82,16 +86,17 @@ jobs:
         env:
           CHUNK_SIZE: ${{ github.event.inputs.chunk_size || '50' }}
           WORKERS: ${{ github.event.inputs.workers || '30' }}
-          DOMAINS_PER_HOUR: ${{ github.event.inputs.domains_per_hour || '100' }}
+          DOMAINS_PER_HOUR: ${{ github.event.inputs.domains_per_hour || '10' }}
+          PERMUTATION_LEVEL: ${{ github.event.inputs.permutation_level || '1' }}
         run: |
           python3 .github/s3_recon_chunked.py base_wordlist.txt \
             -c $CHUNK_SIZE \
             -w $WORKERS \
             -t 8 \
-            -e list.txt \
             --state-dir state \
             --output-dir results \
             --domains-per-hour $DOMAINS_PER_HOUR \
+            --permutation-level $PERMUTATION_LEVEL \
             -p
       
       - name: Commit and push results
