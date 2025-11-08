@@ -2,12 +2,180 @@
   "buckets": {
     "public": [
       {
-        "url": "https://cdn-tools.s3.us-east-1.amazonaws.com",
-        "bucket": "cdn-tools",
+        "url": "https://amazon-content.s3.us-east-1.amazonaws.com",
+        "bucket": "amazon-content",
         "region": "us-east-1",
         "status": 200,
         "access": "public",
-        "timestamp": "2025-11-08T01:16:58.466222+00:00"
+        "timestamp": "2025-11-07T21:15:09.282081"
+      },
+      {
+        "url": "https://airtable.s3.us-east-1.amazonaws.com",
+        "bucket": "airtable",
+        "region": "us-east-1",
+        "status": 200,
+        "access": "public",
+        "timestamp": "2025-11-07T21:18:51.177378"
+      },
+      {
+        "url": "https://alphax.s3.sa-east-1.amazonaws.com",
+        "bucket": "alphax",
+        "region": "sa-east-1",
+        "status": 200,
+        "access": "public",
+        "timestamp": "2025-11-07T21:22:58.366416"
+      },
+      {
+        "url": "https://amazon-s3.s3.us-east-1.amazonaws.com",
+        "bucket": "amazon-s3",
+        "region": "us-east-1",
+        "status": 200,
+        "access": "public",
+        "timestamp": "2025-11-07T21:27:54.316056"
+      },
+      {
+        "url": "https://apple-s3.s3.us-west-1.amazonaws.com",
+        "bucket": "apple-s3",
+        "region": "us-west-1",
+        "status": 200,
+        "access": "public",
+        "timestamp": "2025-11-07T21:38:21.430261"
+      },
+      {
+        "url": "https://amazon-website.s3.us-east-1.amazonaws.com",
+        "bucket": "amazon-website",
+        "region": "us-east-1",
+        "status": 200,
+        "access": "public",
+        "timestamp": "2025-11-07T21:40:48.982993"
+      },
+      {
+        "url": "https://airbnb-uploads.s3.eu-north-1.amazonaws.com",
+        "bucket": "airbnb-uploads",
+        "region": "eu-north-1",
+        "status": 200,
+        "access": "public",
+        "timestamp": "2025-11-07T21:43:28.251211"
+      },
+      {
+        "url": "https://amazon-resources.s3.us-west-2.amazonaws.com",
+        "bucket": "amazon-resources",
+        "region": "us-west-2",
+        "status": 200,
+        "access": "public",
+        "timestamp": "2025-11-07T21:43:35.878752"
+      },
+      {
+        "url": "https://caffeine-data.s3.ap-northeast-2.amazonaws.com",
+        "bucket": "caffeine-data",
+        "region": "ap-northeast-2",
+        "status": 200,
+        "access": "public",
+        "timestamp": "2025-11-07T21:49:24.071760"
+      },
+      {
+        "url": "https://site-binary.s3.us-east-1.amazonaws.com",
+        "bucket": "site-binary",
+        "region": "us-east-1",
+        "status": 200,
+        "access": "public",
+        "timestamp": "2025-11-07T21:49:33.704728"
+      },
+      {
+        "url": "https://binary-uploads.s3.us-west-1.amazonaws.com",
+        "bucket": "binary-uploads",
+        "region": "us-west-1",
+        "status": 200,
+        "access": "public",
+        "timestamp": "2025-11-07T21:51:21.031174"
+      },
+      {
+        "url": "https://aurora-media.s3.eu-central-1.amazonaws.com",
+        "bucket": "aurora-media",
+        "region": "eu-central-1",
+        "status": 200,
+        "access": "public",
+        "timestamp": "2025-11-07T21:51:46.082639"
+      },
+      {
+        "url": "https://binary-web.s3.us-east-1.amazonaws.com",
+        "bucket": "binary-web",
+        "region": "us-east-1",
+        "status": 200,
+        "access": "public",
+        "timestamp": "2025-11-07T21:58:08.628772"
+      },
+      {
+        "url": "https://aurora-content.s3.us-west-1.amazonaws.com",
+        "bucket": "aurora-content",
+        "region": "us-west-1",
+        "status": 200,
+        "access": "public",
+        "timestamp": "2025-11-07T22:11:07.577512"
+      },
+      {
+        "url": "https://uploads-aurora.s3.us-east-1.amazonaws.com",
+        "bucket": "uploads-aurora",
+        "region": "us-east-1",
+        "status": 200,
+        "access": "public",
+        "timestamp": "2025-11-07T22:14:00.014677"
+      },
+      {
+        "url": "https://aurora-public.s3.us-west-2.amazonaws.com",
+        "bucket": "aurora-public",
+        "region": "us-west-2",
+        "status": 200,
+        "access": "public",
+        "timestamp": "2025-11-07T22:17:56.590021"
+      },
+      {
+        "url": "https://curve-media.s3.ca-central-1.amazonaws.com",
+        "bucket": "curve-media",
+        "region": "ca-central-1",
+        "status": 200,
+        "access": "public",
+        "timestamp": "2025-11-07T23:22:14.960093"
+      },
+      {
+        "url": "https://curve-videos.s3.us-east-1.amazonaws.com",
+        "bucket": "curve-videos",
+        "region": "us-east-1",
+        "status": 200,
+        "access": "public",
+        "timestamp": "2025-11-07T23:22:21.894087"
+      },
+      {
+        "url": "https://cornershop-test.s3.us-east-1.amazonaws.com",
+        "bucket": "cornershop-test",
+        "region": "us-east-1",
+        "status": 200,
+        "access": "public",
+        "timestamp": "2025-11-07T23:25:27.397514"
+      },
+      {
+        "url": "https://curve-public.s3.ap-southeast-2.amazonaws.com",
+        "bucket": "curve-public",
+        "region": "ap-southeast-2",
+        "status": 200,
+        "access": "public",
+        "timestamp": "2025-11-07T23:26:41.262810"
+      },
+      {
+        "url": "https://coda-files.s3.us-west-2.amazonaws.com",
+        "bucket": "coda-files",
+        "region": "us-west-2",
+        "status": 200,
+        "access": "public",
+        "timestamp": "2025-11-07T23:36:46.117319"
+      },
+      {
+        "url": "https://exodus-website.s3.eu-west-2.amazonaws.com",
+        "bucket": "exodus-website",
+        "region": "eu-west-2",
+        "status": 200,
+        "access": "public",
+        "timestamp": "2025-11-07T23:55:46.428040"
       },
       {
         "url": "https://facebook.s3.us-east-1.amazonaws.com",
@@ -15,7 +183,71 @@
         "region": "us-east-1",
         "status": 200,
         "access": "public",
-        "timestamp": "2025-11-08T01:16:58.509026+00:00"
+        "timestamp": "2025-11-07T23:59:17.343019"
+      },
+      {
+        "url": "https://floqast.s3.us-west-2.amazonaws.com",
+        "bucket": "floqast",
+        "region": "us-west-2",
+        "status": 200,
+        "access": "public",
+        "timestamp": "2025-11-08T00:02:08.155906"
+      },
+      {
+        "url": "https://discord-uploads.s3.us-west-2.amazonaws.com",
+        "bucket": "discord-uploads",
+        "region": "us-west-2",
+        "status": 200,
+        "access": "public",
+        "timestamp": "2025-11-08T00:10:31.168062"
+      },
+      {
+        "url": "https://videos-facebook.s3.us-west-1.amazonaws.com",
+        "bucket": "videos-facebook",
+        "region": "us-west-1",
+        "status": 200,
+        "access": "public",
+        "timestamp": "2025-11-08T00:15:09.611394"
+      },
+      {
+        "url": "https://dropbox-files.s3.ap-southeast-1.amazonaws.com",
+        "bucket": "dropbox-files",
+        "region": "ap-southeast-1",
+        "status": 200,
+        "access": "public",
+        "timestamp": "2025-11-08T00:16:44.115318"
+      },
+      {
+        "url": "https://facebook-blog.s3.ap-southeast-1.amazonaws.com",
+        "bucket": "facebook-blog",
+        "region": "ap-southeast-1",
+        "status": 200,
+        "access": "public",
+        "timestamp": "2025-11-08T00:17:06.961172"
+      },
+      {
+        "url": "https://fitbit.s3.us-east-1.amazonaws.com",
+        "bucket": "fitbit",
+        "region": "us-east-1",
+        "status": 200,
+        "access": "public",
+        "timestamp": "2025-11-08T00:17:08.625669"
+      },
+      {
+        "url": "https://cdn-discord.s3.us-west-2.amazonaws.com",
+        "bucket": "cdn-discord",
+        "region": "us-west-2",
+        "status": 200,
+        "access": "public",
+        "timestamp": "2025-11-08T00:18:30.392982"
+      },
+      {
+        "url": "https://cdn-tools.s3.us-east-1.amazonaws.com",
+        "bucket": "cdn-tools",
+        "region": "us-east-1",
+        "status": 200,
+        "access": "public",
+        "timestamp": "2025-11-08T01:16:58.466222+00:00"
       },
       {
         "url": "https://test-song.s3.us-east-1.amazonaws.com",
@@ -64,22 +296,6 @@
         "status": 200,
         "access": "public",
         "timestamp": "2025-11-08T01:16:58.708036+00:00"
-      },
-      {
-        "url": "https://amazon-website.s3.us-east-1.amazonaws.com",
-        "bucket": "amazon-website",
-        "region": "us-east-1",
-        "status": 200,
-        "access": "public",
-        "timestamp": "2025-11-08T01:16:58.711495+00:00"
-      },
-      {
-        "url": "https://amazon-content.s3.us-east-1.amazonaws.com",
-        "bucket": "amazon-content",
-        "region": "us-east-1",
-        "status": 200,
-        "access": "public",
-        "timestamp": "2025-11-08T01:16:58.720962+00:00"
       },
       {
         "url": "https://tech-images.s3.us-east-1.amazonaws.com",
@@ -146,28 +362,12 @@
         "timestamp": "2025-11-08T01:16:58.763402+00:00"
       },
       {
-        "url": "https://site-binary.s3.us-east-1.amazonaws.com",
-        "bucket": "site-binary",
-        "region": "us-east-1",
-        "status": 200,
-        "access": "public",
-        "timestamp": "2025-11-08T01:16:58.766950+00:00"
-      },
-      {
         "url": "https://tools-dev.s3.us-east-1.amazonaws.com",
         "bucket": "tools-dev",
         "region": "us-east-1",
         "status": 200,
         "access": "public",
         "timestamp": "2025-11-08T01:16:58.768649+00:00"
-      },
-      {
-        "url": "https://curve-videos.s3.us-east-1.amazonaws.com",
-        "bucket": "curve-videos",
-        "region": "us-east-1",
-        "status": 200,
-        "access": "public",
-        "timestamp": "2025-11-08T01:16:58.772026+00:00"
       },
       {
         "url": "https://tinder-bucket.s3.us-east-1.amazonaws.com",
@@ -218,14 +418,6 @@
         "timestamp": "2025-11-08T01:16:58.794202+00:00"
       },
       {
-        "url": "https://fitbit.s3.us-east-1.amazonaws.com",
-        "bucket": "fitbit",
-        "region": "us-east-1",
-        "status": 200,
-        "access": "public",
-        "timestamp": "2025-11-08T01:16:58.810938+00:00"
-      },
-      {
         "url": "https://make-media.s3.us-east-2.amazonaws.com",
         "bucket": "make-media",
         "region": "us-east-2",
@@ -266,14 +458,6 @@
         "timestamp": "2025-11-08T01:16:58.924545+00:00"
       },
       {
-        "url": "https://videos-facebook.s3.us-west-1.amazonaws.com",
-        "bucket": "videos-facebook",
-        "region": "us-west-1",
-        "status": 200,
-        "access": "public",
-        "timestamp": "2025-11-08T01:16:59.028841+00:00"
-      },
-      {
         "url": "https://s3-att.s3.us-east-1.amazonaws.com",
         "bucket": "s3-att",
         "region": "us-east-1",
@@ -306,22 +490,6 @@
         "timestamp": "2025-11-08T01:16:59.141940+00:00"
       },
       {
-        "url": "https://uploads-aurora.s3.us-east-1.amazonaws.com",
-        "bucket": "uploads-aurora",
-        "region": "us-east-1",
-        "status": 200,
-        "access": "public",
-        "timestamp": "2025-11-08T01:16:59.180981+00:00"
-      },
-      {
-        "url": "https://binary-web.s3.us-east-1.amazonaws.com",
-        "bucket": "binary-web",
-        "region": "us-east-1",
-        "status": 200,
-        "access": "public",
-        "timestamp": "2025-11-08T01:16:59.185837+00:00"
-      },
-      {
         "url": "https://magento-storage.s3.us-east-2.amazonaws.com",
         "bucket": "magento-storage",
         "region": "us-east-2",
@@ -344,14 +512,6 @@
         "status": 200,
         "access": "public",
         "timestamp": "2025-11-08T01:16:59.236895+00:00"
-      },
-      {
-        "url": "https://amazon-s3.s3.us-east-1.amazonaws.com",
-        "bucket": "amazon-s3",
-        "region": "us-east-1",
-        "status": 200,
-        "access": "public",
-        "timestamp": "2025-11-08T01:16:59.263896+00:00"
       },
       {
         "url": "https://metis-images.s3.us-east-1.amazonaws.com",
@@ -386,44 +546,12 @@
         "timestamp": "2025-11-08T01:16:59.351154+00:00"
       },
       {
-        "url": "https://curve-media.s3.ca-central-1.amazonaws.com",
-        "bucket": "curve-media",
-        "region": "ca-central-1",
-        "status": 200,
-        "access": "public",
-        "timestamp": "2025-11-08T01:16:59.355012+00:00"
-      },
-      {
-        "url": "https://floqast.s3.us-west-2.amazonaws.com",
-        "bucket": "floqast",
-        "region": "us-west-2",
-        "status": 200,
-        "access": "public",
-        "timestamp": "2025-11-08T01:16:59.373234+00:00"
-      },
-      {
         "url": "https://parity-wordpress.s3.ca-central-1.amazonaws.com",
         "bucket": "parity-wordpress",
         "region": "ca-central-1",
         "status": 200,
         "access": "public",
         "timestamp": "2025-11-08T01:16:59.382369+00:00"
-      },
-      {
-        "url": "https://amazon-resources.s3.us-west-2.amazonaws.com",
-        "bucket": "amazon-resources",
-        "region": "us-west-2",
-        "status": 200,
-        "access": "public",
-        "timestamp": "2025-11-08T01:16:59.390314+00:00"
-      },
-      {
-        "url": "https://aurora-content.s3.us-west-1.amazonaws.com",
-        "bucket": "aurora-content",
-        "region": "us-west-1",
-        "status": 200,
-        "access": "public",
-        "timestamp": "2025-11-08T01:16:59.395037+00:00"
       },
       {
         "url": "https://ata-website.s3.us-east-1.amazonaws.com",
@@ -434,28 +562,12 @@
         "timestamp": "2025-11-08T01:16:59.397829+00:00"
       },
       {
-        "url": "https://apple-s3.s3.us-west-1.amazonaws.com",
-        "bucket": "apple-s3",
-        "region": "us-west-1",
-        "status": 200,
-        "access": "public",
-        "timestamp": "2025-11-08T01:16:59.400911+00:00"
-      },
-      {
         "url": "https://images-casino.s3.us-east-2.amazonaws.com",
         "bucket": "images-casino",
         "region": "us-east-2",
         "status": 200,
         "access": "public",
         "timestamp": "2025-11-08T01:16:59.406209+00:00"
-      },
-      {
-        "url": "https://binary-uploads.s3.us-west-1.amazonaws.com",
-        "bucket": "binary-uploads",
-        "region": "us-west-1",
-        "status": 200,
-        "access": "public",
-        "timestamp": "2025-11-08T01:16:59.416314+00:00"
       },
       {
         "url": "https://build-resources.s3.us-east-1.amazonaws.com",
@@ -498,14 +610,6 @@
         "timestamp": "2025-11-08T01:16:59.447134+00:00"
       },
       {
-        "url": "https://airtable.s3.us-east-1.amazonaws.com",
-        "bucket": "airtable",
-        "region": "us-east-1",
-        "status": 200,
-        "access": "public",
-        "timestamp": "2025-11-08T01:16:59.453351+00:00"
-      },
-      {
         "url": "https://simple-videos.s3.eu-west-1.amazonaws.com",
         "bucket": "simple-videos",
         "region": "eu-west-1",
@@ -538,14 +642,6 @@
         "timestamp": "2025-11-08T01:16:59.486438+00:00"
       },
       {
-        "url": "https://coda-files.s3.us-west-2.amazonaws.com",
-        "bucket": "coda-files",
-        "region": "us-west-2",
-        "status": 200,
-        "access": "public",
-        "timestamp": "2025-11-08T01:16:59.492643+00:00"
-      },
-      {
         "url": "https://casino-images.s3.us-east-1.amazonaws.com",
         "bucket": "casino-images",
         "region": "us-east-1",
@@ -570,28 +666,12 @@
         "timestamp": "2025-11-08T01:16:59.540064+00:00"
       },
       {
-        "url": "https://cornershop-test.s3.us-east-1.amazonaws.com",
-        "bucket": "cornershop-test",
-        "region": "us-east-1",
-        "status": 200,
-        "access": "public",
-        "timestamp": "2025-11-08T01:16:59.569138+00:00"
-      },
-      {
         "url": "https://delta-public.s3.us-east-1.amazonaws.com",
         "bucket": "delta-public",
         "region": "us-east-1",
         "status": 200,
         "access": "public",
         "timestamp": "2025-11-08T01:16:59.583910+00:00"
-      },
-      {
-        "url": "https://aurora-public.s3.us-west-2.amazonaws.com",
-        "bucket": "aurora-public",
-        "region": "us-west-2",
-        "status": 200,
-        "access": "public",
-        "timestamp": "2025-11-08T01:16:59.587272+00:00"
       },
       {
         "url": "https://images-crypto.s3.us-east-2.amazonaws.com",
@@ -810,28 +890,12 @@
         "timestamp": "2025-11-08T01:17:00.118927+00:00"
       },
       {
-        "url": "https://cdn-discord.s3.us-west-2.amazonaws.com",
-        "bucket": "cdn-discord",
-        "region": "us-west-2",
-        "status": 200,
-        "access": "public",
-        "timestamp": "2025-11-08T01:17:00.129090+00:00"
-      },
-      {
         "url": "https://foundation-images.s3.us-east-1.amazonaws.com",
         "bucket": "foundation-images",
         "region": "us-east-1",
         "status": 200,
         "access": "public",
         "timestamp": "2025-11-08T01:17:00.133896+00:00"
-      },
-      {
-        "url": "https://discord-uploads.s3.us-west-2.amazonaws.com",
-        "bucket": "discord-uploads",
-        "region": "us-west-2",
-        "status": 200,
-        "access": "public",
-        "timestamp": "2025-11-08T01:17:00.139915+00:00"
       },
       {
         "url": "https://matomo-test.s3.eu-central-1.amazonaws.com",
@@ -1002,28 +1066,12 @@
         "timestamp": "2025-11-08T01:17:00.466000+00:00"
       },
       {
-        "url": "https://curve-public.s3.ap-southeast-2.amazonaws.com",
-        "bucket": "curve-public",
-        "region": "ap-southeast-2",
-        "status": 200,
-        "access": "public",
-        "timestamp": "2025-11-08T01:17:00.473083+00:00"
-      },
-      {
         "url": "https://gsa-data.s3.us-east-1.amazonaws.com",
         "bucket": "gsa-data",
         "region": "us-east-1",
         "status": 200,
         "access": "public",
         "timestamp": "2025-11-08T01:17:00.478007+00:00"
-      },
-      {
-        "url": "https://alphax.s3.sa-east-1.amazonaws.com",
-        "bucket": "alphax",
-        "region": "sa-east-1",
-        "status": 200,
-        "access": "public",
-        "timestamp": "2025-11-08T01:17:00.478462+00:00"
       },
       {
         "url": "https://geotab-test.s3.ap-northeast-2.amazonaws.com",
@@ -1064,14 +1112,6 @@
         "status": 200,
         "access": "public",
         "timestamp": "2025-11-08T01:17:00.518801+00:00"
-      },
-      {
-        "url": "https://airbnb-uploads.s3.eu-north-1.amazonaws.com",
-        "bucket": "airbnb-uploads",
-        "region": "eu-north-1",
-        "status": 200,
-        "access": "public",
-        "timestamp": "2025-11-08T01:17:00.533919+00:00"
       },
       {
         "url": "https://helium-storage.s3.us-west-2.amazonaws.com",
@@ -1128,14 +1168,6 @@
         "status": 200,
         "access": "public",
         "timestamp": "2025-11-08T01:17:00.665101+00:00"
-      },
-      {
-        "url": "https://aurora-media.s3.eu-central-1.amazonaws.com",
-        "bucket": "aurora-media",
-        "region": "eu-central-1",
-        "status": 200,
-        "access": "public",
-        "timestamp": "2025-11-08T01:17:00.683311+00:00"
       },
       {
         "url": "https://info-images.s3.us-east-1.amazonaws.com",
@@ -1450,14 +1482,6 @@
         "timestamp": "2025-11-08T01:17:01.373115+00:00"
       },
       {
-        "url": "https://facebook-blog.s3.ap-southeast-1.amazonaws.com",
-        "bucket": "facebook-blog",
-        "region": "ap-southeast-1",
-        "status": 200,
-        "access": "public",
-        "timestamp": "2025-11-08T01:17:01.376912+00:00"
-      },
-      {
         "url": "https://mini-data.s3.us-east-1.amazonaws.com",
         "bucket": "mini-data",
         "region": "us-east-1",
@@ -1562,14 +1586,6 @@
         "timestamp": "2025-11-08T01:17:01.474091+00:00"
       },
       {
-        "url": "https://dropbox-files.s3.ap-southeast-1.amazonaws.com",
-        "bucket": "dropbox-files",
-        "region": "ap-southeast-1",
-        "status": 200,
-        "access": "public",
-        "timestamp": "2025-11-08T01:17:01.479470+00:00"
-      },
-      {
         "url": "https://niche-1.s3.us-east-1.amazonaws.com",
         "bucket": "niche-1",
         "region": "us-east-1",
@@ -1626,14 +1642,6 @@
         "timestamp": "2025-11-08T01:17:01.633871+00:00"
       },
       {
-        "url": "https://exodus-website.s3.eu-west-2.amazonaws.com",
-        "bucket": "exodus-website",
-        "region": "eu-west-2",
-        "status": 200,
-        "access": "public",
-        "timestamp": "2025-11-08T01:17:01.639766+00:00"
-      },
-      {
         "url": "https://ops-live.s3.us-east-1.amazonaws.com",
         "bucket": "ops-live",
         "region": "us-east-1",
@@ -1664,14 +1672,6 @@
         "status": 200,
         "access": "public",
         "timestamp": "2025-11-08T01:17:01.717903+00:00"
-      },
-      {
-        "url": "https://caffeine-data.s3.ap-northeast-2.amazonaws.com",
-        "bucket": "caffeine-data",
-        "region": "ap-northeast-2",
-        "status": 200,
-        "access": "public",
-        "timestamp": "2025-11-08T01:17:01.720721+00:00"
       },
       {
         "url": "https://nozbe.s3.us-east-2.amazonaws.com",
@@ -2500,8 +2500,10 @@
     ],
     "private": []
   },
-  "generated_at": "2025-11-08T01:17:03.712484+00:00",
-  "validated_at": "2025-11-08T01:17:03.712497+00:00",
+  "generated_at": "2025-11-08T01:43:43.011693+00:00",
+  "source_files": 5,
+  "domains_scanned": 4,
+  "total_chunks": 5,
   "file_index": 0,
   "total_files": 1,
   "stats": {
