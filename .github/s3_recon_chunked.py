@@ -24,6 +24,10 @@ AWS_REGIONS = [
 
 SEPARATORS = ['', '-', '_', '.']
 
+# Separator subsets for specific use cases
+SEPARATORS_NO_DOT = ['', '-', '_']  # Common separators without dot (used for most permutations)
+SEPARATORS_DASH_ONLY = ['-', '']    # Most common separators for short forms
+
 DEFAULT_ENVIRONMENTS = [
     '', 'dev', 'prod', 'test', 'staging', 'stage', 'qa', 'uat',
     'backup', 'backups', 'data', 'files', 'assets',
@@ -31,10 +35,19 @@ DEFAULT_ENVIRONMENTS = [
     'www', 'api', 'app', 'web', 'mobile', 'admin'
 ]
 
+# Additional permutation constants for intelligent bucket name generation
+YEARS = ['2020', '2021', '2022', '2023', '2024', '2025']
+SHORT_YEARS = ['20', '21', '22', '23', '24', '25']
+NUMBERS = ['1', '2', '3', '01', '02', '03', 'v1', 'v2', 'v3']
+REGIONS_SHORT = ['us', 'eu', 'asia', 'ap', 'ca', 'uk', 'au', 'br', 'de', 'fr', 'jp']
+COMMON_SUFFIXES = ['bucket', 'storage', 'store', 'media', 'content', 'static', 'assets', 'archive']
+COMMON_PREFIXES = ['my', 'company', 'project', 'app', 'service', 'cloud']
+
 class S3ReconChunked:
     def __init__(self, wordlist, timeout=10, max_workers=30, public_only=False, 
                  env_file=None, verbose=False, chunk_size=50, state_dir='state', 
-                 output_dir='results', resume=True, domains_per_hour=None, max_state_size_mb=28):
+                 output_dir='results', resume=True, domains_per_hour=None, max_state_size_mb=28,
+                 permutation_level=2):
         self.wordlist = wordlist
         self.timeout = timeout
         self.max_workers = max_workers
@@ -48,6 +61,7 @@ class S3ReconChunked:
         self.domains_per_hour = domains_per_hour
         self.max_state_size_mb = max_state_size_mb
         self.max_state_size_bytes = max_state_size_mb * 1024 * 1024
+        self.permutation_level = permutation_level
         self.environments = self.load_environments()
         self.results = {'public': [], 'private': []}
         self.total_checked = 0
@@ -84,22 +98,89 @@ class S3ReconChunked:
         return words
     
     def generate_bucket_names(self, words):
+        """
+        Enhanced bucket name generation with multiple permutation techniques.
+        Permutation levels:
+        - Level 0: Only base words (minimal)
+        - Level 1: Base + basic environment combinations (default from before)
+        - Level 2: Level 1 + years, numbers, regions (recommended, default)
+        - Level 3: Level 2 + common prefixes/suffixes and more variations (extensive)
+        """
         buckets = set()
         
         for word in words:
+            # Normalize the word
             word = word.lower().replace(' ', '-').replace('*', '').replace('.', '-')
             
             if not word:
                 continue
             
+            # Always add the base word
             buckets.add(word)
             
-            for env in self.environments[:30]:
+            # Level 0: Stop here if permutation_level is 0
+            if self.permutation_level == 0:
+                continue
+            
+            # Level 1: Basic environment combinations (original logic, but enhanced)
+            # Use all environments instead of limiting to first 30
+            for env in self.environments:
                 if env:
-                    for sep in SEPARATORS[:2]:
-                        if sep:
-                            buckets.add(f"{word}{sep}{env}")
-                            buckets.add(f"{env}{sep}{word}")
+                    # Use all separators for environment combinations
+                    for sep in SEPARATORS:
+                        buckets.add(f"{word}{sep}{env}")
+                        buckets.add(f"{env}{sep}{word}")
+            
+            # Level 2+: Add year variations
+            if self.permutation_level >= 2:
+                # Add years with all separators
+                for year in YEARS:
+                    for sep in SEPARATORS:
+                        buckets.add(f"{word}{sep}{year}")
+                        buckets.add(f"{year}{sep}{word}")
+                
+                # Add short years (typically use dash or no separator)
+                for year in SHORT_YEARS:
+                    for sep in SEPARATORS_DASH_ONLY:
+                        buckets.add(f"{word}{sep}{year}")
+                        buckets.add(f"{year}{sep}{word}")
+                
+                # Add numbers
+                for num in NUMBERS:
+                    for sep in SEPARATORS:
+                        buckets.add(f"{word}{sep}{num}")
+                
+                # Add region variations (commonly use dash, underscore, or no separator)
+                for region in REGIONS_SHORT:
+                    for sep in SEPARATORS_NO_DOT:
+                        buckets.add(f"{word}{sep}{region}")
+                        buckets.add(f"{region}{sep}{word}")
+            
+            # Level 3: Add common prefixes and suffixes
+            if self.permutation_level >= 3:
+                # Common suffixes (typically use dash, underscore, or no separator)
+                for suffix in COMMON_SUFFIXES:
+                    for sep in SEPARATORS_NO_DOT:
+                        buckets.add(f"{word}{sep}{suffix}")
+                
+                # Common prefixes (typically use dash, underscore, or no separator)
+                for prefix in COMMON_PREFIXES:
+                    for sep in SEPARATORS_NO_DOT:
+                        buckets.add(f"{prefix}{sep}{word}")
+                
+                # Combine environment + year patterns (common in real-world)
+                for env in ['dev', 'prod', 'test', 'staging']:
+                    for year in ['2023', '2024', '2025']:
+                        for sep in ['-', '_']:  # Only dash and underscore for multi-part names
+                            buckets.add(f"{word}{sep}{env}{sep}{year}")
+                            buckets.add(f"{word}{sep}{year}{sep}{env}")
+                
+                # Add environment + region combinations
+                for env in ['dev', 'prod', 'staging', 'test']:
+                    for region in ['us', 'eu', 'ap']:
+                        for sep in ['-', '_']:  # Only dash and underscore for multi-part names
+                            buckets.add(f"{word}{sep}{env}{sep}{region}")
+                            buckets.add(f"{word}{sep}{region}{sep}{env}")
         
         return list(buckets)
     
@@ -326,6 +407,7 @@ class S3ReconChunked:
             all_words.extend(words)
         
         print(f"[*] Loaded {len(all_words)} words from {len(self.wordlist)} wordlist(s)")
+        print(f"[*] Permutation level: {self.permutation_level}")
         
         # Load domain state to track which domains have been scanned
         scanned_domains, last_scan_time = self.load_domain_state()
@@ -337,9 +419,37 @@ class S3ReconChunked:
         remaining_domains = [word for word in all_words if self.get_domain_hash(word) not in scanned_domains]
         print(f"[*] Remaining domains to scan: {len(remaining_domains)}")
         
+        # If no remaining domains and permutation level allows, do another permutation round
         if not remaining_domains:
-            print("[*] All domains have been scanned. No work to do.")
-            return
+            print("[*] All base domains have been scanned.")
+            
+            # Check if we can do an additional permutation round
+            if self.permutation_level < 3:
+                print(f"[*] Starting additional permutation round with level {self.permutation_level + 1}")
+                # Temporarily increase permutation level for additional research
+                original_level = self.permutation_level
+                self.permutation_level += 1
+                
+                # Reset scanned_domains to re-scan with new permutations
+                # But keep track of the original level scans
+                state_file = os.path.join(self.state_dir, "domain_state.json")
+                if os.path.exists(state_file):
+                    try:
+                        with open(state_file, 'r') as f:
+                            state = json.load(f)
+                            state['permutation_level_completed'] = original_level
+                            state['additional_rounds'] = state.get('additional_rounds', 0) + 1
+                        with open(state_file, 'w') as f:
+                            json.dump(state, f, indent=2)
+                    except:
+                        pass
+                
+                # Use all words again for the new permutation round
+                remaining_domains = all_words
+                print(f"[*] Re-scanning {len(remaining_domains)} domains with enhanced permutations")
+            else:
+                print("[*] All permutation levels have been exhausted. No more work to do.")
+                return
         
         # Determine how many domains to process this run
         if self.domains_per_hour:
@@ -362,6 +472,7 @@ class S3ReconChunked:
             domain = chunk[0] if chunk else "unknown"
             
             bucket_names = self.generate_bucket_names(chunk)
+            print(f"[*] Generated {len(bucket_names)} bucket name variations")
             
             self.results = {'public': [], 'private': []}
             self.total_checked = 0
@@ -384,6 +495,7 @@ class S3ReconChunked:
         print(f"[*] Domains scanned in this run: {len(domains_scanned_this_run)}")
         print(f"[*] Total domains scanned so far: {len(scanned_domains)}")
         print(f"[*] Remaining domains: {len(all_words) - len(scanned_domains)}")
+        print(f"[*] Permutation level used: {self.permutation_level}")
         print(f"{'='*60}")
 
 def main():
@@ -400,6 +512,8 @@ def main():
     parser.add_argument('--no-resume', action='store_true', help='Disable resume from previous state')
     parser.add_argument('--domains-per-hour', type=int, help='Number of domains to scan per hour (default: all remaining)')
     parser.add_argument('--max-state-size', type=int, default=28, help='Maximum state file size in MB before rotation (default: 28)')
+    parser.add_argument('--permutation-level', type=int, default=2, choices=[0, 1, 2, 3],
+                        help='Permutation level: 0=base only, 1=basic envs, 2=+years/numbers/regions (default), 3=+prefixes/suffixes/combos')
     
     args = parser.parse_args()
     
@@ -409,6 +523,7 @@ def main():
 ╔═══════════════════════════════════════════════════╗
 ║   S3 Bucket Mass Recon Scanner - Chunked         ║
 ║   Memory-Safe Chunked Processing                 ║
+║   Enhanced Permutation Engine                    ║
 ╚═══════════════════════════════════════════════════╝
     """)
     
@@ -424,7 +539,8 @@ def main():
         output_dir=args.output_dir,
         resume=not args.no_resume,
         domains_per_hour=args.domains_per_hour,
-        max_state_size_mb=args.max_state_size
+        max_state_size_mb=args.max_state_size,
+        permutation_level=args.permutation_level
     )
     
     recon.run()
