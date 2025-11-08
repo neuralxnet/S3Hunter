@@ -1,0 +1,104 @@
+{
+  "chunk_id": 2,
+  "domain": "Square",
+  "date": "2025-11-08",
+  "timestamp": "2025-11-08T05:24:48.448316",
+  "results": {
+    "public": [
+      {
+        "url": "https://tiktok-uploads.s3.us-west-2.amazonaws.com",
+        "bucket": "tiktok-uploads",
+        "region": "us-west-2",
+        "status": 200,
+        "access": "public",
+        "timestamp": "2025-11-08T04:54:09.808972"
+      },
+      {
+        "url": "https://bucket-twitter.s3.us-east-1.amazonaws.com",
+        "bucket": "bucket-twitter",
+        "region": "us-east-1",
+        "status": 200,
+        "access": "public",
+        "timestamp": "2025-11-08T04:59:22.004136"
+      },
+      {
+        "url": "https://tinder-bucket.s3.us-east-1.amazonaws.com",
+        "bucket": "tinder-bucket",
+        "region": "us-east-1",
+        "status": 200,
+        "access": "public",
+        "timestamp": "2025-11-08T05:00:30.689403"
+      },
+      {
+        "url": "https://twilio-resources.s3.us-east-1.amazonaws.com",
+        "bucket": "twilio-resources",
+        "region": "us-east-1",
+        "status": 200,
+        "access": "public",
+        "timestamp": "2025-11-08T05:05:31.529862"
+      },
+      {
+        "url": "https://twilio-us.s3.us-east-1.amazonaws.com",
+        "bucket": "twilio-us",
+        "region": "us-east-1",
+        "status": 200,
+        "access": "public",
+        "timestamp": "2025-11-08T05:11:21.701030"
+      },
+      {
+        "url": "https://tyk.s3.sa-east-1.amazonaws.com",
+        "bucket": "tyk",
+        "region": "sa-east-1",
+        "status": 200,
+        "access": "public",
+        "timestamp": "2025-11-08T05:17:20.484227"
+      },
+      {
+        "url": "https://trello-test.s3.eu-west-2.amazonaws.com",
+        "bucket": "trello-test",
+        "region": "eu-west-2",
+        "status": 200,
+        "access": "public",
+        "timestamp": "2025-11-08T05:17:27.268063"
+      },
+      {
+        "url": "https://test-usaa.s3.us-east-1.amazonaws.com",
+        "bucket": "test-usaa",
+        "region": "us-east-1",
+        "status": 200,
+        "access": "public",
+        "timestamp": "2025-11-08T05:18:04.976131"
+      },
+      {
+        "url": "https://sui-files.s3.us-west-1.amazonaws.com",
+        "bucket": "sui-files",
+        "region": "us-west-1",
+        "status": 200,
+        "access": "public",
+        "timestamp": "2025-11-08T05:20:13.272800"
+      },
+      {
+        "url": "https://test-tinder.s3.us-west-2.amazonaws.com",
+        "bucket": "test-tinder",
+        "region": "us-west-2",
+        "status": 200,
+        "access": "public",
+        "timestamp": "2025-11-08T05:20:22.688819"
+      },
+      {
+        "url": "https://twitter-s3.s3.us-east-1.amazonaws.com",
+        "bucket": "twitter-s3",
+        "region": "us-east-1",
+        "status": 200,
+        "access": "public",
+        "timestamp": "2025-11-08T05:23:54.609192"
+      }
+    ],
+    "private": []
+  },
+  "stats": {
+    "total_checked": 57950,
+    "public_found": 11,
+    "private_found": 0
+  }
+}
