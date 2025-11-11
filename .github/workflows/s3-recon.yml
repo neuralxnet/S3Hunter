@@ -8,7 +8,7 @@ on:
       chunk_size:
         description: 'Words per chunk'
         required: false
-        default: '50'
+        default: '1'
       workers:
         description: 'Concurrent workers'
         required: false
@@ -16,7 +16,7 @@ on:
       domains_per_hour:
         description: 'Domains to scan per hour (leave empty for all)'
         required: false
-        default: ''
+        default: '1'
       permutation_level:
         description: 'Permutation level (0=base, 1=basic, 2=enhanced, 3=comprehensive)'
         required: false
@@ -84,9 +84,9 @@ jobs:
       
       - name: Run S3 Reconnaissance
         env:
-          CHUNK_SIZE: ${{ github.event.inputs.chunk_size || '50' }}
+          CHUNK_SIZE: ${{ github.event.inputs.chunk_size || '1' }}
           WORKERS: ${{ github.event.inputs.workers || '30' }}
-          DOMAINS_PER_HOUR: ${{ github.event.inputs.domains_per_hour || '10' }}
+          DOMAINS_PER_HOUR: ${{ github.event.inputs.domains_per_hour || '1' }}
           PERMUTATION_LEVEL: ${{ github.event.inputs.permutation_level || '1' }}
         run: |
           python3 .github/s3_recon_chunked.py base_wordlist.txt \
