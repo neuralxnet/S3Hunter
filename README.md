@@ -5,6 +5,7 @@ Enhanced S3 bucket discovery tool with intelligent permutation engine for compre
 ## Features
 
 - **Enhanced Permutation Engine**: Generate intelligent bucket name variations with 4 levels of sophistication
+- **Targeted Domain Processing**: Process one domain at a time for reliable, conflict-free results
 - **Continuous Research Mode**: Automatically continues with higher permutation levels after base scan completes
 - **Memory-Safe Chunked Processing**: Process large wordlists efficiently without memory issues
 - **Stateful Resume**: Resume from interruptions with automatic state management
@@ -14,7 +15,7 @@ Enhanced S3 bucket discovery tool with intelligent permutation engine for compre
 ## Quick Start
 
 ```bash
-# Basic scan with default Level 2 permutations (recommended)
+# Targeted scan (one domain at a time, recommended for reliable results)
 python3 .github/s3_recon_chunked.py base_wordlist.txt
 
 # Comprehensive scan with Level 3 permutations
@@ -61,9 +62,9 @@ python3 .github/s3_recon_chunked.py [-h] [-p] [-t TIMEOUT] [-w WORKERS]
 
 - `--permutation-level {0,1,2,3}`: Set permutation sophistication (default: 2)
 - `--env-file ENV_FILE`: Custom environment keywords file
-- `--chunk-size CHUNK_SIZE`: Words per processing chunk (default: 50)
+- `--chunk-size CHUNK_SIZE`: Words per processing chunk (default: 1 for targeted scanning)
 - `--workers WORKERS`: Concurrent workers (default: 30)
-- `--domains-per-hour N`: Rate limit domains processed per hour
+- `--domains-per-hour N`: Rate limit domains processed per hour (default: 1 for focused processing)
 - `-v, --verbose`: Verbose output showing all attempts
 
 ## Output
@@ -75,6 +76,12 @@ Results are saved to the `results/` directory in JSON format:
 
 ## Examples
 
+### Targeted Reconnaissance (Recommended)
+```bash
+# Process one domain at a time for reliable results
+python3 .github/s3_recon_chunked.py base_wordlist.txt --permutation-level 2
+```
+
 ### Standard Reconnaissance
 ```bash
 python3 .github/s3_recon_chunked.py base_wordlist.txt --permutation-level 2
@@ -85,14 +92,14 @@ python3 .github/s3_recon_chunked.py base_wordlist.txt --permutation-level 2
 python3 .github/s3_recon_chunked.py base_wordlist.txt \
   --permutation-level 3 \
   --workers 50 \
-  --chunk-size 25
+  --chunk-size 1
 ```
 
 ### Rate-Limited Scan
 ```bash
 python3 .github/s3_recon_chunked.py base_wordlist.txt \
   --permutation-level 2 \
-  --domains-per-hour 100
+  --domains-per-hour 1
 ```
 
 ## Requirements

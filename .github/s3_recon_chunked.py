@@ -506,11 +506,11 @@ def main():
     parser.add_argument('-w', '--workers', type=int, default=30, help='Concurrent workers (default: 30)')
     parser.add_argument('-e', '--env-file', help='Environment/keywords file (default: list.txt)')
     parser.add_argument('-v', '--verbose', action='store_true', help='Verbose mode - show all attempts')
-    parser.add_argument('-c', '--chunk-size', type=int, default=50, help='Words per chunk (default: 50)')
+    parser.add_argument('-c', '--chunk-size', type=int, default=1, help='Words per chunk (default: 1 for focused scanning)')
     parser.add_argument('--state-dir', default='state', help='State directory (default: state)')
     parser.add_argument('--output-dir', default='results', help='Output directory (default: results)')
     parser.add_argument('--no-resume', action='store_true', help='Disable resume from previous state')
-    parser.add_argument('--domains-per-hour', type=int, help='Number of domains to scan per hour (default: all remaining)')
+    parser.add_argument('--domains-per-hour', type=int, default=1, help='Number of domains to scan per hour (default: 1 for targeted scanning)')
     parser.add_argument('--max-state-size', type=int, default=28, help='Maximum state file size in MB before rotation (default: 28)')
     parser.add_argument('--permutation-level', type=int, default=2, choices=[0, 1, 2, 3],
                         help='Permutation level: 0=base only, 1=basic envs, 2=+years/numbers/regions (default), 3=+prefixes/suffixes/combos')
