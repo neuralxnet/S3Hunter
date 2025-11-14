@@ -1,0 +1,48 @@
+{
+  "chunk_id": 1,
+  "domain": "Udemy",
+  "date": "2025-11-14",
+  "timestamp": "2025-11-14T19:38:20.444823",
+  "results": {
+    "public": [
+      {
+        "url": "https://eshop-udemy.s3.us-east-1.amazonaws.com",
+        "bucket": "eshop-udemy",
+        "region": "us-east-1",
+        "status": 200,
+        "access": "public",
+        "timestamp": "2025-11-14T17:08:06.272601"
+      },
+      {
+        "url": "https://courseudemy.s3.sa-east-1.amazonaws.com",
+        "bucket": "courseudemy",
+        "region": "sa-east-1",
+        "status": 200,
+        "access": "public",
+        "timestamp": "2025-11-14T17:35:15.757847"
+      },
+      {
+        "url": "https://udemy-test2.s3.ap-southeast-1.amazonaws.com",
+        "bucket": "udemy-test2",
+        "region": "ap-southeast-1",
+        "status": 200,
+        "access": "public",
+        "timestamp": "2025-11-14T18:15:11.415626"
+      },
+      {
+        "url": "https://s3.us-east-1.amazonaws.com/udemy.demo",
+        "bucket": "udemy.demo",
+        "region": "us-east-1",
+        "status": 200,
+        "access": "public",
+        "timestamp": "2025-11-14T19:31:01.150559"
+      }
+    ],
+    "private": []
+  },
+  "stats": {
+    "total_checked": 361323,
+    "public_found": 4,
+    "private_found": 0
+  }
+}
