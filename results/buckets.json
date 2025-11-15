@@ -2,6 +2,38 @@
   "buckets": {
     "public": [
       {
+        "url": "https://eshop-udemy.s3.us-east-1.amazonaws.com",
+        "bucket": "eshop-udemy",
+        "region": "us-east-1",
+        "status": 200,
+        "access": "public",
+        "timestamp": "2025-11-14T18:48:21.552189"
+      },
+      {
+        "url": "https://courseudemy.s3.sa-east-1.amazonaws.com",
+        "bucket": "courseudemy",
+        "region": "sa-east-1",
+        "status": 200,
+        "access": "public",
+        "timestamp": "2025-11-14T19:23:21.698060"
+      },
+      {
+        "url": "https://udemy-test2.s3.ap-southeast-1.amazonaws.com",
+        "bucket": "udemy-test2",
+        "region": "ap-southeast-1",
+        "status": 200,
+        "access": "public",
+        "timestamp": "2025-11-14T20:12:32.903974"
+      },
+      {
+        "url": "https://s3.us-east-1.amazonaws.com/udemy.demo",
+        "bucket": "udemy.demo",
+        "region": "us-east-1",
+        "status": 200,
+        "access": "public",
+        "timestamp": "2025-11-14T21:00:55.181884"
+      },
+      {
         "url": "https://images-services.s3.us-east-1.amazonaws.com",
         "bucket": "images-services",
         "region": "us-east-1",
@@ -2492,16 +2524,18 @@
     ],
     "private": []
   },
-  "generated_at": "2025-11-15T01:19:31.946323+00:00",
-  "validated_at": "2025-11-15T01:19:31.946341+00:00",
+  "generated_at": "2025-11-15T01:47:14.992702+00:00",
+  "source_files": 3,
+  "domains_scanned": 2,
+  "total_chunks": 3,
   "file_index": 0,
   "total_files": 1,
   "stats": {
-    "public_buckets_in_file": 311,
+    "public_buckets_in_file": 315,
     "private_buckets_in_file": 0,
-    "total_buckets_in_file": 311,
-    "total_public_buckets": 311,
+    "total_buckets_in_file": 315,
+    "total_public_buckets": 315,
     "total_private_buckets": 0,
-    "total_buckets": 311
+    "total_buckets": 315
   }
 }
