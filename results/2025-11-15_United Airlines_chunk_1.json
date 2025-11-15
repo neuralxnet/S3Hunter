@@ -1,0 +1,15 @@
+{
+  "chunk_id": 1,
+  "domain": "United Airlines",
+  "date": "2025-11-15",
+  "timestamp": "2025-11-15T09:37:32.016358",
+  "results": {
+    "public": [],
+    "private": []
+  },
+  "stats": {
+    "total_checked": 361323,
+    "public_found": 0,
+    "private_found": 0
+  }
+}
