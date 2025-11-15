@@ -2520,22 +2520,30 @@
         "status": 200,
         "access": "public",
         "timestamp": "2025-11-15T01:19:31.941087+00:00"
+      },
+      {
+        "url": "https://unikrn-demo.s3.ap-southeast-2.amazonaws.com",
+        "bucket": "unikrn-demo",
+        "region": "ap-southeast-2",
+        "status": 200,
+        "access": "public",
+        "timestamp": "2025-11-15T01:34:43.070723"
       }
     ],
     "private": []
   },
-  "generated_at": "2025-11-15T01:47:14.992702+00:00",
+  "generated_at": "2025-11-15T12:42:07.294943+00:00",
   "source_files": 3,
-  "domains_scanned": 2,
+  "domains_scanned": 3,
   "total_chunks": 3,
   "file_index": 0,
   "total_files": 1,
   "stats": {
-    "public_buckets_in_file": 315,
+    "public_buckets_in_file": 316,
     "private_buckets_in_file": 0,
-    "total_buckets_in_file": 315,
-    "total_public_buckets": 315,
+    "total_buckets_in_file": 316,
+    "total_public_buckets": 316,
     "total_private_buckets": 0,
-    "total_buckets": 315
+    "total_buckets": 316
   }
 }
