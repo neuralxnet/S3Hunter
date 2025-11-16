@@ -1,0 +1,40 @@
+{
+  "chunk_id": 1,
+  "domain": "Vanilla",
+  "date": "2025-11-16",
+  "timestamp": "2025-11-16T18:12:04.407782",
+  "results": {
+    "public": [
+      {
+        "url": "https://vanilla-plus.s3.ap-southeast-2.amazonaws.com",
+        "bucket": "vanilla-plus",
+        "region": "ap-southeast-2",
+        "status": 200,
+        "access": "public",
+        "timestamp": "2025-11-16T15:18:35.259359"
+      },
+      {
+        "url": "https://vanillateam.s3.us-east-1.amazonaws.com",
+        "bucket": "vanillateam",
+        "region": "us-east-1",
+        "status": 200,
+        "access": "public",
+        "timestamp": "2025-11-16T16:08:38.180951"
+      },
+      {
+        "url": "https://vanilla-status.s3.us-east-1.amazonaws.com",
+        "bucket": "vanilla-status",
+        "region": "us-east-1",
+        "status": 200,
+        "access": "public",
+        "timestamp": "2025-11-16T16:52:53.551313"
+      }
+    ],
+    "private": []
+  },
+  "stats": {
+    "total_checked": 361323,
+    "public_found": 3,
+    "private_found": 0
+  }
+}
