@@ -2,28 +2,20 @@
   "buckets": {
     "public": [
       {
-        "url": "https://upworkbucket.s3.us-east-1.amazonaws.com",
-        "bucket": "upworkbucket",
+        "url": "https://upworkteam.s3.us-west-2.amazonaws.com",
+        "bucket": "upworkteam",
+        "region": "us-west-2",
+        "status": 200,
+        "access": "public",
+        "timestamp": "2025-11-15T23:18:04.467513"
+      },
+      {
+        "url": "https://upwork-reviews.s3.us-east-1.amazonaws.com",
+        "bucket": "upwork-reviews",
         "region": "us-east-1",
         "status": 200,
         "access": "public",
-        "timestamp": "2025-11-15T22:21:07.386444"
-      },
-      {
-        "url": "https://publicupwork.s3.us-east-1.amazonaws.com",
-        "bucket": "publicupwork",
-        "region": "us-east-1",
-        "status": 200,
-        "access": "public",
-        "timestamp": "2025-11-15T22:46:54.017850"
-      },
-      {
-        "url": "https://upwork-project.s3.ap-south-1.amazonaws.com",
-        "bucket": "upwork-project",
-        "region": "ap-south-1",
-        "status": 200,
-        "access": "public",
-        "timestamp": "2025-11-15T23:09:45.620952"
+        "timestamp": "2025-11-15T23:26:58.350572"
       },
       {
         "url": "https://upworkvideos.s3.us-east-2.amazonaws.com",
@@ -31,23 +23,15 @@
         "region": "us-east-2",
         "status": 200,
         "access": "public",
-        "timestamp": "2025-11-16T00:24:24.422428"
+        "timestamp": "2025-11-16T00:26:45.792323"
       },
       {
-        "url": "https://upworkteam.s3.us-west-2.amazonaws.com",
-        "bucket": "upworkteam",
-        "region": "us-west-2",
+        "url": "https://upwork-project.s3.ap-south-1.amazonaws.com",
+        "bucket": "upwork-project",
+        "region": "ap-south-1",
         "status": 200,
         "access": "public",
-        "timestamp": "2025-11-16T00:37:21.887536"
-      },
-      {
-        "url": "https://dev-upwork.s3.us-east-1.amazonaws.com",
-        "bucket": "dev-upwork",
-        "region": "us-east-1",
-        "status": 200,
-        "access": "public",
-        "timestamp": "2025-11-16T01:06:42.181583"
+        "timestamp": "2025-11-16T00:53:28.802851"
       },
       {
         "url": "https://eshop-udemy.s3.us-east-1.amazonaws.com",
@@ -680,14 +664,6 @@
         "status": 200,
         "access": "public",
         "timestamp": "2025-11-16T01:26:28.456488+00:00"
-      },
-      {
-        "url": "https://upwork-reviews.s3.us-east-1.amazonaws.com",
-        "bucket": "upwork-reviews",
-        "region": "us-east-1",
-        "status": 200,
-        "access": "public",
-        "timestamp": "2025-11-16T01:26:28.458899"
       },
       {
         "url": "https://discord-uploads.s3.us-west-2.amazonaws.com",
@@ -2576,14 +2552,38 @@
         "status": 200,
         "access": "public",
         "timestamp": "2025-11-16T01:26:32.598274+00:00"
+      },
+      {
+        "url": "https://upworkbucket.s3.us-east-1.amazonaws.com",
+        "bucket": "upworkbucket",
+        "region": "us-east-1",
+        "status": 200,
+        "access": "public",
+        "timestamp": "2025-11-16T01:34:59.768314"
+      },
+      {
+        "url": "https://publicupwork.s3.us-east-1.amazonaws.com",
+        "bucket": "publicupwork",
+        "region": "us-east-1",
+        "status": 200,
+        "access": "public",
+        "timestamp": "2025-11-16T02:06:20.757950"
+      },
+      {
+        "url": "https://dev-upwork.s3.us-east-1.amazonaws.com",
+        "bucket": "dev-upwork",
+        "region": "us-east-1",
+        "status": 200,
+        "access": "public",
+        "timestamp": "2025-11-16T02:13:14.035254"
       }
     ],
     "private": []
   },
-  "generated_at": "2025-11-16T01:56:43.705530+00:00",
-  "source_files": 6,
-  "domains_scanned": 5,
-  "total_chunks": 6,
+  "generated_at": "2025-11-16T12:42:01.318297+00:00",
+  "source_files": 3,
+  "domains_scanned": 3,
+  "total_chunks": 3,
   "file_index": 0,
   "total_files": 1,
   "stats": {
