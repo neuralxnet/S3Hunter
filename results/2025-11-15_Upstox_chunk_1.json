@@ -1,0 +1,15 @@
+{
+  "chunk_id": 1,
+  "domain": "Upstox",
+  "date": "2025-11-15",
+  "timestamp": "2025-11-15T23:23:10.741694",
+  "results": {
+    "public": [],
+    "private": []
+  },
+  "stats": {
+    "total_checked": 361323,
+    "public_found": 0,
+    "private_found": 0
+  }
+}
