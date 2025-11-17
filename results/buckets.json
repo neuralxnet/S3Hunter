@@ -2,6 +2,30 @@
   "buckets": {
     "public": [
       {
+        "url": "https://vanilla-plus.s3.ap-southeast-2.amazonaws.com",
+        "bucket": "vanilla-plus",
+        "region": "ap-southeast-2",
+        "status": 200,
+        "access": "public",
+        "timestamp": "2025-11-16T16:57:09.064026"
+      },
+      {
+        "url": "https://vanillateam.s3.us-east-1.amazonaws.com",
+        "bucket": "vanillateam",
+        "region": "us-east-1",
+        "status": 200,
+        "access": "public",
+        "timestamp": "2025-11-16T17:03:47.073812"
+      },
+      {
+        "url": "https://vanilla-status.s3.us-east-1.amazonaws.com",
+        "bucket": "vanilla-status",
+        "region": "us-east-1",
+        "status": 200,
+        "access": "public",
+        "timestamp": "2025-11-16T17:56:00.561647"
+      },
+      {
         "url": "https://upworkteam.s3.us-west-2.amazonaws.com",
         "bucket": "upworkteam",
         "region": "us-west-2",
@@ -2580,16 +2604,18 @@
     ],
     "private": []
   },
-  "generated_at": "2025-11-17T01:22:31.205927+00:00",
-  "validated_at": "2025-11-17T01:22:31.205939+00:00",
+  "generated_at": "2025-11-17T01:52:21.062792+00:00",
+  "source_files": 4,
+  "domains_scanned": 4,
+  "total_chunks": 4,
   "file_index": 0,
   "total_files": 1,
   "stats": {
-    "public_buckets_in_file": 322,
+    "public_buckets_in_file": 325,
     "private_buckets_in_file": 0,
-    "total_buckets_in_file": 322,
-    "total_public_buckets": 322,
+    "total_buckets_in_file": 325,
+    "total_public_buckets": 325,
     "total_private_buckets": 0,
-    "total_buckets": 322
+    "total_buckets": 325
   }
 }
