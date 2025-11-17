@@ -1,0 +1,15 @@
+{
+  "chunk_id": 1,
+  "domain": "Vertex Protocol",
+  "date": "2025-11-17",
+  "timestamp": "2025-11-17T07:40:50.863470",
+  "results": {
+    "public": [],
+    "private": []
+  },
+  "stats": {
+    "total_checked": 361323,
+    "public_found": 0,
+    "private_found": 0
+  }
+}
