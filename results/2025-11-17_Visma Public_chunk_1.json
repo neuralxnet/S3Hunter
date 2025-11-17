@@ -1,0 +1,15 @@
+{
+  "chunk_id": 1,
+  "domain": "Visma Public",
+  "date": "2025-11-17",
+  "timestamp": "2025-11-17T22:23:32.299495",
+  "results": {
+    "public": [],
+    "private": []
+  },
+  "stats": {
+    "total_checked": 361323,
+    "public_found": 0,
+    "private_found": 0
+  }
+}
