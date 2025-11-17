@@ -1,0 +1,32 @@
+{
+  "chunk_id": 1,
+  "domain": "Vimeo",
+  "date": "2025-11-17",
+  "timestamp": "2025-11-17T15:57:41.655721",
+  "results": {
+    "public": [
+      {
+        "url": "https://vimeo2.s3.us-east-1.amazonaws.com",
+        "bucket": "vimeo2",
+        "region": "us-east-1",
+        "status": 200,
+        "access": "public",
+        "timestamp": "2025-11-17T13:39:06.503723"
+      },
+      {
+        "url": "https://playervimeo.s3.sa-east-1.amazonaws.com",
+        "bucket": "playervimeo",
+        "region": "sa-east-1",
+        "status": 200,
+        "access": "public",
+        "timestamp": "2025-11-17T15:15:20.406192"
+      }
+    ],
+    "private": []
+  },
+  "stats": {
+    "total_checked": 361323,
+    "public_found": 2,
+    "private_found": 0
+  }
+}
