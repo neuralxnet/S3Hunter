@@ -2,7 +2,7 @@
   "chunk_id": 1,
   "domain": "Vimeo",
   "date": "2025-11-17",
-  "timestamp": "2025-11-17T16:44:38.661771",
+  "timestamp": "2025-11-17T18:40:15.738985",
   "results": {
     "public": [
       {
@@ -11,7 +11,7 @@
         "region": "sa-east-1",
         "status": 200,
         "access": "public",
-        "timestamp": "2025-11-17T13:43:20.717344"
+        "timestamp": "2025-11-17T15:35:24.478183"
       },
       {
         "url": "https://vimeo2.s3.us-east-1.amazonaws.com",
@@ -19,7 +19,7 @@
         "region": "us-east-1",
         "status": 200,
         "access": "public",
-        "timestamp": "2025-11-17T14:12:41.419073"
+        "timestamp": "2025-11-17T15:56:48.358907"
       }
     ],
     "private": []
