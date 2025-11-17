@@ -2,7 +2,7 @@
   "chunk_id": 1,
   "domain": "Viator",
   "date": "2025-11-17",
-  "timestamp": "2025-11-17T12:35:45.821600",
+  "timestamp": "2025-11-17T14:32:52.562396",
   "results": {
     "public": [
       {
@@ -11,7 +11,7 @@
         "region": "us-east-1",
         "status": 200,
         "access": "public",
-        "timestamp": "2025-11-17T10:12:17.822536"
+        "timestamp": "2025-11-17T13:47:26.955547"
       }
     ],
     "private": []
