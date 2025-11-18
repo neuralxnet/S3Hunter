@@ -2,6 +2,94 @@
   "buckets": {
     "public": [
       {
+        "url": "https://s3.us-east-1.amazonaws.com/viator.docs",
+        "bucket": "viator.docs",
+        "region": "us-east-1",
+        "status": 200,
+        "access": "public",
+        "timestamp": "2025-11-17T13:47:26.955547"
+      },
+      {
+        "url": "https://playervimeo.s3.sa-east-1.amazonaws.com",
+        "bucket": "playervimeo",
+        "region": "sa-east-1",
+        "status": 200,
+        "access": "public",
+        "timestamp": "2025-11-17T15:35:24.478183"
+      },
+      {
+        "url": "https://vimeo2.s3.us-east-1.amazonaws.com",
+        "bucket": "vimeo2",
+        "region": "us-east-1",
+        "status": 200,
+        "access": "public",
+        "timestamp": "2025-11-17T15:56:48.358907"
+      },
+      {
+        "url": "https://vivostream.s3.us-east-1.amazonaws.com",
+        "bucket": "vivostream",
+        "region": "us-east-1",
+        "status": 200,
+        "access": "public",
+        "timestamp": "2025-11-17T23:08:14.013763"
+      },
+      {
+        "url": "https://vivo-stg.s3.us-east-1.amazonaws.com",
+        "bucket": "vivo-stg",
+        "region": "us-east-1",
+        "status": 200,
+        "access": "public",
+        "timestamp": "2025-11-17T23:11:08.319636"
+      },
+      {
+        "url": "https://avivo.s3.us-east-1.amazonaws.com",
+        "bucket": "avivo",
+        "region": "us-east-1",
+        "status": 200,
+        "access": "public",
+        "timestamp": "2025-11-17T23:15:24.052648"
+      },
+      {
+        "url": "https://vivov3.s3.ap-south-1.amazonaws.com",
+        "bucket": "vivov3",
+        "region": "ap-south-1",
+        "status": 200,
+        "access": "public",
+        "timestamp": "2025-11-17T23:32:52.683083"
+      },
+      {
+        "url": "https://old-vivo.s3.us-east-1.amazonaws.com",
+        "bucket": "old-vivo",
+        "region": "us-east-1",
+        "status": 200,
+        "access": "public",
+        "timestamp": "2025-11-17T23:43:36.800293"
+      },
+      {
+        "url": "https://vivo-public.s3.us-east-1.amazonaws.com",
+        "bucket": "vivo-public",
+        "region": "us-east-1",
+        "status": 200,
+        "access": "public",
+        "timestamp": "2025-11-18T00:08:18.828847"
+      },
+      {
+        "url": "https://vivopic.s3.ap-northeast-1.amazonaws.com",
+        "bucket": "vivopic",
+        "region": "ap-northeast-1",
+        "status": 200,
+        "access": "public",
+        "timestamp": "2025-11-18T00:24:56.661881"
+      },
+      {
+        "url": "https://vivo-dev.s3.eu-west-1.amazonaws.com",
+        "bucket": "vivo-dev",
+        "region": "eu-west-1",
+        "status": 200,
+        "access": "public",
+        "timestamp": "2025-11-18T00:48:42.802401"
+      },
+      {
         "url": "https://upworkvideos.s3.us-east-2.amazonaws.com",
         "bucket": "upworkvideos",
         "region": "us-east-2",
@@ -1170,14 +1258,6 @@
         "timestamp": "2025-11-18T01:21:32.037226+00:00"
       },
       {
-        "url": "https://vivo-public.s3.us-east-1.amazonaws.com",
-        "bucket": "vivo-public",
-        "region": "us-east-1",
-        "status": 200,
-        "access": "public",
-        "timestamp": "2025-11-18T01:21:32.059447+00:00"
-      },
-      {
         "url": "https://lbc-videos.s3.us-west-2.amazonaws.com",
         "bucket": "lbc-videos",
         "region": "us-west-2",
@@ -1736,14 +1816,6 @@
         "status": 200,
         "access": "public",
         "timestamp": "2025-11-18T01:21:33.063483+00:00"
-      },
-      {
-        "url": "https://vivo-dev.s3.eu-west-1.amazonaws.com",
-        "bucket": "vivo-dev",
-        "region": "eu-west-1",
-        "status": 200,
-        "access": "public",
-        "timestamp": "2025-11-18T01:21:33.096077+00:00"
       },
       {
         "url": "https://site-mail.s3.eu-west-1.amazonaws.com",
@@ -2442,14 +2514,6 @@
         "timestamp": "2025-11-18T01:21:34.797322+00:00"
       },
       {
-        "url": "https://s3.us-east-1.amazonaws.com/viator.docs",
-        "bucket": "viator.docs",
-        "region": "us-east-1",
-        "status": 200,
-        "access": "public",
-        "timestamp": "2025-11-18T01:21:34.826906+00:00"
-      },
-      {
         "url": "https://asia-cdn.s3.ap-southeast-1.amazonaws.com",
         "bucket": "asia-cdn",
         "region": "ap-southeast-1",
@@ -2660,16 +2724,18 @@
     ],
     "private": []
   },
-  "generated_at": "2025-11-18T01:21:35.915924+00:00",
-  "validated_at": "2025-11-18T01:21:35.915940+00:00",
+  "generated_at": "2025-11-18T01:50:09.706661+00:00",
+  "source_files": 5,
+  "domains_scanned": 4,
+  "total_chunks": 5,
   "file_index": 0,
   "total_files": 1,
   "stats": {
-    "public_buckets_in_file": 332,
+    "public_buckets_in_file": 340,
     "private_buckets_in_file": 0,
-    "total_buckets_in_file": 332,
-    "total_public_buckets": 332,
+    "total_buckets_in_file": 340,
+    "total_public_buckets": 340,
     "total_private_buckets": 0,
-    "total_buckets": 332
+    "total_buckets": 340
   }
 }
