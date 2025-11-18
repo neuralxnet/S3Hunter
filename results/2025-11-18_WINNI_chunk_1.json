@@ -1,0 +1,15 @@
+{
+  "chunk_id": 1,
+  "domain": "WINNI",
+  "date": "2025-11-18",
+  "timestamp": "2025-11-18T09:13:21.009560",
+  "results": {
+    "public": [],
+    "private": []
+  },
+  "stats": {
+    "total_checked": 361323,
+    "public_found": 0,
+    "private_found": 0
+  }
+}
