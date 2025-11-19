@@ -1,0 +1,15 @@
+{
+  "chunk_id": 1,
+  "domain": "XT",
+  "date": "2025-11-19",
+  "timestamp": "2025-11-19T22:25:23.172300",
+  "results": {
+    "public": [],
+    "private": []
+  },
+  "stats": {
+    "total_checked": 361323,
+    "public_found": 0,
+    "private_found": 0
+  }
+}
