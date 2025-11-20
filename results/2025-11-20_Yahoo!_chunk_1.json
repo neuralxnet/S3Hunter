@@ -1,0 +1,15 @@
+{
+  "chunk_id": 1,
+  "domain": "Yahoo!",
+  "date": "2025-11-20",
+  "timestamp": "2025-11-20T08:06:49.939719",
+  "results": {
+    "public": [],
+    "private": []
+  },
+  "stats": {
+    "total_checked": 361323,
+    "public_found": 0,
+    "private_found": 0
+  }
+}
