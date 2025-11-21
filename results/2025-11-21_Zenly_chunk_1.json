@@ -1,0 +1,24 @@
+{
+  "chunk_id": 1,
+  "domain": "Zenly",
+  "date": "2025-11-21",
+  "timestamp": "2025-11-21T19:42:04.304531",
+  "results": {
+    "public": [
+      {
+        "url": "https://zenly-api.s3.ap-southeast-2.amazonaws.com",
+        "bucket": "zenly-api",
+        "region": "ap-southeast-2",
+        "status": 200,
+        "access": "public",
+        "timestamp": "2025-11-21T18:50:39.238939"
+      }
+    ],
+    "private": []
+  },
+  "stats": {
+    "total_checked": 361323,
+    "public_found": 1,
+    "private_found": 0
+  }
+}
