@@ -1,0 +1,40 @@
+{
+  "chunk_id": 1,
+  "domain": "Zapier",
+  "date": "2025-11-21",
+  "timestamp": "2025-11-21T12:31:58.869763",
+  "results": {
+    "public": [
+      {
+        "url": "https://zapiericons.s3.us-east-1.amazonaws.com",
+        "bucket": "zapiericons",
+        "region": "us-east-1",
+        "status": 200,
+        "access": "public",
+        "timestamp": "2025-11-21T10:40:20.391182"
+      },
+      {
+        "url": "https://zapier-docs.s3.ap-southeast-2.amazonaws.com",
+        "bucket": "zapier-docs",
+        "region": "ap-southeast-2",
+        "status": 200,
+        "access": "public",
+        "timestamp": "2025-11-21T11:33:38.660559"
+      },
+      {
+        "url": "https://zapier-logos.s3.us-east-1.amazonaws.com",
+        "bucket": "zapier-logos",
+        "region": "us-east-1",
+        "status": 200,
+        "access": "public",
+        "timestamp": "2025-11-21T12:13:05.085867"
+      }
+    ],
+    "private": []
+  },
+  "stats": {
+    "total_checked": 361323,
+    "public_found": 3,
+    "private_found": 0
+  }
+}
