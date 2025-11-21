@@ -2,7 +2,7 @@
   "chunk_id": 1,
   "domain": "Yatra",
   "date": "2025-11-20",
-  "timestamp": "2025-11-20T19:38:35.983808",
+  "timestamp": "2025-11-20T20:31:42.456073",
   "results": {
     "public": [
       {
@@ -11,7 +11,7 @@
         "region": "ap-south-1",
         "status": 200,
         "access": "public",
-        "timestamp": "2025-11-20T18:01:29.271639"
+        "timestamp": "2025-11-20T18:23:47.838112"
       }
     ],
     "private": []
