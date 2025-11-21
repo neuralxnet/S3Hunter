@@ -2,6 +2,46 @@
   "buckets": {
     "public": [
       {
+        "url": "https://yatra-bucket.s3.ap-south-1.amazonaws.com",
+        "bucket": "yatra-bucket",
+        "region": "ap-south-1",
+        "status": 200,
+        "access": "public",
+        "timestamp": "2025-11-20T18:23:47.838112"
+      },
+      {
+        "url": "https://s3.us-east-2.amazonaws.com/yelp.wiki",
+        "bucket": "yelp.wiki",
+        "region": "us-east-2",
+        "status": 200,
+        "access": "public",
+        "timestamp": "2025-11-20T21:33:20.438632"
+      },
+      {
+        "url": "https://yelpdemo2.s3.us-east-1.amazonaws.com",
+        "bucket": "yelpdemo2",
+        "region": "us-east-1",
+        "status": 200,
+        "access": "public",
+        "timestamp": "2025-11-20T22:15:40.281573"
+      },
+      {
+        "url": "https://yelp-food.s3.eu-west-2.amazonaws.com",
+        "bucket": "yelp-food",
+        "region": "eu-west-2",
+        "status": 200,
+        "access": "public",
+        "timestamp": "2025-11-20T22:46:20.847403"
+      },
+      {
+        "url": "https://yelpstorage.s3.us-east-1.amazonaws.com",
+        "bucket": "yelpstorage",
+        "region": "us-east-1",
+        "status": 200,
+        "access": "public",
+        "timestamp": "2025-11-20T23:13:03.826755"
+      },
+      {
         "url": "https://wiseone.s3.us-east-1.amazonaws.com",
         "bucket": "wiseone",
         "region": "us-east-1",
@@ -2794,14 +2834,6 @@
         "timestamp": "2025-11-21T01:20:47.306512+00:00"
       },
       {
-        "url": "https://yatra-bucket.s3.ap-south-1.amazonaws.com",
-        "bucket": "yatra-bucket",
-        "region": "ap-south-1",
-        "status": 200,
-        "access": "public",
-        "timestamp": "2025-11-21T01:20:47.322933+00:00"
-      },
-      {
         "url": "https://media-data.s3.ap-south-1.amazonaws.com",
         "bucket": "media-data",
         "region": "ap-south-1",
@@ -2844,16 +2876,18 @@
     ],
     "private": []
   },
-  "generated_at": "2025-11-21T01:20:47.484692+00:00",
-  "validated_at": "2025-11-21T01:20:47.484712+00:00",
+  "generated_at": "2025-11-21T01:49:50.240149+00:00",
+  "source_files": 5,
+  "domains_scanned": 4,
+  "total_chunks": 5,
   "file_index": 0,
   "total_files": 1,
   "stats": {
-    "public_buckets_in_file": 355,
+    "public_buckets_in_file": 359,
     "private_buckets_in_file": 0,
-    "total_buckets_in_file": 355,
-    "total_public_buckets": 355,
+    "total_buckets_in_file": 359,
+    "total_public_buckets": 359,
     "total_private_buckets": 0,
-    "total_buckets": 355
+    "total_buckets": 359
   }
 }
