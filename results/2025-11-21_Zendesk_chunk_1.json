@@ -1,0 +1,48 @@
+{
+  "chunk_id": 1,
+  "domain": "Zendesk",
+  "date": "2025-11-21",
+  "timestamp": "2025-11-21T14:27:21.137082",
+  "results": {
+    "public": [
+      {
+        "url": "https://zendesk-application.s3.us-east-1.amazonaws.com",
+        "bucket": "zendesk-application",
+        "region": "us-east-1",
+        "status": 200,
+        "access": "public",
+        "timestamp": "2025-11-21T11:30:42.687802"
+      },
+      {
+        "url": "https://zendesk-cc.s3.us-east-1.amazonaws.com",
+        "bucket": "zendesk-cc",
+        "region": "us-east-1",
+        "status": 200,
+        "access": "public",
+        "timestamp": "2025-11-21T11:46:08.462007"
+      },
+      {
+        "url": "https://wpzendesk.s3.eu-west-1.amazonaws.com",
+        "bucket": "wpzendesk",
+        "region": "eu-west-1",
+        "status": 200,
+        "access": "public",
+        "timestamp": "2025-11-21T12:47:30.987806"
+      },
+      {
+        "url": "https://zendeskapp.s3.sa-east-1.amazonaws.com",
+        "bucket": "zendeskapp",
+        "region": "sa-east-1",
+        "status": 200,
+        "access": "public",
+        "timestamp": "2025-11-21T14:04:34.885055"
+      }
+    ],
+    "private": []
+  },
+  "stats": {
+    "total_checked": 361323,
+    "public_found": 4,
+    "private_found": 0
+  }
+}
