@@ -2872,22 +2872,46 @@
         "status": 200,
         "access": "public",
         "timestamp": "2025-11-21T01:20:47.478427+00:00"
+      },
+      {
+        "url": "https://zapiericons.s3.us-east-1.amazonaws.com",
+        "bucket": "zapiericons",
+        "region": "us-east-1",
+        "status": 200,
+        "access": "public",
+        "timestamp": "2025-11-21T10:40:20.391182"
+      },
+      {
+        "url": "https://zapier-docs.s3.ap-southeast-2.amazonaws.com",
+        "bucket": "zapier-docs",
+        "region": "ap-southeast-2",
+        "status": 200,
+        "access": "public",
+        "timestamp": "2025-11-21T11:33:38.660559"
+      },
+      {
+        "url": "https://zapier-logos.s3.us-east-1.amazonaws.com",
+        "bucket": "zapier-logos",
+        "region": "us-east-1",
+        "status": 200,
+        "access": "public",
+        "timestamp": "2025-11-21T12:13:05.085867"
       }
     ],
     "private": []
   },
-  "generated_at": "2025-11-21T01:49:50.240149+00:00",
-  "source_files": 5,
-  "domains_scanned": 4,
-  "total_chunks": 5,
+  "generated_at": "2025-11-21T12:47:13.020254+00:00",
+  "source_files": 3,
+  "domains_scanned": 3,
+  "total_chunks": 3,
   "file_index": 0,
   "total_files": 1,
   "stats": {
-    "public_buckets_in_file": 359,
+    "public_buckets_in_file": 362,
     "private_buckets_in_file": 0,
-    "total_buckets_in_file": 359,
-    "total_public_buckets": 359,
+    "total_buckets_in_file": 362,
+    "total_public_buckets": 362,
     "total_private_buckets": 0,
-    "total_buckets": 359
+    "total_buckets": 362
   }
 }
