@@ -1,0 +1,48 @@
+{
+  "chunk_id": 1,
+  "domain": "Yelp",
+  "date": "2025-11-21",
+  "timestamp": "2025-11-21T00:09:57.566473",
+  "results": {
+    "public": [
+      {
+        "url": "https://yelpstorage.s3.us-east-1.amazonaws.com",
+        "bucket": "yelpstorage",
+        "region": "us-east-1",
+        "status": 200,
+        "access": "public",
+        "timestamp": "2025-11-20T20:42:15.314693"
+      },
+      {
+        "url": "https://yelp-food.s3.eu-west-2.amazonaws.com",
+        "bucket": "yelp-food",
+        "region": "eu-west-2",
+        "status": 200,
+        "access": "public",
+        "timestamp": "2025-11-20T22:30:18.479562"
+      },
+      {
+        "url": "https://yelpdemo2.s3.us-east-1.amazonaws.com",
+        "bucket": "yelpdemo2",
+        "region": "us-east-1",
+        "status": 200,
+        "access": "public",
+        "timestamp": "2025-11-21T00:02:08.683418"
+      },
+      {
+        "url": "https://s3.us-east-2.amazonaws.com/yelp.wiki",
+        "bucket": "yelp.wiki",
+        "region": "us-east-2",
+        "status": 200,
+        "access": "public",
+        "timestamp": "2025-11-21T00:08:02.193626"
+      }
+    ],
+    "private": []
+  },
+  "stats": {
+    "total_checked": 361323,
+    "public_found": 4,
+    "private_found": 0
+  }
+}
