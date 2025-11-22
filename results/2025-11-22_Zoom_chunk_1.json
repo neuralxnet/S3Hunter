@@ -2,7 +2,7 @@
   "chunk_id": 1,
   "domain": "Zoom",
   "date": "2025-11-22",
-  "timestamp": "2025-11-22T17:35:06.226921",
+  "timestamp": "2025-11-22T20:25:23.413636",
   "results": {
     "public": [
       {
@@ -11,31 +11,7 @@
         "region": "eu-central-1",
         "status": 200,
         "access": "public",
-        "timestamp": "2025-11-22T14:19:17.704591"
-      },
-      {
-        "url": "https://zoomdirectory.s3.us-east-1.amazonaws.com",
-        "bucket": "zoomdirectory",
-        "region": "us-east-1",
-        "status": 200,
-        "access": "public",
-        "timestamp": "2025-11-22T14:33:19.622036"
-      },
-      {
-        "url": "https://bgzoom.s3.eu-central-1.amazonaws.com",
-        "bucket": "bgzoom",
-        "region": "eu-central-1",
-        "status": 200,
-        "access": "public",
-        "timestamp": "2025-11-22T14:51:09.479058"
-      },
-      {
-        "url": "https://zoomweb.s3.us-east-1.amazonaws.com",
-        "bucket": "zoomweb",
-        "region": "us-east-1",
-        "status": 200,
-        "access": "public",
-        "timestamp": "2025-11-22T14:51:16.796857"
+        "timestamp": "2025-11-22T17:15:40.806954"
       },
       {
         "url": "https://zoom-uk.s3.us-east-1.amazonaws.com",
@@ -43,47 +19,15 @@
         "region": "us-east-1",
         "status": 200,
         "access": "public",
-        "timestamp": "2025-11-22T14:51:51.850997"
+        "timestamp": "2025-11-22T17:35:16.301123"
       },
       {
-        "url": "https://zoomd.s3.us-east-2.amazonaws.com",
-        "bucket": "zoomd",
-        "region": "us-east-2",
-        "status": 200,
-        "access": "public",
-        "timestamp": "2025-11-22T15:50:30.640968"
-      },
-      {
-        "url": "https://zoom-web.s3.ap-south-1.amazonaws.com",
-        "bucket": "zoom-web",
-        "region": "ap-south-1",
-        "status": 200,
-        "access": "public",
-        "timestamp": "2025-11-22T15:59:58.252166"
-      },
-      {
-        "url": "https://zoomout.s3.eu-west-1.amazonaws.com",
-        "bucket": "zoomout",
-        "region": "eu-west-1",
-        "status": 200,
-        "access": "public",
-        "timestamp": "2025-11-22T16:05:49.124803"
-      },
-      {
-        "url": "https://zoomus.s3.us-east-1.amazonaws.com",
-        "bucket": "zoomus",
+        "url": "https://zoomdirectory.s3.us-east-1.amazonaws.com",
+        "bucket": "zoomdirectory",
         "region": "us-east-1",
         "status": 200,
         "access": "public",
-        "timestamp": "2025-11-22T16:16:41.566761"
-      },
-      {
-        "url": "https://zoomusa.s3.us-east-1.amazonaws.com",
-        "bucket": "zoomusa",
-        "region": "us-east-1",
-        "status": 200,
-        "access": "public",
-        "timestamp": "2025-11-22T16:31:35.911746"
+        "timestamp": "2025-11-22T17:38:27.447211"
       },
       {
         "url": "https://zoomtutorial.s3.eu-west-1.amazonaws.com",
@@ -91,15 +35,7 @@
         "region": "eu-west-1",
         "status": 200,
         "access": "public",
-        "timestamp": "2025-11-22T16:33:31.199541"
-      },
-      {
-        "url": "https://zoom-staging.s3.us-east-1.amazonaws.com",
-        "bucket": "zoom-staging",
-        "region": "us-east-1",
-        "status": 200,
-        "access": "public",
-        "timestamp": "2025-11-22T16:51:19.687904"
+        "timestamp": "2025-11-22T18:08:23.409364"
       },
       {
         "url": "https://zoom-genius.s3.sa-east-1.amazonaws.com",
@@ -107,7 +43,31 @@
         "region": "sa-east-1",
         "status": 200,
         "access": "public",
-        "timestamp": "2025-11-22T17:04:34.448273"
+        "timestamp": "2025-11-22T18:17:37.813065"
+      },
+      {
+        "url": "https://zoomweb.s3.us-east-1.amazonaws.com",
+        "bucket": "zoomweb",
+        "region": "us-east-1",
+        "status": 200,
+        "access": "public",
+        "timestamp": "2025-11-22T18:19:51.596418"
+      },
+      {
+        "url": "https://zoomd.s3.us-east-2.amazonaws.com",
+        "bucket": "zoomd",
+        "region": "us-east-2",
+        "status": 200,
+        "access": "public",
+        "timestamp": "2025-11-22T18:33:57.910727"
+      },
+      {
+        "url": "https://zoomusa.s3.us-east-1.amazonaws.com",
+        "bucket": "zoomusa",
+        "region": "us-east-1",
+        "status": 200,
+        "access": "public",
+        "timestamp": "2025-11-22T19:08:02.114375"
       },
       {
         "url": "https://zoom-us.s3.us-east-1.amazonaws.com",
@@ -115,23 +75,15 @@
         "region": "us-east-1",
         "status": 200,
         "access": "public",
-        "timestamp": "2025-11-22T17:06:01.853496"
+        "timestamp": "2025-11-22T19:14:09.049784"
       },
       {
-        "url": "https://clientzoom.s3.us-west-2.amazonaws.com",
-        "bucket": "clientzoom",
-        "region": "us-west-2",
+        "url": "https://zoom-web.s3.ap-south-1.amazonaws.com",
+        "bucket": "zoom-web",
+        "region": "ap-south-1",
         "status": 200,
         "access": "public",
-        "timestamp": "2025-11-22T17:08:46.791958"
-      },
-      {
-        "url": "https://zoom-video.s3.ap-northeast-2.amazonaws.com",
-        "bucket": "zoom-video",
-        "region": "ap-northeast-2",
-        "status": 200,
-        "access": "public",
-        "timestamp": "2025-11-22T17:13:42.091089"
+        "timestamp": "2025-11-22T19:39:01.079954"
       },
       {
         "url": "https://zoommaster.s3.ca-central-1.amazonaws.com",
@@ -139,7 +91,55 @@
         "region": "ca-central-1",
         "status": 200,
         "access": "public",
-        "timestamp": "2025-11-22T17:18:04.654267"
+        "timestamp": "2025-11-22T19:39:50.067774"
+      },
+      {
+        "url": "https://zoom-staging.s3.us-east-1.amazonaws.com",
+        "bucket": "zoom-staging",
+        "region": "us-east-1",
+        "status": 200,
+        "access": "public",
+        "timestamp": "2025-11-22T19:40:31.679425"
+      },
+      {
+        "url": "https://zoom-video.s3.ap-northeast-2.amazonaws.com",
+        "bucket": "zoom-video",
+        "region": "ap-northeast-2",
+        "status": 200,
+        "access": "public",
+        "timestamp": "2025-11-22T19:50:49.881403"
+      },
+      {
+        "url": "https://clientzoom.s3.us-west-2.amazonaws.com",
+        "bucket": "clientzoom",
+        "region": "us-west-2",
+        "status": 200,
+        "access": "public",
+        "timestamp": "2025-11-22T19:53:19.845993"
+      },
+      {
+        "url": "https://zoomout.s3.eu-west-1.amazonaws.com",
+        "bucket": "zoomout",
+        "region": "eu-west-1",
+        "status": 200,
+        "access": "public",
+        "timestamp": "2025-11-22T19:57:55.479581"
+      },
+      {
+        "url": "https://zoomus.s3.us-east-1.amazonaws.com",
+        "bucket": "zoomus",
+        "region": "us-east-1",
+        "status": 200,
+        "access": "public",
+        "timestamp": "2025-11-22T20:10:57.956015"
+      },
+      {
+        "url": "https://bgzoom.s3.eu-central-1.amazonaws.com",
+        "bucket": "bgzoom",
+        "region": "eu-central-1",
+        "status": 200,
+        "access": "public",
+        "timestamp": "2025-11-22T20:22:44.175274"
       }
     ],
     "private": []
