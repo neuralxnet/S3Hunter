@@ -1,0 +1,64 @@
+{
+  "chunk_id": 1,
+  "domain": "Zoho",
+  "date": "2025-11-22",
+  "timestamp": "2025-11-22T12:17:00.231330",
+  "results": {
+    "public": [
+      {
+        "url": "https://zohovideos.s3.us-east-1.amazonaws.com",
+        "bucket": "zohovideos",
+        "region": "us-east-1",
+        "status": 200,
+        "access": "public",
+        "timestamp": "2025-11-22T08:26:14.462387"
+      },
+      {
+        "url": "https://zoho-app.s3.eu-west-1.amazonaws.com",
+        "bucket": "zoho-app",
+        "region": "eu-west-1",
+        "status": 200,
+        "access": "public",
+        "timestamp": "2025-11-22T08:52:51.766422"
+      },
+      {
+        "url": "https://zohoone.s3.eu-west-2.amazonaws.com",
+        "bucket": "zohoone",
+        "region": "eu-west-2",
+        "status": 200,
+        "access": "public",
+        "timestamp": "2025-11-22T09:13:46.470231"
+      },
+      {
+        "url": "https://zohobucket2.s3.us-east-1.amazonaws.com",
+        "bucket": "zohobucket2",
+        "region": "us-east-1",
+        "status": 200,
+        "access": "public",
+        "timestamp": "2025-11-22T10:11:46.236913"
+      },
+      {
+        "url": "https://pro-zoho.s3.us-west-2.amazonaws.com",
+        "bucket": "pro-zoho",
+        "region": "us-west-2",
+        "status": 200,
+        "access": "public",
+        "timestamp": "2025-11-22T11:22:59.017560"
+      },
+      {
+        "url": "https://zohoacademy.s3.eu-west-2.amazonaws.com",
+        "bucket": "zohoacademy",
+        "region": "eu-west-2",
+        "status": 200,
+        "access": "public",
+        "timestamp": "2025-11-22T11:29:52.205726"
+      }
+    ],
+    "private": []
+  },
+  "stats": {
+    "total_checked": 361323,
+    "public_found": 6,
+    "private_found": 0
+  }
+}
