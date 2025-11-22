@@ -1,17 +1,17 @@
 {
   "chunk_id": 1,
-  "domain": "Zenly",
+  "domain": "Zerodha",
   "date": "2025-11-21",
-  "timestamp": "2025-11-21T21:38:15.981141",
+  "timestamp": "2025-11-21T23:34:17.917569",
   "results": {
     "public": [
       {
-        "url": "https://zenly-api.s3.ap-southeast-2.amazonaws.com",
-        "bucket": "zenly-api",
-        "region": "ap-southeast-2",
+        "url": "https://s3.ap-south-1.amazonaws.com/zerodha.trade",
+        "bucket": "zerodha.trade",
+        "region": "ap-south-1",
         "status": 200,
         "access": "public",
-        "timestamp": "2025-11-21T18:40:09.372303"
+        "timestamp": "2025-11-21T20:55:46.543836"
       }
     ],
     "private": []
