@@ -2,6 +2,78 @@
   "buckets": {
     "public": [
       {
+        "url": "https://zapiericons.s3.us-east-1.amazonaws.com",
+        "bucket": "zapiericons",
+        "region": "us-east-1",
+        "status": 200,
+        "access": "public",
+        "timestamp": "2025-11-21T10:40:11.295868"
+      },
+      {
+        "url": "https://zapier-docs.s3.ap-southeast-2.amazonaws.com",
+        "bucket": "zapier-docs",
+        "region": "ap-southeast-2",
+        "status": 200,
+        "access": "public",
+        "timestamp": "2025-11-21T12:02:27.511084"
+      },
+      {
+        "url": "https://zapier-logos.s3.us-east-1.amazonaws.com",
+        "bucket": "zapier-logos",
+        "region": "us-east-1",
+        "status": 200,
+        "access": "public",
+        "timestamp": "2025-11-21T13:33:07.488169"
+      },
+      {
+        "url": "https://zendesk-cc.s3.us-east-1.amazonaws.com",
+        "bucket": "zendesk-cc",
+        "region": "us-east-1",
+        "status": 200,
+        "access": "public",
+        "timestamp": "2025-11-21T15:13:24.317878"
+      },
+      {
+        "url": "https://wpzendesk.s3.eu-west-1.amazonaws.com",
+        "bucket": "wpzendesk",
+        "region": "eu-west-1",
+        "status": 200,
+        "access": "public",
+        "timestamp": "2025-11-21T16:12:18.982550"
+      },
+      {
+        "url": "https://zendeskapp.s3.sa-east-1.amazonaws.com",
+        "bucket": "zendeskapp",
+        "region": "sa-east-1",
+        "status": 200,
+        "access": "public",
+        "timestamp": "2025-11-21T17:01:55.958394"
+      },
+      {
+        "url": "https://zendesk-application.s3.us-east-1.amazonaws.com",
+        "bucket": "zendesk-application",
+        "region": "us-east-1",
+        "status": 200,
+        "access": "public",
+        "timestamp": "2025-11-21T17:03:41.038707"
+      },
+      {
+        "url": "https://zenly-api.s3.ap-southeast-2.amazonaws.com",
+        "bucket": "zenly-api",
+        "region": "ap-southeast-2",
+        "status": 200,
+        "access": "public",
+        "timestamp": "2025-11-21T18:40:09.372303"
+      },
+      {
+        "url": "https://s3.ap-south-1.amazonaws.com/zerodha.trade",
+        "bucket": "zerodha.trade",
+        "region": "ap-south-1",
+        "status": 200,
+        "access": "public",
+        "timestamp": "2025-11-22T00:49:12.240600"
+      },
+      {
         "url": "https://s3.us-east-1.amazonaws.com/viator.docs",
         "bucket": "viator.docs",
         "region": "us-east-1",
@@ -2650,14 +2722,6 @@
         "timestamp": "2025-11-22T01:18:18.961964+00:00"
       },
       {
-        "url": "https://zapiericons.s3.us-east-1.amazonaws.com",
-        "bucket": "zapiericons",
-        "region": "us-east-1",
-        "status": 200,
-        "access": "public",
-        "timestamp": "2025-11-22T01:18:19.013405+00:00"
-      },
-      {
         "url": "https://unikrn-demo.s3.ap-southeast-2.amazonaws.com",
         "bucket": "unikrn-demo",
         "region": "ap-southeast-2",
@@ -2672,14 +2736,6 @@
         "status": 200,
         "access": "public",
         "timestamp": "2025-11-22T01:18:19.133950+00:00"
-      },
-      {
-        "url": "https://zapier-logos.s3.us-east-1.amazonaws.com",
-        "bucket": "zapier-logos",
-        "region": "us-east-1",
-        "status": 200,
-        "access": "public",
-        "timestamp": "2025-11-22T01:18:19.182695+00:00"
       },
       {
         "url": "https://facebook-blog.s3.ap-southeast-1.amazonaws.com",
@@ -2888,28 +2944,22 @@
         "status": 200,
         "access": "public",
         "timestamp": "2025-11-22T01:18:19.644573+00:00"
-      },
-      {
-        "url": "https://zapier-docs.s3.ap-southeast-2.amazonaws.com",
-        "bucket": "zapier-docs",
-        "region": "ap-southeast-2",
-        "status": 200,
-        "access": "public",
-        "timestamp": "2025-11-22T01:18:19.705754+00:00"
       }
     ],
     "private": []
   },
-  "generated_at": "2025-11-22T01:18:19.711940+00:00",
-  "validated_at": "2025-11-22T01:18:19.711955+00:00",
+  "generated_at": "2025-11-22T01:46:04.836304+00:00",
+  "source_files": 5,
+  "domains_scanned": 4,
+  "total_chunks": 5,
   "file_index": 0,
   "total_files": 1,
   "stats": {
-    "public_buckets_in_file": 362,
+    "public_buckets_in_file": 368,
     "private_buckets_in_file": 0,
-    "total_buckets_in_file": 362,
-    "total_public_buckets": 362,
+    "total_buckets_in_file": 368,
+    "total_public_buckets": 368,
     "total_private_buckets": 0,
-    "total_buckets": 362
+    "total_buckets": 368
   }
 }
