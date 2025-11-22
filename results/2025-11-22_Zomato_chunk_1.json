@@ -1,0 +1,24 @@
+{
+  "chunk_id": 1,
+  "domain": "Zomato",
+  "date": "2025-11-22",
+  "timestamp": "2025-11-22T14:29:45.843697",
+  "results": {
+    "public": [
+      {
+        "url": "https://zomato-api.s3.ap-southeast-1.amazonaws.com",
+        "bucket": "zomato-api",
+        "region": "ap-southeast-1",
+        "status": 200,
+        "access": "public",
+        "timestamp": "2025-11-22T11:31:52.639298"
+      }
+    ],
+    "private": []
+  },
+  "stats": {
+    "total_checked": 361323,
+    "public_found": 1,
+    "private_found": 0
+  }
+}
