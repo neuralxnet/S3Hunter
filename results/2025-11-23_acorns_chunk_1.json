@@ -1,0 +1,32 @@
+{
+  "chunk_id": 1,
+  "domain": "acorns",
+  "date": "2025-11-23",
+  "timestamp": "2025-11-23T06:38:50.654129",
+  "results": {
+    "public": [
+      {
+        "url": "https://red-acorns.s3.ap-southeast-2.amazonaws.com",
+        "bucket": "red-acorns",
+        "region": "ap-southeast-2",
+        "status": 200,
+        "access": "public",
+        "timestamp": "2025-11-23T03:29:22.026799"
+      },
+      {
+        "url": "https://acornstest.s3.us-west-1.amazonaws.com",
+        "bucket": "acornstest",
+        "region": "us-west-1",
+        "status": 200,
+        "access": "public",
+        "timestamp": "2025-11-23T04:39:16.164311"
+      }
+    ],
+    "private": []
+  },
+  "stats": {
+    "total_checked": 361323,
+    "public_found": 2,
+    "private_found": 0
+  }
+}
