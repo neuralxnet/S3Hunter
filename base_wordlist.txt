@@ -3011,6 +3011,8 @@ teslamotors
 teslamotors.com
 test-socrata
 test-socrata.com
+tgoyemek
+tgoyemek.com
 thefacebook
 thefacebook.com
 thenodbuysblack
@@ -3089,6 +3091,8 @@ trello
 trello.com
 trello.services
 trendyol
+trendyol-milla
+trendyol-milla.com
 trendyol.com
 trustpilot
 trustpilot.com
