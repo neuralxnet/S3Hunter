@@ -1,0 +1,15 @@
+{
+  "chunk_id": 1,
+  "domain": "acronis.work",
+  "date": "2025-11-23",
+  "timestamp": "2025-11-23T23:34:18.089956",
+  "results": {
+    "public": [],
+    "private": []
+  },
+  "stats": {
+    "total_checked": 361323,
+    "public_found": 0,
+    "private_found": 0
+  }
+}
