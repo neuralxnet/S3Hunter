@@ -2,7 +2,7 @@
   "chunk_id": 1,
   "domain": "acorns",
   "date": "2025-11-23",
-  "timestamp": "2025-11-23T06:38:50.654129",
+  "timestamp": "2025-11-23T07:38:28.531123",
   "results": {
     "public": [
       {
@@ -11,7 +11,7 @@
         "region": "ap-southeast-2",
         "status": 200,
         "access": "public",
-        "timestamp": "2025-11-23T03:29:22.026799"
+        "timestamp": "2025-11-23T05:32:12.814877"
       },
       {
         "url": "https://acornstest.s3.us-west-1.amazonaws.com",
@@ -19,7 +19,7 @@
         "region": "us-west-1",
         "status": 200,
         "access": "public",
-        "timestamp": "2025-11-23T04:39:16.164311"
+        "timestamp": "2025-11-23T06:59:36.101600"
       }
     ],
     "private": []
