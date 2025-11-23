@@ -1,0 +1,32 @@
+{
+  "chunk_id": 1,
+  "domain": "acronis",
+  "date": "2025-11-23",
+  "timestamp": "2025-11-23T13:32:22.540394",
+  "results": {
+    "public": [
+      {
+        "url": "https://s3.eu-central-1.amazonaws.com/acronis.1",
+        "bucket": "acronis.1",
+        "region": "eu-central-1",
+        "status": 200,
+        "access": "public",
+        "timestamp": "2025-11-23T12:40:42.397216"
+      },
+      {
+        "url": "https://bucketacronis.s3.us-east-2.amazonaws.com",
+        "bucket": "bucketacronis",
+        "region": "us-east-2",
+        "status": 200,
+        "access": "public",
+        "timestamp": "2025-11-23T13:24:24.087629"
+      }
+    ],
+    "private": []
+  },
+  "stats": {
+    "total_checked": 361323,
+    "public_found": 2,
+    "private_found": 0
+  }
+}
