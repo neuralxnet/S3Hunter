@@ -1,0 +1,24 @@
+{
+  "chunk_id": 1,
+  "domain": "adafruit",
+  "date": "2025-11-24",
+  "timestamp": "2025-11-24T02:32:57.978151",
+  "results": {
+    "public": [
+      {
+        "url": "https://adafruit-ar.s3.us-east-1.amazonaws.com",
+        "bucket": "adafruit-ar",
+        "region": "us-east-1",
+        "status": 200,
+        "access": "public",
+        "timestamp": "2025-11-24T01:54:29.376505"
+      }
+    ],
+    "private": []
+  },
+  "stats": {
+    "total_checked": 361323,
+    "public_found": 1,
+    "private_found": 0
+  }
+}
