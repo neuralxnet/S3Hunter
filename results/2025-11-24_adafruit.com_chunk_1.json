@@ -1,0 +1,15 @@
+{
+  "chunk_id": 1,
+  "domain": "adafruit.com",
+  "date": "2025-11-24",
+  "timestamp": "2025-11-24T06:37:10.223949",
+  "results": {
+    "public": [],
+    "private": []
+  },
+  "stats": {
+    "total_checked": 361323,
+    "public_found": 0,
+    "private_found": 0
+  }
+}
