@@ -2,6 +2,38 @@
   "buckets": {
     "public": [
       {
+        "url": "https://airbnb-pictures.s3.us-west-1.amazonaws.com",
+        "bucket": "airbnb-pictures",
+        "region": "us-west-1",
+        "status": 200,
+        "access": "public",
+        "timestamp": "2025-11-25T22:37:42.117440"
+      },
+      {
+        "url": "https://airbnb-uploads.s3.eu-north-1.amazonaws.com",
+        "bucket": "airbnb-uploads",
+        "region": "eu-north-1",
+        "status": 200,
+        "access": "public",
+        "timestamp": "2025-11-26T00:34:18.822810"
+      },
+      {
+        "url": "https://s3.us-east-1.amazonaws.com/airbnb_clone",
+        "bucket": "airbnb_clone",
+        "region": "us-east-1",
+        "status": 200,
+        "access": "public",
+        "timestamp": "2025-11-26T00:48:02.181986"
+      },
+      {
+        "url": "https://alexairbnb.s3.us-east-1.amazonaws.com",
+        "bucket": "alexairbnb",
+        "region": "us-east-1",
+        "status": 200,
+        "access": "public",
+        "timestamp": "2025-11-26T00:55:43.629739"
+      },
+      {
         "url": "https://zendesk-application.s3.us-east-1.amazonaws.com",
         "bucket": "zendesk-application",
         "region": "us-east-1",
@@ -2514,14 +2546,6 @@
         "timestamp": "2025-11-26T01:21:59.993410+00:00"
       },
       {
-        "url": "https://airbnb-uploads.s3.eu-north-1.amazonaws.com",
-        "bucket": "airbnb-uploads",
-        "region": "eu-north-1",
-        "status": 200,
-        "access": "public",
-        "timestamp": "2025-11-26T01:21:59.997814+00:00"
-      },
-      {
         "url": "https://storage-website.s3.eu-west-3.amazonaws.com",
         "bucket": "storage-website",
         "region": "eu-west-3",
@@ -3128,20 +3152,30 @@
         "status": 200,
         "access": "public",
         "timestamp": "2025-11-26T01:22:01.777314+00:00"
+      },
+      {
+        "url": "https://airbnb-promo.s3.us-east-1.amazonaws.com",
+        "bucket": "airbnb-promo",
+        "region": "us-east-1",
+        "status": 200,
+        "access": "public",
+        "timestamp": "2025-11-26T01:25:40.152849"
       }
     ],
     "private": []
   },
-  "generated_at": "2025-11-26T01:22:01.783043+00:00",
-  "validated_at": "2025-11-26T01:22:01.783059+00:00",
+  "generated_at": "2025-11-26T01:51:53.495199+00:00",
+  "source_files": 5,
+  "domains_scanned": 4,
+  "total_chunks": 5,
   "file_index": 0,
   "total_files": 1,
   "stats": {
-    "public_buckets_in_file": 391,
+    "public_buckets_in_file": 395,
     "private_buckets_in_file": 0,
-    "total_buckets_in_file": 391,
-    "total_public_buckets": 391,
+    "total_buckets_in_file": 395,
+    "total_public_buckets": 395,
     "total_private_buckets": 0,
-    "total_buckets": 391
+    "total_buckets": 395
   }
 }
