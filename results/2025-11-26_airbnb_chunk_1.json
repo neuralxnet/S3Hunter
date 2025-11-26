@@ -1,0 +1,56 @@
+{
+  "chunk_id": 1,
+  "domain": "airbnb",
+  "date": "2025-11-26",
+  "timestamp": "2025-11-26T00:34:24.656958",
+  "results": {
+    "public": [
+      {
+        "url": "https://airbnb-pictures.s3.us-west-1.amazonaws.com",
+        "bucket": "airbnb-pictures",
+        "region": "us-west-1",
+        "status": 200,
+        "access": "public",
+        "timestamp": "2025-11-25T21:33:24.576784"
+      },
+      {
+        "url": "https://airbnb-uploads.s3.eu-north-1.amazonaws.com",
+        "bucket": "airbnb-uploads",
+        "region": "eu-north-1",
+        "status": 200,
+        "access": "public",
+        "timestamp": "2025-11-25T22:19:17.238997"
+      },
+      {
+        "url": "https://alexairbnb.s3.us-east-1.amazonaws.com",
+        "bucket": "alexairbnb",
+        "region": "us-east-1",
+        "status": 200,
+        "access": "public",
+        "timestamp": "2025-11-25T22:26:55.553633"
+      },
+      {
+        "url": "https://airbnb-promo.s3.us-east-1.amazonaws.com",
+        "bucket": "airbnb-promo",
+        "region": "us-east-1",
+        "status": 200,
+        "access": "public",
+        "timestamp": "2025-11-25T23:27:23.655282"
+      },
+      {
+        "url": "https://s3.us-east-1.amazonaws.com/airbnb_clone",
+        "bucket": "airbnb_clone",
+        "region": "us-east-1",
+        "status": 200,
+        "access": "public",
+        "timestamp": "2025-11-25T23:52:15.995070"
+      }
+    ],
+    "private": []
+  },
+  "stats": {
+    "total_checked": 361323,
+    "public_found": 5,
+    "private_found": 0
+  }
+}
