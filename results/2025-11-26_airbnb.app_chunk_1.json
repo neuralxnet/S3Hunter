@@ -1,0 +1,15 @@
+{
+  "chunk_id": 1,
+  "domain": "airbnb.app",
+  "date": "2025-11-26",
+  "timestamp": "2025-11-26T13:31:10.467956",
+  "results": {
+    "public": [],
+    "private": []
+  },
+  "stats": {
+    "total_checked": 361323,
+    "public_found": 0,
+    "private_found": 0
+  }
+}
