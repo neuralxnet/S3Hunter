@@ -1,0 +1,48 @@
+{
+  "chunk_id": 1,
+  "domain": "airtable",
+  "date": "2025-11-27",
+  "timestamp": "2025-11-27T04:34:15.142539",
+  "results": {
+    "public": [
+      {
+        "url": "https://airtabledata.s3.us-east-2.amazonaws.com",
+        "bucket": "airtabledata",
+        "region": "us-east-2",
+        "status": 200,
+        "access": "public",
+        "timestamp": "2025-11-27T01:40:25.238943"
+      },
+      {
+        "url": "https://airtable.s3.us-east-1.amazonaws.com",
+        "bucket": "airtable",
+        "region": "us-east-1",
+        "status": 200,
+        "access": "public",
+        "timestamp": "2025-11-27T02:42:41.244283"
+      },
+      {
+        "url": "https://logos-airtable.s3.eu-central-1.amazonaws.com",
+        "bucket": "logos-airtable",
+        "region": "eu-central-1",
+        "status": 200,
+        "access": "public",
+        "timestamp": "2025-11-27T02:55:45.557179"
+      },
+      {
+        "url": "https://airtableuploads.s3.us-east-2.amazonaws.com",
+        "bucket": "airtableuploads",
+        "region": "us-east-2",
+        "status": 200,
+        "access": "public",
+        "timestamp": "2025-11-27T04:00:28.381429"
+      }
+    ],
+    "private": []
+  },
+  "stats": {
+    "total_checked": 361323,
+    "public_found": 4,
+    "private_found": 0
+  }
+}
