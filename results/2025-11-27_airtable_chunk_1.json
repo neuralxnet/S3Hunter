@@ -2,7 +2,7 @@
   "chunk_id": 1,
   "domain": "airtable",
   "date": "2025-11-27",
-  "timestamp": "2025-11-27T06:21:44.361529",
+  "timestamp": "2025-11-27T07:32:56.898538",
   "results": {
     "public": [
       {
@@ -11,15 +11,7 @@
         "region": "us-east-1",
         "status": 200,
         "access": "public",
-        "timestamp": "2025-11-27T03:27:48.439355"
-      },
-      {
-        "url": "https://airtableuploads.s3.us-east-2.amazonaws.com",
-        "bucket": "airtableuploads",
-        "region": "us-east-2",
-        "status": 200,
-        "access": "public",
-        "timestamp": "2025-11-27T03:34:51.041425"
+        "timestamp": "2025-11-27T04:52:47.853571"
       },
       {
         "url": "https://airtabledata.s3.us-east-2.amazonaws.com",
@@ -27,7 +19,7 @@
         "region": "us-east-2",
         "status": 200,
         "access": "public",
-        "timestamp": "2025-11-27T04:19:32.732645"
+        "timestamp": "2025-11-27T05:56:58.741580"
       },
       {
         "url": "https://logos-airtable.s3.eu-central-1.amazonaws.com",
@@ -35,7 +27,15 @@
         "region": "eu-central-1",
         "status": 200,
         "access": "public",
-        "timestamp": "2025-11-27T04:24:55.921824"
+        "timestamp": "2025-11-27T06:41:11.589324"
+      },
+      {
+        "url": "https://airtableuploads.s3.us-east-2.amazonaws.com",
+        "bucket": "airtableuploads",
+        "region": "us-east-2",
+        "status": 200,
+        "access": "public",
+        "timestamp": "2025-11-27T06:43:51.273963"
       }
     ],
     "private": []
