@@ -298,14 +298,6 @@
         "timestamp": "2025-11-27T01:20:51.973891+00:00"
       },
       {
-        "url": "https://airtable.s3.us-east-1.amazonaws.com",
-        "bucket": "airtable",
-        "region": "us-east-1",
-        "status": 200,
-        "access": "public",
-        "timestamp": "2025-11-27T01:20:51.987256+00:00"
-      },
-      {
         "url": "https://old-vivo.s3.us-east-1.amazonaws.com",
         "bucket": "old-vivo",
         "region": "us-east-1",
@@ -3160,22 +3152,54 @@
         "status": 200,
         "access": "public",
         "timestamp": "2025-11-27T01:21:01.660181+00:00"
+      },
+      {
+        "url": "https://airtable.s3.us-east-1.amazonaws.com",
+        "bucket": "airtable",
+        "region": "us-east-1",
+        "status": 200,
+        "access": "public",
+        "timestamp": "2025-11-27T04:52:47.853571"
+      },
+      {
+        "url": "https://airtabledata.s3.us-east-2.amazonaws.com",
+        "bucket": "airtabledata",
+        "region": "us-east-2",
+        "status": 200,
+        "access": "public",
+        "timestamp": "2025-11-27T05:56:58.741580"
+      },
+      {
+        "url": "https://logos-airtable.s3.eu-central-1.amazonaws.com",
+        "bucket": "logos-airtable",
+        "region": "eu-central-1",
+        "status": 200,
+        "access": "public",
+        "timestamp": "2025-11-27T06:41:11.589324"
+      },
+      {
+        "url": "https://airtableuploads.s3.us-east-2.amazonaws.com",
+        "bucket": "airtableuploads",
+        "region": "us-east-2",
+        "status": 200,
+        "access": "public",
+        "timestamp": "2025-11-27T06:43:51.273963"
       }
     ],
     "private": []
   },
-  "generated_at": "2025-11-27T01:49:45.465926+00:00",
-  "source_files": 5,
+  "generated_at": "2025-11-27T12:50:27.866223+00:00",
+  "source_files": 4,
   "domains_scanned": 4,
-  "total_chunks": 5,
+  "total_chunks": 4,
   "file_index": 0,
   "total_files": 1,
   "stats": {
-    "public_buckets_in_file": 395,
+    "public_buckets_in_file": 398,
     "private_buckets_in_file": 0,
-    "total_buckets_in_file": 395,
-    "total_public_buckets": 395,
+    "total_buckets_in_file": 398,
+    "total_public_buckets": 398,
     "total_private_buckets": 0,
-    "total_buckets": 395
+    "total_buckets": 398
   }
 }
