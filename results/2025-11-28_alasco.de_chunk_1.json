@@ -1,0 +1,15 @@
+{
+  "chunk_id": 1,
+  "domain": "alasco.de",
+  "date": "2025-11-28",
+  "timestamp": "2025-11-28T10:30:43.808514",
+  "results": {
+    "public": [],
+    "private": []
+  },
+  "stats": {
+    "total_checked": 361323,
+    "public_found": 0,
+    "private_found": 0
+  }
+}
