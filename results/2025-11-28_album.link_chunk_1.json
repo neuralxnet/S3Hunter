@@ -1,0 +1,15 @@
+{
+  "chunk_id": 1,
+  "domain": "album.link",
+  "date": "2025-11-28",
+  "timestamp": "2025-11-28T19:36:32.522943",
+  "results": {
+    "public": [],
+    "private": []
+  },
+  "stats": {
+    "total_checked": 361323,
+    "public_found": 0,
+    "private_found": 0
+  }
+}
