@@ -1,0 +1,192 @@
+{
+  "chunk_id": 1,
+  "domain": "album",
+  "date": "2025-11-28",
+  "timestamp": "2025-11-28T16:42:19.212724",
+  "results": {
+    "public": [
+      {
+        "url": "https://albumtest2.s3.us-east-1.amazonaws.com",
+        "bucket": "albumtest2",
+        "region": "us-east-1",
+        "status": 200,
+        "access": "public",
+        "timestamp": "2025-11-28T13:38:47.069819"
+      },
+      {
+        "url": "https://albumid.s3.eu-central-1.amazonaws.com",
+        "bucket": "albumid",
+        "region": "eu-central-1",
+        "status": 200,
+        "access": "public",
+        "timestamp": "2025-11-28T13:56:00.414214"
+      },
+      {
+        "url": "https://s3.us-east-1.amazonaws.com/album.covers",
+        "bucket": "album.covers",
+        "region": "us-east-1",
+        "status": 200,
+        "access": "public",
+        "timestamp": "2025-11-28T14:22:17.549529"
+      },
+      {
+        "url": "https://album-photo.s3.us-east-1.amazonaws.com",
+        "bucket": "album-photo",
+        "region": "us-east-1",
+        "status": 200,
+        "access": "public",
+        "timestamp": "2025-11-28T14:24:09.289652"
+      },
+      {
+        "url": "https://test-album.s3.us-east-1.amazonaws.com",
+        "bucket": "test-album",
+        "region": "us-east-1",
+        "status": 200,
+        "access": "public",
+        "timestamp": "2025-11-28T14:25:14.303261"
+      },
+      {
+        "url": "https://albumtest.s3.us-east-1.amazonaws.com",
+        "bucket": "albumtest",
+        "region": "us-east-1",
+        "status": 200,
+        "access": "public",
+        "timestamp": "2025-11-28T14:44:15.772860"
+      },
+      {
+        "url": "https://album-public.s3.eu-north-1.amazonaws.com",
+        "bucket": "album-public",
+        "region": "eu-north-1",
+        "status": 200,
+        "access": "public",
+        "timestamp": "2025-11-28T14:47:52.319882"
+      },
+      {
+        "url": "https://albumph.s3.sa-east-1.amazonaws.com",
+        "bucket": "albumph",
+        "region": "sa-east-1",
+        "status": 200,
+        "access": "public",
+        "timestamp": "2025-11-28T14:50:28.175254"
+      },
+      {
+        "url": "https://album-test1.s3.us-east-1.amazonaws.com",
+        "bucket": "album-test1",
+        "region": "us-east-1",
+        "status": 200,
+        "access": "public",
+        "timestamp": "2025-11-28T15:10:29.392951"
+      },
+      {
+        "url": "https://album-photos.s3.us-east-1.amazonaws.com",
+        "bucket": "album-photos",
+        "region": "us-east-1",
+        "status": 200,
+        "access": "public",
+        "timestamp": "2025-11-28T15:17:36.973177"
+      },
+      {
+        "url": "https://albumonline.s3.us-west-2.amazonaws.com",
+        "bucket": "albumonline",
+        "region": "us-west-2",
+        "status": 200,
+        "access": "public",
+        "timestamp": "2025-11-28T15:22:04.953103"
+      },
+      {
+        "url": "https://balbum.s3.eu-west-1.amazonaws.com",
+        "bucket": "balbum",
+        "region": "eu-west-1",
+        "status": 200,
+        "access": "public",
+        "timestamp": "2025-11-28T15:29:27.601895"
+      },
+      {
+        "url": "https://weddingalbum.s3.us-east-1.amazonaws.com",
+        "bucket": "weddingalbum",
+        "region": "us-east-1",
+        "status": 200,
+        "access": "public",
+        "timestamp": "2025-11-28T15:32:07.411850"
+      },
+      {
+        "url": "https://imagealbum.s3.us-east-2.amazonaws.com",
+        "bucket": "imagealbum",
+        "region": "us-east-2",
+        "status": 200,
+        "access": "public",
+        "timestamp": "2025-11-28T15:38:36.884926"
+      },
+      {
+        "url": "https://album-mp3.s3.us-east-1.amazonaws.com",
+        "bucket": "album-mp3",
+        "region": "us-east-1",
+        "status": 200,
+        "access": "public",
+        "timestamp": "2025-11-28T15:51:09.313737"
+      },
+      {
+        "url": "https://album-covers.s3.eu-west-2.amazonaws.com",
+        "bucket": "album-covers",
+        "region": "eu-west-2",
+        "status": 200,
+        "access": "public",
+        "timestamp": "2025-11-28T16:05:47.349507"
+      },
+      {
+        "url": "https://myalbum.s3.eu-central-1.amazonaws.com",
+        "bucket": "myalbum",
+        "region": "eu-central-1",
+        "status": 200,
+        "access": "public",
+        "timestamp": "2025-11-28T16:11:47.774373"
+      },
+      {
+        "url": "https://album-training.s3.eu-west-1.amazonaws.com",
+        "bucket": "album-training",
+        "region": "eu-west-1",
+        "status": 200,
+        "access": "public",
+        "timestamp": "2025-11-28T16:19:38.123648"
+      },
+      {
+        "url": "https://albumpictures.s3.eu-west-2.amazonaws.com",
+        "bucket": "albumpictures",
+        "region": "eu-west-2",
+        "status": 200,
+        "access": "public",
+        "timestamp": "2025-11-28T16:24:31.805552"
+      },
+      {
+        "url": "https://audio-album.s3.eu-west-1.amazonaws.com",
+        "bucket": "audio-album",
+        "region": "eu-west-1",
+        "status": 200,
+        "access": "public",
+        "timestamp": "2025-11-28T16:30:12.507391"
+      },
+      {
+        "url": "https://fwalbum.s3.ap-southeast-1.amazonaws.com",
+        "bucket": "fwalbum",
+        "region": "ap-southeast-1",
+        "status": 200,
+        "access": "public",
+        "timestamp": "2025-11-28T16:31:35.192289"
+      },
+      {
+        "url": "https://album-downloads.s3.us-east-1.amazonaws.com",
+        "bucket": "album-downloads",
+        "region": "us-east-1",
+        "status": 200,
+        "access": "public",
+        "timestamp": "2025-11-28T16:37:00.185235"
+      }
+    ],
+    "private": []
+  },
+  "stats": {
+    "total_checked": 361247,
+    "public_found": 22,
+    "private_found": 0
+  }
+}
