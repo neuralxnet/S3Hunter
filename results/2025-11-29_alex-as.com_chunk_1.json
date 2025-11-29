@@ -1,0 +1,15 @@
+{
+  "chunk_id": 1,
+  "domain": "alex-as.com",
+  "date": "2025-11-29",
+  "timestamp": "2025-11-29T07:35:27.328855",
+  "results": {
+    "public": [],
+    "private": []
+  },
+  "stats": {
+    "total_checked": 361323,
+    "public_found": 0,
+    "private_found": 0
+  }
+}
