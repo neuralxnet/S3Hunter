@@ -3348,8 +3348,10 @@
     ],
     "private": []
   },
-  "generated_at": "2025-11-30T01:39:31.558746+00:00",
-  "validated_at": "2025-11-30T01:39:31.558767+00:00",
+  "generated_at": "2025-11-30T02:02:58.530924+00:00",
+  "source_files": 2,
+  "domains_scanned": 2,
+  "total_chunks": 2,
   "file_index": 0,
   "total_files": 1,
   "stats": {
